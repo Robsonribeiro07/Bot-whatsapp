@@ -1,5 +1,5 @@
-import { RafflesStorage } from '../../../database/Raffles'
-import { SendMessageWithDelay } from '../sendMessageWithDelay'
+import { RafflesStorage } from '../../../database/raffle-storage'
+import { SendMessageWithDelay } from '../send-message-with-delay'
 import { proto } from '@whiskeysockets/baileys'
 
 interface IReservedNumber {

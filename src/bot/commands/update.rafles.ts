@@ -1,7 +1,7 @@
-import { RafflesStorage } from '../../database/Raffles'
+import { RafflesStorage } from '../../database/raffle-storage'
 import { useBotStore } from '../../store/sock-store'
-import { formatRifaMessageUpdate } from '../../utils/formatted-upadet-rifa'
-import { SendMessageWithDelay } from '../handlers/sendMessageWithDelay'
+import { formatRifaMessageUpdate } from '../../utils/formated-update-message'
+import { SendMessageWithDelay } from '../handlers/send-message-with-delay'
 
 const updateRifas = async () => {
   const { groupId } = useBotStore.getState()

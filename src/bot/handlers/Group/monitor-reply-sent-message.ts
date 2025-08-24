@@ -1,6 +1,6 @@
 import { useBotStore } from '../../../store/sock-store'
 import { proto } from '@whiskeysockets/baileys'
-import { ReservedNumber } from '../Rifa/ReserverdNumber'
+import { reserveNumbers } from '../Rifa/ReserverdNumber'
 
 export const MonitorReplySentRifa = (m: proto.IWebMessageInfo) => {
   const { sock, groupId } = useBotStore.getState()
@@ -13,11 +13,12 @@ export const MonitorReplySentRifa = (m: proto.IWebMessageInfo) => {
 
   const assinante = m.pushName || m.key.remoteJid || ''
 
-  const Numbers = m.message?.conversation || m.message?.extendedTextMessage?.text
+  const Numbers =
+    m.message?.conversation || m.message?.extendedTextMessage?.text
 
   const NumberConverted = Numbers?.split(/[\s,]+/)
-    .map((n) => parseInt(n, 10))
-    .filter((n) => !isNaN(n))
+    .map(n => parseInt(n, 10))
+    .filter(n => !isNaN(n))
 
   if (!assinante && !Numbers) return
 
@@ -27,5 +28,11 @@ export const MonitorReplySentRifa = (m: proto.IWebMessageInfo) => {
 
   if (!repliedMsgId) return
 
-  ReservedNumber({ assinante, number: NumberConverted, groupId, RifaId: repliedMsgId, msg: m })
+  reserveNumbers({
+    assinante,
+    numbers: NumberConverted,
+    groupId,
+    RifaId: repliedMsgId,
+    msg: m,
+  })
 }

@@ -1,8 +1,8 @@
 import { WASocket } from '@whiskeysockets/baileys'
-import { SendMessageWithDelay } from './sendMessageWithDelay'
-import { CreateNewRifa } from './Rifa/CreateNewRifa'
+import { SendMessageWithDelay } from './send-message-with-delay'
+import { CreateNewRifa } from './Rifa/create-new-raffle'
 import { updateRifas } from '../commands/updateRaffles'
-import { MonitorReplySentRifa } from './Group/monitorReplySentMessages'
+import { MonitorReplySentRifa } from './Group/monitor-reply-sent-message'
 
 interface MonitorGroupOptions {
   sock: WASocket
