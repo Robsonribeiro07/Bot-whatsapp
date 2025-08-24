@@ -1,0 +1,28 @@
+{
+  "dependencies": {
+    "@whiskeysockets/baileys": "^6.7.18",
+    "puppeteer": "^24.17.0",
+    "qrcode-terminal": "^0.12.0",
+    "venom-bot": "^5.3.0",
+    "zustand": "^5.0.8"
+  },
+  "type": "module",
+  "scripts": {
+    "start": "npx ts-node src/bot/index.ts",
+    "lint": "eslint src --ext .ts,.tsx",
+    "lint:fix": "eslint src --ext .ts,.tsx --fix",
+     "format": "prettier --write \"src/**/*.{ts,tsx,js,jsx,json,css,md}\""
+
+  },
+  "devDependencies": {
+    "@types/node": "^24.3.0",
+    "@types/qrcode-terminal": "^0.12.2",
+    "@typescript-eslint/eslint-plugin": "^8.40.0",
+    "@typescript-eslint/parser": "^8.40.0",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-prettier": "^5.5.4",
+    "prettier": "^3.6.2",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.2"
+  }
+}
