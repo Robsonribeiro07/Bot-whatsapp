@@ -1,6 +1,9 @@
-import { RafflesStorage } from '../../../database/raffle-storage'
-import { SendMessageWithDelay } from '../send-message-with-delay'
+import { useStore } from 'zustand'
+import { RafflesStorage } from '../../../../database/raffle-storage'
+import { SendMessageWithDelay } from '../../send-message-with-delay'
 import { proto } from '@whiskeysockets/baileys'
+import { useBotStore } from '../../../../store/sock-store'
+import { SendMessageSucessedReserved } from './send-message-sucessed-reserved'
 
 interface IReservedNumber {
   assinante: string
@@ -10,7 +13,7 @@ interface IReservedNumber {
   msg?: proto.IWebMessageInfo
 }
 
-const reserveNumbers = ({
+const reserveNumbers = async ({
   assinante,
   numbers,
   msg,
@@ -21,22 +24,21 @@ const reserveNumbers = ({
 
   const raffle = RafflesStorage.find(r => r.messageId.some(id => id === RifaId))
 
-  if (!raffle) {
-    return SendMessageWithDelay({
-      text: 'Esta Rifa nao existe ou ja foi encerrada',
-      jid: groupId,
-    })
-  }
+  console.log(msg?.message?.conversation)
+
+  if (!raffle) return
 
   const reservedSuccess: number[] = []
   const reservedFailed: number[] = []
 
-  numbers.forEach(n => {
-    const success = raffle.reservedNumber(n, assinante)
+  numbers.forEach(async n => {
+    const success = raffle?.reservedNumber(n, assinante)
     if (success) {
       reservedSuccess.push(n)
+
+      return await SendMessageSucessedReserved({ groupId, msg })
     } else {
-      reservedFailed.push(n)
+      return reservedFailed.push(n)
     }
   })
 

@@ -1,10 +1,10 @@
 import { proto } from '@whiskeysockets/baileys'
-import { RafflesStorage } from '../../database/raffle-storage'
-import { timeToMinutes } from '../../utils/time-to-minutes'
-import { getMessageHour } from '../../utils/get-message-data'
-import { SendMessageWithDelay } from '../handlers/send-message-with-delay'
-import { formatRifaMessageDisponivel } from '../../utils/formated-ticket-avaliable'
-import { useBotStore } from '../../store/sock-store'
+import { RafflesStorage } from '../../../database/raffle-storage'
+import { timeToMinutes } from '../../../utils/time-to-minutes'
+import { getMessageHour } from '../../../utils/get-message-data'
+import { SendMessageWithDelay } from '../../handlers/send-message-with-delay'
+import { formatRifaMessageDisponivel } from '../../../utils/formated-ticket-avaliable'
+import { useBotStore } from '../../../store/sock-store'
 
 const TicketsAvaliables = async (msg: proto.IWebMessageInfo) => {
   const { groupId } = useBotStore.getState()

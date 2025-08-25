@@ -1,7 +1,7 @@
 import { WASocket } from '@whiskeysockets/baileys'
 import { SendMessageWithDelay } from './send-message-with-delay'
 import { CreateNewRifa } from './Rifa/create-new-raffle'
-import { updateRifas } from '../commands/updateRaffles'
+import { updateRifas } from '../commands/Raffle/update.rafles'
 import { MonitorReplySentRifa } from './Group/monitor-reply-sent-message'
 
 interface MonitorGroupOptions {
@@ -17,7 +17,6 @@ const MonitorGroup = ({ sock, groupId }: MonitorGroupOptions) => {
 
     if (msg.key.remoteJid === groupId) {
       const text = msg.message.conversation || ''
-      console.log('message no group', text)
 
       if (msg.message.extendedTextMessage?.contextInfo?.stanzaId) {
         MonitorReplySentRifa(msg)
