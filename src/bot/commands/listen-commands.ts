@@ -4,7 +4,10 @@ import { TicketsAvaliables } from './Raffle/ticket-avaliables'
 import { closeGroup } from './group/closed-group'
 import { OpenGroup } from './group/open-group'
 
-type commandFn = (msg: proto.IWebMessageInfo) => Promise<unknown>
+type commandFn = (
+  msg: proto.IWebMessageInfo,
+  args: string[],
+) => Promise<unknown>
 const coomands: Record<string, commandFn> = {
   '!disponivel': TicketsAvaliables,
   '!fechar': closeGroup,
@@ -24,9 +27,15 @@ const listenCommands = async () => {
 
     if (!text.startsWith('!')) return
 
-    const fn = coomands[text.toLowerCase()]
+    const parts = text.trim().split(/\s+/)
 
-    if (fn) await fn(msg)
+    const command = parts[0].toLowerCase()
+
+    const args = parts.slice(1)
+
+    const fn = coomands[command]
+
+    if (fn) await fn(msg, args)
   })
 }
 
