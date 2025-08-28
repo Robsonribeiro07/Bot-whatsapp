@@ -1,7 +1,7 @@
 export interface Bilhete {
   Number: number
   User: string | null
-  Reserved: boolean
+  ReservedBy: boolean
 }
 
 export class Rifa {
@@ -22,26 +22,26 @@ export class Rifa {
     this.Bilhetes = Array.from({ length: 100 }, (_, i) => ({
       Number: i + 1,
       User: null,
-      Reserved: false,
+      ReservedBy: false,
     }))
   }
 
   reservedNumber(Number: number, User: string): boolean {
-    const Bilhete = this.Bilhetes.find((b) => b.Number === Number)
+    const Bilhete = this.Bilhetes.find(b => b.Number === Number)
 
     if (!Bilhete) return false
-    if (Bilhete.Reserved) return false
+    if (Bilhete.ReservedBy) return false
 
     Bilhete.User = User
-    Bilhete.Reserved = true
+    Bilhete.ReservedBy = true
     return true
   }
 
   listaDisponiveis(): number[] {
-    return this.Bilhetes.filter((b) => !b.Reserved).map((b) => b.Number)
+    return this.Bilhetes.filter(b => !b.ReservedBy).map(b => b.Number)
   }
 
   ListReserved(): Bilhete[] {
-    return this.Bilhetes.filter((b) => b.Reserved)
+    return this.Bilhetes.filter(b => b.ReservedBy)
   }
 }

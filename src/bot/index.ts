@@ -1,20 +1,27 @@
-import { useBotStore } from '../store/sock-store'
 import { listenCommands } from './commands/listen-commands'
 import { MonitorGroup } from './handlers/message-handlers'
-import { StartBot } from './handlers/startBot'
+import { startAllBots } from './handlers/startBot'
+import { sessions } from '../database/bot/sessions'
+import { userGetGroupsForUserServices } from '../services/users/get-groups-for-user'
 
-async function main() {
-  const sock = await StartBot()
+export async function main() {
+  await startAllBots()
 
-  const { setSock } = useBotStore.getState()
+  for (const userId of Object.keys(sessions)) {
+    const sock = sessions[userId]
 
-  setSock(sock)
+    if (!sock) return
 
-  const groupId = '120363420435813452@g.us'
+    const GroupsMonitor = await userGetGroupsForUserServices({ jid: userId })
 
-  listenCommands()
+    listenCommands()
 
-  MonitorGroup({ sock, groupId })
+    if (GroupsMonitor) {
+      for (const group of GroupsMonitor) {
+        MonitorGroup({ sock, groupId: group.remoteJid })
+      }
+    }
+
+    console.log('monitrando para ', userId)
+  }
 }
-
-main()

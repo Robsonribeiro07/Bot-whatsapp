@@ -9,8 +9,8 @@ const formatRifaMessage = (rifa: Rifa): string => {
   for (let i = 0; i < bilhetes.length; i += blockSize) {
     const block = bilhetes.slice(i, i + blockSize)
 
-    block.forEach((b) => {
-      if (b.Reserved && b.User) {
+    block.forEach(b => {
+      if (b.ReservedBy && b.User) {
         message += `✅ Número ${b.Number}: ${b.User}\n`
       } else {
         message += `🔹 Número ${b.Number}: Disponível\n`

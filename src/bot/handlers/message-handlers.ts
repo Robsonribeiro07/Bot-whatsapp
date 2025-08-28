@@ -3,6 +3,8 @@ import { SendMessageWithDelay } from './send-message-with-delay'
 import { CreateNewRifa } from './Rifa/create-new-raffle'
 import { updateRifas } from '../commands/Raffle/update.rafles'
 import { MonitorReplySentRifa } from './Group/monitor-reply-sent-message'
+import { createUserController } from '../../controllers/user/create-new-user'
+import { userServiceCreate } from '../../services/users/create-user'
 
 interface MonitorGroupOptions {
   sock: WASocket
@@ -19,31 +21,26 @@ const MonitorGroup = ({ sock, groupId }: MonitorGroupOptions) => {
       const text = msg.message.conversation || ''
 
       if (msg.message.extendedTextMessage?.contextInfo?.stanzaId) {
-        MonitorReplySentRifa(msg)
+        MonitorReplySentRifa(msg, sock)
       }
 
       if (text.toLocaleLowerCase().includes('ola')) {
         await SendMessageWithDelay({
           jid: groupId,
           text: 'Seja bem vindo',
+          sock,
           delayMS: 200,
         })
       } else if (text.toLowerCase().includes('rifa')) {
-        const newRifa = await CreateNewRifa({
-          hour: '19:00',
-          value: '800',
-          id: '210',
-          sock,
+        const result = await userServiceCreate({
+          id: '12',
+          name: 'Robson',
+          number: '3232',
         })
 
-        if (newRifa.Error?.message && !newRifa.sucessed?.message)
-          return SendMessageWithDelay({
-            delayMS: 100,
-            jid: groupId,
-            text: 'Houve um erro ao criar rifa',
-          })
+        console.log(result)
       } else if (text.toLowerCase().includes('!update')) {
-        updateRifas()
+        updateRifas(sock)
       }
     }
   })

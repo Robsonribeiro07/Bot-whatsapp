@@ -1,4 +1,4 @@
-import { proto } from '@whiskeysockets/baileys'
+import { proto, WASocket } from '@whiskeysockets/baileys'
 import { RafflesStorage } from '../../../database/raffle-storage'
 import { timeToMinutes } from '../../../utils/time-to-minutes'
 import { getMessageHour } from '../../../utils/get-message-data'
@@ -6,8 +6,14 @@ import { SendMessageWithDelay } from '../../handlers/send-message-with-delay'
 import { formatRifaMessageDisponivel } from '../../../utils/formated-ticket-avaliable'
 import { useBotStore } from '../../../store/sock-store'
 
-const TicketsAvaliables = async (msg: proto.IWebMessageInfo) => {
+const TicketsAvaliables = async (
+  sock: WASocket,
+
+  msg?: proto.IWebMessageInfo,
+) => {
   const { groupId } = useBotStore.getState()
+
+  if (!msg) return
 
   const RaffleId = msg.message?.extendedTextMessage?.contextInfo?.remoteJid
 
@@ -21,6 +27,7 @@ const TicketsAvaliables = async (msg: proto.IWebMessageInfo) => {
     if (FinndRafle) {
       await SendMessageWithDelay({
         jid: groupId,
+        sock,
         text: formatRifaMessageDisponivel(FinndRafle),
       })
     }
@@ -38,6 +45,7 @@ const TicketsAvaliables = async (msg: proto.IWebMessageInfo) => {
 
   await SendMessageWithDelay({
     jid: groupId,
+    sock,
     text: formatRifaMessageDisponivel(FinndRafle),
   })
 }

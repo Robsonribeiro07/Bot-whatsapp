@@ -1,17 +1,22 @@
-import { proto } from '@whiskeysockets/baileys'
+import { proto, WASocket } from '@whiskeysockets/baileys'
 import { useBotStore } from '../../store/sock-store'
 import { TicketsAvaliables } from './Raffle/ticket-avaliables'
 import { closeGroup } from './group/closed-group'
 import { OpenGroup } from './group/open-group'
+import { RemoverUser } from './group/users/remover-user'
+import { AddUser } from './group/users/add-user'
 
 type commandFn = (
-  msg: proto.IWebMessageInfo,
-  args: string[],
+  sock: WASocket,
+  msg?: proto.IWebMessageInfo,
+  args?: string[],
 ) => Promise<unknown>
 const coomands: Record<string, commandFn> = {
   '!disponivel': TicketsAvaliables,
   '!fechar': closeGroup,
   '!abrir': OpenGroup,
+  '!banir': RemoverUser,
+  '!add': AddUser,
 }
 const listenCommands = async () => {
   const { sock, groupId } = useBotStore.getState()
@@ -23,7 +28,8 @@ const listenCommands = async () => {
 
     if (msg.key.remoteJid !== groupId) return
 
-    const text = msg.message?.conversation ?? ''
+    const text =
+      msg.message?.conversation ?? msg.message?.extendedTextMessage?.text ?? ''
 
     if (!text.startsWith('!')) return
 
@@ -35,7 +41,7 @@ const listenCommands = async () => {
 
     const fn = coomands[command]
 
-    if (fn) await fn(msg, args)
+    if (fn) await fn(sock, msg, args)
   })
 }
 

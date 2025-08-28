@@ -1,11 +1,12 @@
 import { useStore } from 'zustand'
 import { RafflesStorage } from '../../../../database/raffle-storage'
 import { SendMessageWithDelay } from '../../send-message-with-delay'
-import { proto } from '@whiskeysockets/baileys'
+import { proto, WASocket } from '@whiskeysockets/baileys'
 import { useBotStore } from '../../../../store/sock-store'
 import { SendMessageSucessedReserved } from './send-message-sucessed-reserved'
 
 interface IReservedNumber {
+  sock: WASocket
   assinante: string
   RifaId?: string | null
   numbers?: number[]
@@ -19,6 +20,7 @@ const reserveNumbers = async ({
   msg,
   groupId,
   RifaId,
+  sock,
 }: IReservedNumber) => {
   if (!numbers || numbers.length === 0) return
 
@@ -49,7 +51,13 @@ const reserveNumbers = async ({
     reply += `❌ Números indisponíveis: ${reservedFailed.join(', ')}`
 
   console.log(raffle)
-  return SendMessageWithDelay({ text: reply, jid: groupId, quoted: true, msg })
+  return SendMessageWithDelay({
+    text: reply,
+    jid: groupId,
+    quoted: true,
+    msg,
+    sock,
+  })
 }
 
 export { reserveNumbers }

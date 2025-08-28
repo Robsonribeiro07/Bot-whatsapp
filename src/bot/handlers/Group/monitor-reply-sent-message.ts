@@ -1,9 +1,13 @@
 import { useBotStore } from '../../../store/sock-store'
-import { proto } from '@whiskeysockets/baileys'
+import { proto, WASocket } from '@whiskeysockets/baileys'
 import { reserveNumbers } from '../Rifa/tickets/reserve-number'
+import GetMessageText from '../../../utils/group/get-message-text'
 
-export const MonitorReplySentRifa = async (m: proto.IWebMessageInfo) => {
-  const { sock, groupId } = useBotStore.getState()
+export const MonitorReplySentRifa = async (
+  m: proto.IWebMessageInfo,
+  sock: WASocket,
+) => {
+  const { groupId } = useBotStore.getState()
 
   if (!sock || !m) return
 
@@ -13,8 +17,7 @@ export const MonitorReplySentRifa = async (m: proto.IWebMessageInfo) => {
 
   const assinante = m.pushName || m.key.remoteJid || ''
 
-  const Numbers =
-    m.message?.conversation || m.message?.extendedTextMessage?.text
+  const Numbers = GetMessageText(m)
 
   const NumberConverted = Numbers?.split(/[\s,]+/)
     .map(n => parseInt(n, 10))
@@ -39,5 +42,6 @@ export const MonitorReplySentRifa = async (m: proto.IWebMessageInfo) => {
     groupId,
     RifaId: repliedMsgId,
     msg: m,
+    sock,
   })
 }

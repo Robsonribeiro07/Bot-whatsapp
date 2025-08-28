@@ -1,32 +1,24 @@
-import makeWASocket, { useMultiFileAuthState } from '@whiskeysockets/baileys'
-import qrcode from 'qrcode-terminal'
+import path from 'path'
+import fs from 'fs'
+import { connectBotController } from '../../controllers/bot/connect'
+import { sessions } from '../../database/bot/sessions'
 
-async function StartBot() {
-  const { state, saveCreds } = await useMultiFileAuthState('auth-info')
+async function startAllBots() {
+  const sessionsPath = path.join(__dirname, '../functions/sessions')
 
-  const socket = makeWASocket({
-    auth: state,
-  })
+  if (!fs.existsSync(sessionsPath)) return
 
-  socket.ev.on('creds.update', saveCreds)
+  const userIds = fs.readdirSync(sessionsPath)
 
-  socket.ev.on('connection.update', (uptade) => {
-    const { connection, qr } = uptade
-
-    if (qr) {
-      qrcode.generate(qr, { small: true })
-      console.log('qr code gerado com sucesso')
+  for (const userId of userIds) {
+    if (!sessions[userId]) {
+      console.log(`Reconectando bot do usuário ${userId}...`)
+      const newBot = await connectBotController(userId)
+      if (newBot) sessions[userId] = newBot
+    } else {
+      console.log(`Bot do usuário ${userId} já está ativo em memória`)
     }
-
-    if (connection === 'close') {
-      console.log('Desconectado, tentando reconectar...')
-      StartBot()
-    } else if (connection === 'open') {
-      console.log('Bot Conectado')
-    }
-  })
-
-  return socket
+  }
 }
 
-export { StartBot }
+export { startAllBots }
