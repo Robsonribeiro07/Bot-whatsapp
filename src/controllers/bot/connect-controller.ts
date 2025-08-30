@@ -1,9 +1,9 @@
-import { createBot } from '../../bot/functions/create-bot'
+import { BotManager } from '../../bot/functions/create-bot'
 import { sessions } from '../../database/bot/sessions'
-import { findUserController } from '../user/find-user'
+import { userServiceFind } from '../../services/users/find-user'
 
 async function connectBotController(jid: string) {
-  const findUser = await findUserController({ jid })
+  const findUser = await userServiceFind({ jid })
 
   if (!findUser) return
 
@@ -11,8 +11,9 @@ async function connectBotController(jid: string) {
     console.log('user Conectado')
   }
 
-  const newBot = await createBot(findUser._id.toString())
+  const newBot = new BotManager(jid)
 
+  newBot.connect()
   return newBot
 }
 

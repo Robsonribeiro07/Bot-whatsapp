@@ -1,6 +1,6 @@
 import path from 'path'
 import fs from 'fs'
-import { connectBotController } from '../../controllers/bot/connect'
+import { connectBotController } from '../../controllers/bot/connect-controller'
 import { sessions } from '../../database/bot/sessions'
 
 async function startAllBots() {
@@ -14,7 +14,7 @@ async function startAllBots() {
     if (!sessions[userId]) {
       console.log(`Reconectando bot do usuário ${userId}...`)
       const newBot = await connectBotController(userId)
-      if (newBot) sessions[userId] = newBot
+      if (newBot) await newBot.connect()
     } else {
       console.log(`Bot do usuário ${userId} já está ativo em memória`)
     }

@@ -1,6 +1,6 @@
 import { WASocket } from '@whiskeysockets/baileys'
 import { FindUser } from '../../bot/functions/group/find-user'
-import { findUserController } from '../../controllers/user/find-user'
+import { userServiceFind } from './find-user'
 
 interface IgetGroupsForUsersServices {
   jid: string
@@ -9,7 +9,7 @@ interface IgetGroupsForUsersServices {
 const userGetGroupsForUserServices = async ({
   jid,
 }: IgetGroupsForUsersServices) => {
-  const user = await findUserController({ jid })
+  const user = await userServiceFind({ jid })
 
   if (!user) return
 

@@ -4,14 +4,8 @@ export interface IUserSchemaServices {
   id?: string
   name: string
   number: string
-  groups?: IGroupSchema
 }
-const userServiceCreate = async ({
-  id,
-  number,
-  name,
-  groups,
-}: IUserSchemaServices) => {
+const userServiceCreate = async ({ id, number, name }: IUserSchemaServices) => {
   if (!id || !number || !name) return
 
   try {
@@ -19,7 +13,6 @@ const userServiceCreate = async ({
       name,
       id: id ?? id,
       number,
-      Groups: groups,
     })
 
     return newUser

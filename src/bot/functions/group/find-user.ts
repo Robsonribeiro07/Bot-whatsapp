@@ -15,7 +15,7 @@ const FindUser = async ({
 }: IFindUser): Promise<GroupParticipant | null> => {
   if (!msg || !args) return null
 
-  const groupMetadata = await GetGroupMetada({ msg })
+  const groupMetadata = await GetGroupMetada({ msg, sock })
   if (!groupMetadata) return null
 
   const userID = await GetMessageFormatedNumber({ msg, args, sock })

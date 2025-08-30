@@ -3,7 +3,6 @@ import { SendMessageWithDelay } from './send-message-with-delay'
 import { CreateNewRifa } from './Rifa/create-new-raffle'
 import { updateRifas } from '../commands/Raffle/update.rafles'
 import { MonitorReplySentRifa } from './Group/monitor-reply-sent-message'
-import { createUserController } from '../../controllers/user/create-new-user'
 import { userServiceCreate } from '../../services/users/create-user'
 
 interface MonitorGroupOptions {

@@ -1,6 +1,7 @@
 {
   "dependencies": {
     "@whiskeysockets/baileys": "^6.7.18",
+    "body-parser": "^2.2.0",
     "express": "^5.1.0",
     "mongoose": "^8.18.0",
     "pino": "^9.9.0",
@@ -9,6 +10,7 @@
     "swagger-jsdoc": "^6.2.8",
     "swagger-ui-express": "^5.0.1",
     "tsconfig-paths": "^4.2.0",
+    "tsoa": "^6.6.0",
     "venom-bot": "^5.3.0",
     "zustand": "^5.0.8"
   },
@@ -16,7 +18,9 @@
     "start": "npx ts-node src/bot/server.ts",
     "lint": "eslint src --ext .ts,.tsx",
     "lint:fix": "eslint src --ext .ts,.tsx --fix",
-    "format": "prettier --write \"src/**/*.{ts,tsx,js,jsx,json,css,md}\""
+    "format": "prettier --write \"src/**/*.{ts,tsx,js,jsx,json,css,md}\"",
+    "tsoa:routes": "tsoa routes",
+    "tsoa:spec": "tsoa spec"
   },
   "devDependencies": {
     "@types/express": "^5.0.3",

@@ -11,6 +11,7 @@ export interface IUserSchema {
 
 const UserSchema = new Schema<IUserSchema>({
   id: { type: String, required: true },
+  name: { type: String },
   Groups: { type: [GroupSchema], default: [] },
 })
 
