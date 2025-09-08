@@ -17,7 +17,7 @@ export class FindUserControoler extends Controller {
   @SuccessResponse('200', 'Usuario Encontrado com sucess')
   @Response('404', 'Usuario nao encontrado')
   public async findUser(@Query() jid: string): Promise<UserDTO | null> {
-    const user = await userServiceFind({ jid })
+    const user = await userServiceFind({ id: jid })
 
     if (!user) {
       this.setStatus(404)

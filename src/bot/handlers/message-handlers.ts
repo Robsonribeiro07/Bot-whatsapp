@@ -30,16 +30,6 @@ const MonitorGroup = ({ sock, groupId }: MonitorGroupOptions) => {
           sock,
           delayMS: 200,
         })
-      } else if (text.toLowerCase().includes('rifa')) {
-        const result = await userServiceCreate({
-          id: '12',
-          name: 'Robson',
-          number: '3232',
-        })
-
-        console.log(result)
-      } else if (text.toLowerCase().includes('!update')) {
-        updateRifas(sock)
       }
     }
   })

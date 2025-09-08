@@ -1,23 +1,25 @@
-import { IGroupSchema } from '../../database/mongoDB/models/group/group-schema'
-import { IUserSchema, UserModel } from '../../database/mongoDB/user-schema'
+import { UserModel } from '../../database/mongoDB/user-schema'
+import { userServiceFind } from './find-user'
 export interface IUserSchemaServices {
-  id?: string
-  name: string
-  number: string
+  id: string
 }
-const userServiceCreate = async ({ id, number, name }: IUserSchemaServices) => {
-  if (!id || !number || !name) return
+const userServiceCreate = async ({ id }: IUserSchemaServices) => {
+  if (!id) return null
+
+  const findExistingUser = await userServiceFind({ id })
+
+  if (findExistingUser) return findExistingUser
 
   try {
     const newUser = await UserModel.create({
-      name,
-      id: id ?? id,
-      number,
+      id,
     })
 
     return newUser
   } catch (err) {
     console.log(err)
+
+    return null
   }
 }
 

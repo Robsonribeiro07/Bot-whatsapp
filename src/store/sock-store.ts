@@ -7,8 +7,8 @@ interface BotStore {
   groupId: string
 }
 
-export const useBotStore = createStore<BotStore>((set) => ({
+export const useBotStore = createStore<BotStore>(set => ({
   sock: null,
   groupId: '120363420435813452@g.us',
-  setSock: (sock) => set({ sock }),
+  setSock: sock => set({ sock }),
 }))

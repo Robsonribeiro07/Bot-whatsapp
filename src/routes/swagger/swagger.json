@@ -9,10 +9,10 @@
 		"schemas": {
 			"UserDTO": {
 				"properties": {
-					"name": {
+					"user": {
 						"type": "string"
 					},
-					"number": {
+					"passowrd": {
 						"type": "string"
 					},
 					"id": {
@@ -20,8 +20,29 @@
 					}
 				},
 				"required": [
-					"name",
-					"number"
+					"user",
+					"passowrd",
+					"id"
+				],
+				"type": "object",
+				"additionalProperties": false
+			},
+			"IUserSchemaServices": {
+				"properties": {
+					"id": {
+						"type": "string"
+					},
+					"user": {
+						"type": "string"
+					},
+					"passowrd": {
+						"type": "string"
+					}
+				},
+				"required": [
+					"id",
+					"user",
+					"passowrd"
 				],
 				"type": "object",
 				"additionalProperties": false
@@ -29,9 +50,27 @@
 			"ICreateUserResponse": {
 				"properties": {
 					"message": {
+						"type": "string",
+						"enum": [
+							"bot-connectado",
+							"Usuario criado",
+							"Erro ao criar usuário",
+							"Houve um erro ao criar o bot",
+							"Erro interno no servidor"
+						]
+					},
+					"user": {
+						"$ref": "#/components/schemas/IUserSchemaServices"
+					},
+					"QRcode": {
 						"type": "string"
 					},
-					"user": {}
+					"base64": {
+						"type": "string"
+					},
+					"statusBot": {
+						"type": "boolean"
+					}
 				},
 				"required": [
 					"message"
@@ -41,10 +80,10 @@
 			},
 			"CreateUserDTO": {
 				"properties": {
-					"name": {
+					"user": {
 						"type": "string"
 					},
-					"number": {
+					"passowrd": {
 						"type": "string"
 					},
 					"id": {
@@ -52,8 +91,37 @@
 					}
 				},
 				"required": [
-					"name",
-					"number"
+					"user",
+					"passowrd",
+					"id"
+				],
+				"type": "object",
+				"additionalProperties": false
+			},
+			"IRegenerateQRCodeResponse": {
+				"properties": {
+					"qr": {},
+					"base64": {
+						"type": "string"
+					},
+					"message": {
+						"type": "string"
+					},
+					"error": {
+						"type": "string"
+					}
+				},
+				"type": "object",
+				"additionalProperties": false
+			},
+			"IRegenareteQRcodeService": {
+				"properties": {
+					"id": {
+						"type": "string"
+					}
+				},
+				"required": [
+					"id"
 				],
 				"type": "object",
 				"additionalProperties": false
@@ -119,14 +187,10 @@
 							}
 						}
 					},
-					"403": {
-						"description": "Usuário já existe"
-					},
 					"500": {
 						"description": "Erro interno do servidor"
 					}
 				},
-				"description": "Cria um novo usuário",
 				"tags": [
 					"Users"
 				],
@@ -138,6 +202,48 @@
 						"application/json": {
 							"schema": {
 								"$ref": "#/components/schemas/CreateUserDTO"
+							}
+						}
+					}
+				}
+			}
+		},
+		"/bot/regenerate/qrcode": {
+			"post": {
+				"operationId": "RegenaretaQRcode",
+				"responses": {
+					"200": {
+						"description": "QR code gerado com sucesso",
+						"content": {
+							"application/json": {
+								"schema": {
+									"$ref": "#/components/schemas/IRegenerateQRCodeResponse"
+								}
+							}
+						}
+					},
+					"403": {
+						"description": "Id necessario"
+					},
+					"405": {
+						"description": "Bot nao encontrado"
+					},
+					"500": {
+						"description": "Houve um erro ao gerar Um novo Qrcode"
+					}
+				},
+				"description": "Gera um novo Qrocde para o bot",
+				"tags": [
+					"Bot"
+				],
+				"security": [],
+				"parameters": [],
+				"requestBody": {
+					"required": true,
+					"content": {
+						"application/json": {
+							"schema": {
+								"$ref": "#/components/schemas/IRegenareteQRcodeService"
 							}
 						}
 					}

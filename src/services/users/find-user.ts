@@ -2,14 +2,14 @@ import { IUserSchema, UserModel } from '../../database/mongoDB/user-schema'
 
 export type IuserDocument = IUserSchema & Document
 const userServiceFind = async ({
-  jid,
+  id,
 }: {
-  jid: string
+  id?: string
 }): Promise<IuserDocument | null> => {
-  if (!jid) return null
+  if (!id) return null
 
   try {
-    const findUser: IuserDocument | null = await UserModel.findOne({ _id: jid })
+    const findUser: IuserDocument | null = await UserModel.findOne({ id })
 
     return findUser
   } catch (err) {

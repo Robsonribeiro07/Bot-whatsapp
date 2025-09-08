@@ -1,20 +1,20 @@
 import { BotManager } from '../../bot/functions/create-bot'
+import { getOrCreateBot } from '../../database/bot/bot-manager'
 import { sessions } from '../../database/bot/sessions'
 import { userServiceFind } from '../../services/users/find-user'
 
-async function connectBotController(jid: string) {
-  const findUser = await userServiceFind({ jid })
+async function connectBotController(id: string) {
+  const findUser = await userServiceFind({ id })
 
   if (!findUser) return
 
-  if (sessions[jid.toString()]) {
+  if (sessions[id]) {
     console.log('user Conectado')
   }
 
-  const newBot = new BotManager(jid)
+  const bot = getOrCreateBot({ id })
 
-  newBot.connect()
-  return newBot
+  return bot
 }
 
 export { connectBotController }

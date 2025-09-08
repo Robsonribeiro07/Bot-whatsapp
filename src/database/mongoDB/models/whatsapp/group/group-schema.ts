@@ -1,7 +1,6 @@
 import { Schema } from 'mongoose'
 import { IParticipant, ParticipantsSchema } from './participant'
-import { IRaffleSchema, RaffleSChema } from '../raffle-schema'
-import { Permission } from '../../../../bot/rules/types'
+import { IRaffleSchema, RaffleSChema } from '../../raffle-schema'
 
 export interface IGroupSchema {
   active: boolean

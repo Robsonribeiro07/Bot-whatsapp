@@ -7,6 +7,8 @@ import {  fetchMiddlewares, ExpressTemplateService } from '@tsoa/runtime';
 import { FindUserControoler } from './../controllers/user/get-user-controller';
 // WARNING: This file was auto-generated with tsoa. Please do not modify it. Re-run tsoa to re-generate this file: https://github.com/lukeautry/tsoa
 import { UserController } from './../controllers/user/create-new-user-controller';
+// WARNING: This file was auto-generated with tsoa. Please do not modify it. Re-run tsoa to re-generate this file: https://github.com/lukeautry/tsoa
+import { Regenarate } from './../controllers/bot/regenate-Qrcode-controller';
 import type { Request as ExRequest, Response as ExResponse, RequestHandler, Router } from 'express';
 
 
@@ -17,9 +19,15 @@ const models: TsoaRoute.Models = {
     "UserDTO": {
         "dataType": "refObject",
         "properties": {
-            "name": {"dataType":"string","required":true},
-            "number": {"dataType":"string","required":true},
-            "id": {"dataType":"string"},
+            "id": {"dataType":"string","required":true},
+        },
+        "additionalProperties": false,
+    },
+    // WARNING: This file was auto-generated with tsoa. Please do not modify it. Re-run tsoa to re-generate this file: https://github.com/lukeautry/tsoa
+    "IUserSchemaServices": {
+        "dataType": "refObject",
+        "properties": {
+            "id": {"dataType":"string","required":true},
         },
         "additionalProperties": false,
     },
@@ -27,8 +35,11 @@ const models: TsoaRoute.Models = {
     "ICreateUserResponse": {
         "dataType": "refObject",
         "properties": {
-            "message": {"dataType":"string","required":true},
-            "user": {"dataType":"any"},
+            "message": {"dataType":"union","subSchemas":[{"dataType":"enum","enums":["bot-connectado"]},{"dataType":"enum","enums":["Usuario criado"]},{"dataType":"enum","enums":["Erro ao criar usuário"]},{"dataType":"enum","enums":["Houve um erro ao criar o bot"]},{"dataType":"enum","enums":["Erro interno no servidor"]}],"required":true},
+            "user": {"ref":"IUserSchemaServices"},
+            "QRcode": {"dataType":"string"},
+            "base64": {"dataType":"string"},
+            "statusBot": {"dataType":"boolean"},
         },
         "additionalProperties": false,
     },
@@ -36,9 +47,26 @@ const models: TsoaRoute.Models = {
     "CreateUserDTO": {
         "dataType": "refObject",
         "properties": {
-            "name": {"dataType":"string","required":true},
-            "number": {"dataType":"string","required":true},
-            "id": {"dataType":"string"},
+            "id": {"dataType":"string","required":true},
+        },
+        "additionalProperties": false,
+    },
+    // WARNING: This file was auto-generated with tsoa. Please do not modify it. Re-run tsoa to re-generate this file: https://github.com/lukeautry/tsoa
+    "IRegenerateQRCodeResponse": {
+        "dataType": "refObject",
+        "properties": {
+            "qr": {"dataType":"any"},
+            "base64": {"dataType":"string"},
+            "message": {"dataType":"string"},
+            "error": {"dataType":"string"},
+        },
+        "additionalProperties": false,
+    },
+    // WARNING: This file was auto-generated with tsoa. Please do not modify it. Re-run tsoa to re-generate this file: https://github.com/lukeautry/tsoa
+    "IRegenareteQRcodeService": {
+        "dataType": "refObject",
+        "properties": {
+            "id": {"dataType":"string","required":true},
         },
         "additionalProperties": false,
     },
@@ -109,6 +137,36 @@ export function RegisterRoutes(app: Router) {
 
               await templateService.apiHandler({
                 methodName: 'createUser',
+                controller,
+                response,
+                next,
+                validatedArgs,
+                successStatus: 200,
+              });
+            } catch (err) {
+                return next(err);
+            }
+        });
+        // WARNING: This file was auto-generated with tsoa. Please do not modify it. Re-run tsoa to re-generate this file: https://github.com/lukeautry/tsoa
+        const argsRegenarate_regenaretaQRcode: Record<string, TsoaRoute.ParameterSchema> = {
+                body: {"in":"body","name":"body","required":true,"ref":"IRegenareteQRcodeService"},
+        };
+        app.post('/bot/regenerate/qrcode',
+            ...(fetchMiddlewares<RequestHandler>(Regenarate)),
+            ...(fetchMiddlewares<RequestHandler>(Regenarate.prototype.regenaretaQRcode)),
+
+            async function Regenarate_regenaretaQRcode(request: ExRequest, response: ExResponse, next: any) {
+
+            // WARNING: This file was auto-generated with tsoa. Please do not modify it. Re-run tsoa to re-generate this file: https://github.com/lukeautry/tsoa
+
+            let validatedArgs: any[] = [];
+            try {
+                validatedArgs = templateService.getValidatedArgs({ args: argsRegenarate_regenaretaQRcode, request, response });
+
+                const controller = new Regenarate();
+
+              await templateService.apiHandler({
+                methodName: 'regenaretaQRcode',
                 controller,
                 response,
                 next,

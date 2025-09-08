@@ -1,5 +1,5 @@
 import { Schema } from 'mongoose'
-import { Permission } from '../../../../bot/rules/types'
+import { Permission } from '../../../../../bot/rules/types'
 
 export interface IParticipant {
   id: string

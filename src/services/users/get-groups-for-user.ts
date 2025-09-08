@@ -9,7 +9,7 @@ interface IgetGroupsForUsersServices {
 const userGetGroupsForUserServices = async ({
   jid,
 }: IgetGroupsForUsersServices) => {
-  const user = await userServiceFind({ jid })
+  const user = await userServiceFind({ id: jid })
 
   if (!user) return
 
