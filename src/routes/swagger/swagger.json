@@ -9,19 +9,11 @@
 		"schemas": {
 			"UserDTO": {
 				"properties": {
-					"user": {
-						"type": "string"
-					},
-					"passowrd": {
-						"type": "string"
-					},
 					"id": {
 						"type": "string"
 					}
 				},
 				"required": [
-					"user",
-					"passowrd",
 					"id"
 				],
 				"type": "object",
@@ -31,18 +23,10 @@
 				"properties": {
 					"id": {
 						"type": "string"
-					},
-					"user": {
-						"type": "string"
-					},
-					"passowrd": {
-						"type": "string"
 					}
 				},
 				"required": [
-					"id",
-					"user",
-					"passowrd"
+					"id"
 				],
 				"type": "object",
 				"additionalProperties": false
@@ -80,19 +64,11 @@
 			},
 			"CreateUserDTO": {
 				"properties": {
-					"user": {
-						"type": "string"
-					},
-					"passowrd": {
-						"type": "string"
-					},
 					"id": {
 						"type": "string"
 					}
 				},
 				"required": [
-					"user",
-					"passowrd",
 					"id"
 				],
 				"type": "object",

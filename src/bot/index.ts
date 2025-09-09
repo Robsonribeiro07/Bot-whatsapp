@@ -6,7 +6,6 @@ import { userGetGroupsForUserServices } from '../services/users/get-groups-for-u
 
 export async function main() {
   await startAllBots()
-
   for (const userId of Object.keys(sessions)) {
     const sock = sessions[userId]
 
