@@ -5,6 +5,7 @@ import makeWASocket, {
   useMultiFileAuthState,
   WASocket,
   ConnectionState,
+  GroupMetadata,
 } from '@whiskeysockets/baileys'
 import { sessions } from '../../database/bot/sessions'
 import pino from 'pino'
@@ -14,6 +15,7 @@ import { connectSockets } from '../../socket'
 import { Boom } from '@hapi/boom'
 import { Socket } from 'socket.io'
 import { updateWithWhatsappDataService } from '../../services/users/update-with-whatsapp-data-service'
+import { isAwaitKeyword } from 'typescript'
 
 class BotManager extends EventEmitter {
   private userID: string
@@ -28,12 +30,16 @@ class BotManager extends EventEmitter {
   private profileUpdateInterval?: NodeJS.Timeout // IMPROVEMENT: Controle para limpar interval.
   private saveCreds?: () => Promise<void> // Nova propriedade para acessar saveCreds
   private intentionalReconnect = false // Nova flag para reconexão após rename
+  private ConnectAt: Date
+  private oldId: string
 
   constructor(userID: string) {
     super()
     this.userID = userID
     this.authPath = path.join(__dirname, 'sessions', this.userID)
-    this.socket = connectSockets[this.userID] // Assumindo que existe; adicione check se necessário.
+    this.socket = connectSockets[this.userID]
+    this.ConnectAt = new Date()
+    this.oldId = userID
     this.createAuthPath()
   }
 
@@ -128,7 +134,7 @@ class BotManager extends EventEmitter {
           `Flushando credenciais antes de renomear para ${user.id}...`,
         )
         await this.saveCreds()
-        await this.reconnectDelay(1000)
+        await this.reconnectDelay(15000)
       }
 
       if (fs.existsSync(oldPath)) {
@@ -175,7 +181,9 @@ class BotManager extends EventEmitter {
 
     if (connection === 'open' && this.sock) {
       this.status = true
+      this.ConnectAt = new Date()
       this.socket?.emit('bot-connected')
+
       console.log(`Bot do usuário ${this.userID} conectado com sucesso.`)
       this.qrCode = undefined
     }
@@ -236,9 +244,18 @@ class BotManager extends EventEmitter {
   }
 
   private async UpdateUserDataWithWhatsappData() {
-    if (!this.sock?.user) return // FIX: Check precoce.
+    if (!this.sock?.user) return
 
     this.isUloadingDataRemote = true
+
+    await new Promise<void>((resolve, reject) => {
+      const checkInterval = setInterval(() => {
+        if (this.sock && this.status) {
+          clearInterval(checkInterval)
+          resolve()
+        }
+      })
+    })
     try {
       const updateData = await this.GetUserData()
       if (!updateData) return
@@ -246,11 +263,15 @@ class BotManager extends EventEmitter {
       const { id, lid, imgUrl, verifiedName, notify, status, jid, name } =
         updateData
 
+      setTimeout(() => {
+        this.socket?.emit('send-name-update', `quase la ${name} `)
+      }, 2000)
       await updateWithWhatsappDataService({
         lid,
-        userId: id,
+        userId: this.oldId,
         jid,
         name,
+        connectedAt: this.ConnectAt,
         id,
         notify,
         status,
@@ -259,7 +280,10 @@ class BotManager extends EventEmitter {
       })
 
       this.userID = id
-      this.socket?.emit('new-id', id)
+
+      setTimeout(() => {
+        this.socket?.emit('finished', id)
+      }, 2000)
     } catch (err) {
       console.error('Erro ao atualizar dados com WhatsApp:', err)
     } finally {
@@ -271,13 +295,20 @@ class BotManager extends EventEmitter {
     if (!this.sock?.user || !this.status) return
 
     try {
-      const { id, jid, lid, name, notify, status, verifiedName } =
+      const { id, jid, lid, name, notify, verifiedName, status } =
         this.sock.user
       if (!id) return
 
       let profilePictureUrl: string | undefined
+      let groups: GroupMetadata[] = []
       try {
         profilePictureUrl = await this.sock.profilePictureUrl(id, 'image')
+        const AllgroupsObj = await this.sock.groupFetchAllParticipating()
+        const conctatc = await this.sock.fetchStatus(id)
+
+        groups = Object.values(AllgroupsObj)
+
+        console.log('status', conctatc)
       } catch (err) {
         console.warn('Erro ao obter foto de perfil:', err)
         profilePictureUrl = undefined
@@ -292,6 +323,7 @@ class BotManager extends EventEmitter {
         notify,
         status,
         verifiedName,
+        connectedAt: new Date(),
       }
 
       if (!this.isUloadingDataRemote && this.socket) {
@@ -305,7 +337,10 @@ class BotManager extends EventEmitter {
   }
 
   public async clearSession() {
-    if (fs.existsSync(this.authPath)) {
+    if (
+      fs.existsSync(this.authPath) &&
+      fs.readdirSync(this.authPath).length === 0
+    ) {
       fs.rmSync(this.authPath, { recursive: true, force: true })
     }
     this.status = false

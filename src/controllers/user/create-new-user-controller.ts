@@ -40,6 +40,8 @@ export class UserController extends Controller {
   ): Promise<ICreateUserResponse> {
     const { id } = body
 
+    console.log(id)
+
     try {
       const User = await userServiceCreate({ id })
       if (!User) return { message: 'Erro ao criar usuário' }
