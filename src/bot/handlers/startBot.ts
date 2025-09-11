@@ -10,6 +10,8 @@ async function startAllBots() {
 
   const userIds = fs.readdirSync(sessionsPath)
 
+  console.log(userIds)
+
   for (const userId of userIds) {
     if (!sessions[userId]) {
       console.log(`Reconectando bot do usuário ${userId}...`)

@@ -2,7 +2,6 @@ import { proto, WASocket } from '@whiskeysockets/baileys'
 import { SendMessageWithDelay } from '../../../../bot/handlers/send-message-with-delay'
 import { IMessages, MessageErros } from './erros/message'
 import { IMessagesSucess, MessageSucess } from './sucess/message'
-import { MessageType } from 'venom-bot'
 
 interface IAllResponseMessages {
   Erros: IMessages

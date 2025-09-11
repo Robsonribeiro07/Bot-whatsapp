@@ -1,5 +1,19 @@
-import { WASocket } from '@whiskeysockets/baileys'
-import { Schema } from 'mongoose'
+import { Schema, Document } from 'mongoose'
+
+interface IGroupParticipant {
+  id: string
+  isAdmin: boolean
+  isSuperAdmin: boolean
+}
+
+export interface IGroup {
+  id: string
+  subject: string
+  creation: number
+  owner: string
+  imgUrl?: string
+  participants: IGroupParticipant[]
+}
 
 export interface IuserSchemaWhatsapp extends Document {
   id: string
@@ -11,29 +25,47 @@ export interface IuserSchemaWhatsapp extends Document {
   jid: string
   imgUrl: string
   status: string
+  groups?: IGroup[]
 }
 
-const UserSchemaWhatsapp = new Schema<IuserSchemaWhatsapp>(
+const GroupParticipantSchema = new Schema<IGroupParticipant>(
   {
-    id: {
-      type: String,
-      required: true,
-      unique: true,
-      sparse: true,
-      default: null,
-    },
-    name: { type: String },
-    verifiedName: { type: String },
-    notify: { type: String },
-    connectedAt: { type: Date, default: Date.now },
-    lid: { type: String, default: null },
-    jid: { type: String, defaul: null },
-    imgUrl: { type: String, default: null },
-    status: { type: String, default: null },
+    id: { type: String, required: true },
+    isAdmin: { type: Boolean, required: true },
+    isSuperAdmin: { type: Boolean, required: true },
   },
-  {
-    _id: false,
-  },
+  { _id: false },
 )
+
+const GroupSchema = new Schema<IGroup>(
+  {
+    id: { type: String, required: true },
+    subject: { type: String, required: true },
+    creation: { type: Number, required: true },
+    owner: { type: String, required: true },
+    participants: { type: [GroupParticipantSchema], default: [] },
+    imgUrl: { type: String, default: undefined },
+  },
+  { _id: false },
+)
+
+const UserSchemaWhatsapp = new Schema<IuserSchemaWhatsapp>({
+  id: {
+    type: String,
+    required: true,
+    unique: true,
+    sparse: true,
+    default: null,
+  },
+  name: { type: String },
+  verifiedName: { type: String },
+  notify: { type: String },
+  connectedAt: { type: Date, default: Date.now },
+  lid: { type: String, default: null },
+  jid: { type: String, default: null },
+  imgUrl: { type: String, default: null },
+  status: { type: String, default: null },
+  groups: { type: [GroupSchema], default: [] },
+})
 
 export { UserSchemaWhatsapp }

@@ -16,6 +16,9 @@ import { Boom } from '@hapi/boom'
 import { Socket } from 'socket.io'
 import { updateWithWhatsappDataService } from '../../services/users/update-with-whatsapp-data-service'
 import { isAwaitKeyword } from 'typescript'
+import { mapGroupsMetadataToIGroup } from '../../utils/group/map-groups-metadada-to-igroup'
+import { IGroup } from '../../database/mongoDB/models/user-schema'
+import { group } from 'console'
 
 class BotManager extends EventEmitter {
   private userID: string
@@ -27,11 +30,10 @@ class BotManager extends EventEmitter {
   private status: boolean = false
   private intentionalLogout = false
   private isUloadingDataRemote = false
-  private profileUpdateInterval?: NodeJS.Timeout // IMPROVEMENT: Controle para limpar interval.
-  private saveCreds?: () => Promise<void> // Nova propriedade para acessar saveCreds
-  private intentionalReconnect = false // Nova flag para reconexão após rename
+  private profileUpdateInterval?: NodeJS.Timeout
+  private saveCreds?: () => Promise<void>
+  private intentionalReconnect = false
   private ConnectAt: Date
-  private oldId: string
 
   constructor(userID: string) {
     super()
@@ -39,16 +41,19 @@ class BotManager extends EventEmitter {
     this.authPath = path.join(__dirname, 'sessions', this.userID)
     this.socket = connectSockets[this.userID]
     this.ConnectAt = new Date()
-    this.oldId = userID
     this.createAuthPath()
+
+    console.log(this.socket)
   }
 
   public async connect(): Promise<WASocket> {
     if (sessions[this.userID]) return sessions[this.userID]
 
+    const authFilesExist = this.checkAuthFilesExist()
+
     try {
       const { state, saveCreds } = await useMultiFileAuthState(this.authPath)
-      this.saveCreds = saveCreds // Armazena para uso posterior
+      this.saveCreds = saveCreds
 
       this.sock = makeWASocket({
         auth: state,
@@ -61,7 +66,6 @@ class BotManager extends EventEmitter {
         await this.handleConnection(update)
 
         if (update.connection === 'open') {
-          await this.updateSessionBot() // Chama update aqui
           await this.UpdateUserDataWithWhatsappData()
 
           if (this.profileUpdateInterval)
@@ -73,6 +77,15 @@ class BotManager extends EventEmitter {
         }
       })
 
+      // Se os arquivos de autenticação existirem, assuma que está conectado e defina status
+      if (authFilesExist) {
+        this.status = true
+        this.socket?.emit('bot-connected')
+        console.log(
+          `Bot do usuário ${this.userID} carregado de sessão existente e marcado como conectado.`,
+        )
+      }
+
       return this.sock
     } catch (err) {
       console.error(`Erro ao conectar bot para user ${this.userID}:`, err)
@@ -80,14 +93,16 @@ class BotManager extends EventEmitter {
     }
   }
 
+  // Nova função para verificar se os arquivos de autenticação existem
+  private checkAuthFilesExist(): boolean {
+    const credsPath = path.join(this.authPath, 'creds.json')
+    return fs.existsSync(credsPath) // Verifica se creds.json existe, por exemplo
+  }
+
   public async regenerateQrcode(): Promise<void> {
-    if (!this.sock) {
-      console.log('Bot não está conectado')
-      return
-    }
     this.intentionalLogout = true
     try {
-      await this.sock.logout()
+      await this.sock?.logout()
     } catch (err) {
       console.error('Erro ao logout:', err)
     } finally {
@@ -112,55 +127,6 @@ class BotManager extends EventEmitter {
   private createAuthPath() {
     if (!fs.existsSync(this.authPath)) {
       fs.mkdirSync(this.authPath, { recursive: true })
-    }
-  }
-
-  public async updateSessionBot() {
-    if (!this.sock?.user?.id) {
-      console.warn(`user.id não disponível para ${this.userID}. Aguardando...`)
-      return
-    }
-
-    const { user } = this.sock
-    const oldId = this.userID
-    if (oldId === user.id) return
-
-    const oldPath = this.authPath
-    const newPath = path.join(__dirname, 'sessions', user.id)
-
-    try {
-      if (this.saveCreds) {
-        console.log(
-          `Flushando credenciais antes de renomear para ${user.id}...`,
-        )
-        await this.saveCreds()
-        await this.reconnectDelay(15000)
-      }
-
-      if (fs.existsSync(oldPath)) {
-        fs.renameSync(oldPath, newPath)
-        console.log(`Pasta renomeada de ${oldId} para ${user.id}`)
-      }
-
-      this.userID = user.id
-      this.authPath = newPath
-
-      // Atualiza sessions e sockets
-      const sock = connectSockets[oldId]
-      const botInstance = sessions[oldId]
-      delete connectSockets[oldId]
-      delete sessions[oldId]
-      connectSockets[user.id] = sock
-      sessions[user.id] = botInstance
-
-      // Passo 3: Força reconexão com novo path
-      if (this.sock) {
-        this.intentionalReconnect = true
-        console.log(`Forçando reconexão para usar novo authPath: ${newPath}`)
-        this.sock.end(new Error('Reniciando bot'))
-      }
-    } catch (err) {
-      console.error(`Erro ao atualizar sessão para ${user.id}:`, err)
     }
   }
 
@@ -222,9 +188,6 @@ class BotManager extends EventEmitter {
           await this.clearSession()
         }
 
-        this.sock = undefined
-        delete sessions[this.userID]
-
         await this.reconnectDelay(2000)
         await this.connect()
 
@@ -248,6 +211,7 @@ class BotManager extends EventEmitter {
 
     this.isUloadingDataRemote = true
 
+    this.socket?.emit('uploading-data')
     await new Promise<void>((resolve, reject) => {
       const checkInterval = setInterval(() => {
         if (this.sock && this.status) {
@@ -260,15 +224,22 @@ class BotManager extends EventEmitter {
       const updateData = await this.GetUserData()
       if (!updateData) return
 
-      const { id, lid, imgUrl, verifiedName, notify, status, jid, name } =
-        updateData
+      const {
+        id,
+        lid,
+        imgUrl,
+        verifiedName,
+        notify,
+        status,
+        jid,
+        name,
+        groups,
+      } = updateData
 
-      setTimeout(() => {
-        this.socket?.emit('send-name-update', `quase la ${name} `)
-      }, 2000)
+      this.socket?.emit('send-name-update', `quase la ${name} `)
       await updateWithWhatsappDataService({
         lid,
-        userId: this.oldId,
+        userId: this.userID,
         jid,
         name,
         connectedAt: this.ConnectAt,
@@ -277,12 +248,11 @@ class BotManager extends EventEmitter {
         status,
         verifiedName,
         imgUrl,
+        groups,
       })
 
-      this.userID = id
-
       setTimeout(() => {
-        this.socket?.emit('finished', id)
+        this.socket?.emit('finished', this.userID)
       }, 2000)
     } catch (err) {
       console.error('Erro ao atualizar dados com WhatsApp:', err)
@@ -300,22 +270,20 @@ class BotManager extends EventEmitter {
       if (!id) return
 
       let profilePictureUrl: string | undefined
-      let groups: GroupMetadata[] = []
+      let isGroup: IGroup[] = []
       try {
         profilePictureUrl = await this.sock.profilePictureUrl(id, 'image')
         const AllgroupsObj = await this.sock.groupFetchAllParticipating()
-        const conctatc = await this.sock.fetchStatus(id)
+        const groupsMetadata = Object.values(AllgroupsObj)
 
-        groups = Object.values(AllgroupsObj)
-
-        console.log('status', conctatc)
+        isGroup = await mapGroupsMetadataToIGroup(this.sock, groupsMetadata)
       } catch (err) {
         console.warn('Erro ao obter foto de perfil:', err)
         profilePictureUrl = undefined
       }
 
       const updateData = {
-        id,
+        id: this.userID,
         imgUrl: profilePictureUrl,
         jid,
         lid,
@@ -324,6 +292,7 @@ class BotManager extends EventEmitter {
         status,
         verifiedName,
         connectedAt: new Date(),
+        groups: isGroup,
       }
 
       if (!this.isUloadingDataRemote && this.socket) {
@@ -337,15 +306,16 @@ class BotManager extends EventEmitter {
   }
 
   public async clearSession() {
-    if (
-      fs.existsSync(this.authPath) &&
-      fs.readdirSync(this.authPath).length === 0
-    ) {
+    if (fs.existsSync(this.authPath)) {
       fs.rmSync(this.authPath, { recursive: true, force: true })
+      this.status = false
+      this.sock = undefined
     }
-    this.status = false
-    this.sock = undefined
+
     if (this.profileUpdateInterval) clearInterval(this.profileUpdateInterval)
+  }
+  public handleSetSocket(socket: Socket) {
+    this.socket = socket
   }
 }
 

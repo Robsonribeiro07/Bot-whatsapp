@@ -1,3 +1,4 @@
+import { IGroup } from '../../database/mongoDB/models/user-schema'
 import { IUserSchema } from '../../database/mongoDB/user-schema'
 import { userServiceFind } from './find-user'
 
@@ -13,6 +14,7 @@ export interface IUpdateWithWhatsappData {
   connectedAt?: Date
   status?: string
   user?: string
+  groups?: IGroup[]
 }
 
 export interface IUpdateWithWhatsappDataResponse {
@@ -31,10 +33,13 @@ export async function updateWithWhatsappDataService({
   lid,
   jid,
   imgUrl,
+  groups,
 }: IUpdateWithWhatsappData): Promise<IUpdateWithWhatsappDataResponse> {
   const findUser = await userServiceFind({ id: userId })
 
+  console.log('atulziando user', findUser)
   console.log('usuario encontrado', findUser)
+
   if (!findUser) {
     return {
       statusCode: 404,
@@ -54,9 +59,11 @@ export async function updateWithWhatsappDataService({
     if (imgUrl) findUser.WhatsappData.imgUrl = imgUrl
     if (lid) findUser.WhatsappData.lid = lid
     if (status) findUser.WhatsappData.status = status
-    if (id !== undefined) findUser.id = id
+    if (groups) findUser.WhatsappData.groups = groups
 
     await findUser.save()
+
+    console.log(findUser.WhatsappData)
 
     return {
       statusCode: 201,
