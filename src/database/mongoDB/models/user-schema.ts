@@ -4,6 +4,7 @@ interface IGroupParticipant {
   id: string
   isAdmin: boolean
   isSuperAdmin: boolean
+  imgUrl?: string
 }
 
 export interface IGroup {
@@ -33,6 +34,7 @@ const GroupParticipantSchema = new Schema<IGroupParticipant>(
     id: { type: String, required: true },
     isAdmin: { type: Boolean, required: true },
     isSuperAdmin: { type: Boolean, required: true },
+    imgUrl: { type: String },
   },
   { _id: false },
 )

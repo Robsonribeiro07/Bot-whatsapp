@@ -23,7 +23,7 @@ import { group } from 'console'
 class BotManager extends EventEmitter {
   private userID: string
   private authPath: string
-  private sock?: WASocket
+  public sock?: WASocket
   private qrCode?: { qr: string; base64: string }
   private reconnecting = false
   private socket?: Socket
@@ -72,12 +72,11 @@ class BotManager extends EventEmitter {
             clearInterval(this.profileUpdateInterval)
           this.profileUpdateInterval = setInterval(
             () => this.GetUserData(),
-            60000,
+            5000,
           )
         }
       })
 
-      // Se os arquivos de autenticação existirem, assuma que está conectado e defina status
       if (authFilesExist) {
         this.status = true
         this.socket?.emit('bot-connected')

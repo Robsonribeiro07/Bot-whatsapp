@@ -37,9 +37,6 @@ export async function updateWithWhatsappDataService({
 }: IUpdateWithWhatsappData): Promise<IUpdateWithWhatsappDataResponse> {
   const findUser = await userServiceFind({ id: userId })
 
-  console.log('atulziando user', findUser)
-  console.log('usuario encontrado', findUser)
-
   if (!findUser) {
     return {
       statusCode: 404,
@@ -62,8 +59,6 @@ export async function updateWithWhatsappDataService({
     if (groups) findUser.WhatsappData.groups = groups
 
     await findUser.save()
-
-    console.log(findUser.WhatsappData)
 
     return {
       statusCode: 201,

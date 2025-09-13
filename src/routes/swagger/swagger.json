@@ -74,6 +74,74 @@
 				"type": "object",
 				"additionalProperties": false
 			},
+			"IUpdateWithWhatsappDataResponse": {
+				"properties": {
+					"statusCode": {
+						"type": "number",
+						"enum": [
+							201,
+							404,
+							500
+						]
+					},
+					"message": {
+						"type": "string"
+					}
+				},
+				"required": [
+					"statusCode",
+					"message"
+				],
+				"type": "object",
+				"additionalProperties": false
+			},
+			"IResponseRemoveParticipants": {
+				"properties": {
+					"code": {
+						"type": "number",
+						"enum": [
+							200,
+							404,
+							500
+						]
+					},
+					"userUpdated": {
+						"$ref": "#/components/schemas/IUpdateWithWhatsappDataResponse"
+					},
+					"message": {
+						"type": "string"
+					}
+				},
+				"required": [
+					"code",
+					"message"
+				],
+				"type": "object",
+				"additionalProperties": false
+			},
+			"IRemoveParticipantToGroupDTO": {
+				"properties": {
+					"userId": {
+						"type": "string"
+					},
+					"participantsToRemove": {
+						"items": {
+							"type": "string"
+						},
+						"type": "array"
+					},
+					"groupId": {
+						"type": "string"
+					}
+				},
+				"required": [
+					"userId",
+					"participantsToRemove",
+					"groupId"
+				],
+				"type": "object",
+				"additionalProperties": false
+			},
 			"IRegenerateQRCodeResponse": {
 				"properties": {
 					"qr": {},
@@ -178,6 +246,41 @@
 						"application/json": {
 							"schema": {
 								"$ref": "#/components/schemas/CreateUserDTO"
+							}
+						}
+					}
+				}
+			}
+		},
+		"/group/remove-participant": {
+			"post": {
+				"operationId": "RemoteToParticipantControoler",
+				"responses": {
+					"200": {
+						"description": "Usuario removido com sucesso",
+						"content": {
+							"application/json": {
+								"schema": {
+									"$ref": "#/components/schemas/IResponseRemoveParticipants"
+								}
+							}
+						}
+					},
+					"500": {
+						"description": "erro interno"
+					}
+				},
+				"tags": [
+					"Group"
+				],
+				"security": [],
+				"parameters": [],
+				"requestBody": {
+					"required": true,
+					"content": {
+						"application/json": {
+							"schema": {
+								"$ref": "#/components/schemas/IRemoveParticipantToGroupDTO"
 							}
 						}
 					}

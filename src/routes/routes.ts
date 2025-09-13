@@ -8,6 +8,8 @@ import { FindUserControoler } from './../controllers/user/get-user-controller';
 // WARNING: This file was auto-generated with tsoa. Please do not modify it. Re-run tsoa to re-generate this file: https://github.com/lukeautry/tsoa
 import { UserController } from './../controllers/user/create-new-user-controller';
 // WARNING: This file was auto-generated with tsoa. Please do not modify it. Re-run tsoa to re-generate this file: https://github.com/lukeautry/tsoa
+import { RemovoToParticipantController } from './../controllers/group/remove-to-participant-controller';
+// WARNING: This file was auto-generated with tsoa. Please do not modify it. Re-run tsoa to re-generate this file: https://github.com/lukeautry/tsoa
 import { Regenarate } from './../controllers/bot/regenate-Qrcode-controller';
 import type { Request as ExRequest, Response as ExResponse, RequestHandler, Router } from 'express';
 
@@ -48,6 +50,69 @@ const models: TsoaRoute.Models = {
         "dataType": "refObject",
         "properties": {
             "id": {"dataType":"string","required":true},
+        },
+        "additionalProperties": false,
+    },
+    // WARNING: This file was auto-generated with tsoa. Please do not modify it. Re-run tsoa to re-generate this file: https://github.com/lukeautry/tsoa
+    "IGroupParticipant": {
+        "dataType": "refObject",
+        "properties": {
+            "id": {"dataType":"string","required":true},
+            "isAdmin": {"dataType":"boolean","required":true},
+            "isSuperAdmin": {"dataType":"boolean","required":true},
+            "imgUrl": {"dataType":"string"},
+        },
+        "additionalProperties": false,
+    },
+    // WARNING: This file was auto-generated with tsoa. Please do not modify it. Re-run tsoa to re-generate this file: https://github.com/lukeautry/tsoa
+    "IGroup": {
+        "dataType": "refObject",
+        "properties": {
+            "id": {"dataType":"string","required":true},
+            "subject": {"dataType":"string","required":true},
+            "creation": {"dataType":"double","required":true},
+            "owner": {"dataType":"string","required":true},
+            "imgUrl": {"dataType":"string"},
+            "participants": {"dataType":"array","array":{"dataType":"refObject","ref":"IGroupParticipant"},"required":true},
+        },
+        "additionalProperties": false,
+    },
+    // WARNING: This file was auto-generated with tsoa. Please do not modify it. Re-run tsoa to re-generate this file: https://github.com/lukeautry/tsoa
+    "IUpdateWithWhatsappData": {
+        "dataType": "refObject",
+        "properties": {
+            "userId": {"dataType":"string"},
+            "id": {"dataType":"string"},
+            "name": {"dataType":"string"},
+            "imgUrl": {"dataType":"union","subSchemas":[{"dataType":"string"},{"dataType":"enum","enums":[null]}]},
+            "lid": {"dataType":"string"},
+            "jid": {"dataType":"string"},
+            "verifiedName": {"dataType":"string"},
+            "notify": {"dataType":"string"},
+            "connectedAt": {"dataType":"datetime"},
+            "status": {"dataType":"string"},
+            "user": {"dataType":"string"},
+            "groups": {"dataType":"array","array":{"dataType":"refObject","ref":"IGroup"}},
+        },
+        "additionalProperties": false,
+    },
+    // WARNING: This file was auto-generated with tsoa. Please do not modify it. Re-run tsoa to re-generate this file: https://github.com/lukeautry/tsoa
+    "IResponseRemoveParticipants": {
+        "dataType": "refObject",
+        "properties": {
+            "code": {"dataType":"union","subSchemas":[{"dataType":"enum","enums":[200]},{"dataType":"enum","enums":[404]},{"dataType":"enum","enums":[500]}],"required":true},
+            "userUpdated": {"ref":"IUpdateWithWhatsappData"},
+            "message": {"dataType":"string","required":true},
+        },
+        "additionalProperties": false,
+    },
+    // WARNING: This file was auto-generated with tsoa. Please do not modify it. Re-run tsoa to re-generate this file: https://github.com/lukeautry/tsoa
+    "IRemoveParticipantToGroupDTO": {
+        "dataType": "refObject",
+        "properties": {
+            "userId": {"dataType":"string","required":true},
+            "participantsToRemove": {"dataType":"array","array":{"dataType":"string"},"required":true},
+            "groupId": {"dataType":"string","required":true},
         },
         "additionalProperties": false,
     },
@@ -137,6 +202,36 @@ export function RegisterRoutes(app: Router) {
 
               await templateService.apiHandler({
                 methodName: 'createUser',
+                controller,
+                response,
+                next,
+                validatedArgs,
+                successStatus: 200,
+              });
+            } catch (err) {
+                return next(err);
+            }
+        });
+        // WARNING: This file was auto-generated with tsoa. Please do not modify it. Re-run tsoa to re-generate this file: https://github.com/lukeautry/tsoa
+        const argsRemovoToParticipantController_remoteToParticipantControoler: Record<string, TsoaRoute.ParameterSchema> = {
+                body: {"in":"body","name":"body","required":true,"ref":"IRemoveParticipantToGroupDTO"},
+        };
+        app.post('/group/remove-participant',
+            ...(fetchMiddlewares<RequestHandler>(RemovoToParticipantController)),
+            ...(fetchMiddlewares<RequestHandler>(RemovoToParticipantController.prototype.remoteToParticipantControoler)),
+
+            async function RemovoToParticipantController_remoteToParticipantControoler(request: ExRequest, response: ExResponse, next: any) {
+
+            // WARNING: This file was auto-generated with tsoa. Please do not modify it. Re-run tsoa to re-generate this file: https://github.com/lukeautry/tsoa
+
+            let validatedArgs: any[] = [];
+            try {
+                validatedArgs = templateService.getValidatedArgs({ args: argsRemovoToParticipantController_remoteToParticipantControoler, request, response });
+
+                const controller = new RemovoToParticipantController();
+
+              await templateService.apiHandler({
+                methodName: 'remoteToParticipantControoler',
                 controller,
                 response,
                 next,

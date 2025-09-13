@@ -44,6 +44,8 @@ export class UserController extends Controller {
 
     try {
       const User = await userServiceCreate({ id })
+
+      console.log(User)
       if (!User) return { message: 'Erro ao criar usuário' }
 
       let qrCode
