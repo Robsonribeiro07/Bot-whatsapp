@@ -5,7 +5,6 @@ import makeWASocket, {
   useMultiFileAuthState,
   WASocket,
   ConnectionState,
-  GroupMetadata,
 } from '@whiskeysockets/baileys'
 import { sessions } from '../../database/bot/sessions'
 import pino from 'pino'
@@ -15,10 +14,8 @@ import { connectSockets } from '../../socket'
 import { Boom } from '@hapi/boom'
 import { Socket } from 'socket.io'
 import { updateWithWhatsappDataService } from '../../services/users/update-with-whatsapp-data-service'
-import { isAwaitKeyword } from 'typescript'
 import { mapGroupsMetadataToIGroup } from '../../utils/group/map-groups-metadada-to-igroup'
 import { IGroup } from '../../database/mongoDB/models/user-schema'
-import { group } from 'console'
 
 class BotManager extends EventEmitter {
   private userID: string
@@ -26,7 +23,7 @@ class BotManager extends EventEmitter {
   public sock?: WASocket
   private qrCode?: { qr: string; base64: string }
   private reconnecting = false
-  private socket?: Socket
+  public socket?: Socket
   private status: boolean = false
   private intentionalLogout = false
   private isUloadingDataRemote = false
@@ -42,8 +39,6 @@ class BotManager extends EventEmitter {
     this.socket = connectSockets[this.userID]
     this.ConnectAt = new Date()
     this.createAuthPath()
-
-    console.log(this.socket)
   }
 
   public async connect(): Promise<WASocket> {
@@ -72,9 +67,13 @@ class BotManager extends EventEmitter {
             clearInterval(this.profileUpdateInterval)
           this.profileUpdateInterval = setInterval(
             () => this.GetUserData(),
-            5000,
+            15000,
           )
         }
+      })
+
+      this.sock.ev.on('contacts.update', updates => {
+        console.log('updates', updates)
       })
 
       if (authFilesExist) {
@@ -87,7 +86,6 @@ class BotManager extends EventEmitter {
 
       return this.sock
     } catch (err) {
-      console.error(`Erro ao conectar bot para user ${this.userID}:`, err)
       throw err
     }
   }
@@ -103,7 +101,6 @@ class BotManager extends EventEmitter {
     try {
       await this.sock?.logout()
     } catch (err) {
-      console.error('Erro ao logout:', err)
     } finally {
       this.intentionalLogout = false
     }
@@ -139,9 +136,7 @@ class BotManager extends EventEmitter {
         this.status = false
         this.emit('qrcode', this.qrCode)
         this.socket?.emit('qrcode', this.qrCode)
-      } catch (err) {
-        console.error('Erro ao gerar QR base64:', err)
-      }
+      } catch (err) {}
     }
 
     if (connection === 'open' && this.sock) {

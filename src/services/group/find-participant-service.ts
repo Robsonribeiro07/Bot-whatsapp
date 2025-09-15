@@ -1,6 +1,6 @@
 import { IfAny } from 'mongoose'
 import { UserModel } from '../../database/mongoDB/user-schema'
-import { IParticipant } from '../../database/mongoDB/models/group/participant'
+import { IParticipant } from '../../database/mongoDB/models/whatsapp/group/participant'
 
 interface IFindParticipant {
   userID: string

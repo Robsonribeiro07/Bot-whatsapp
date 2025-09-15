@@ -50,8 +50,6 @@ export class Regenarate extends Controller {
 
       const QRcodedata = await generateQrcode({ bot })
 
-      console.log(QRcodedata)
-
       if (!QRcodedata) {
         this.setStatus(500)
 

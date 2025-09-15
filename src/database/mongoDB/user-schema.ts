@@ -6,6 +6,7 @@ export interface IUserSchema extends Document {
   id: string
   Groups?: IGroupSchema[]
   WhatsappData?: Partial<IuserSchemaWhatsapp>
+  pushTokens: string[]
   _id: string
 }
 
@@ -13,6 +14,7 @@ const UserSchema = new Schema<IUserSchema>({
   id: { type: String, default: '', unique: true },
   Groups: { type: [GroupSchema], default: [] },
   WhatsappData: { type: UserSchemaWhatsapp, default: null },
+  pushTokens: { type: [String], default: [] },
 })
 
 const UserModel = mongoose.model<IUserSchema>('Users', UserSchema)

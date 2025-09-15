@@ -40,12 +40,9 @@ export class UserController extends Controller {
   ): Promise<ICreateUserResponse> {
     const { id } = body
 
-    console.log(id)
-
     try {
       const User = await userServiceCreate({ id })
 
-      console.log(User)
       if (!User) return { message: 'Erro ao criar usuário' }
 
       let qrCode
@@ -83,7 +80,6 @@ export class UserController extends Controller {
         base64: qrCode?.base64?.replace(/^data:image\/png;base64,/, ''),
       }
     } catch (err) {
-      console.error(err)
       this.setStatus(500)
       return { message: 'Erro interno no servidor' }
     }

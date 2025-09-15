@@ -53,7 +53,6 @@ export class RemovoToParticipantController extends Controller {
         userUpdated: response.userUpdated,
       }
     } catch (err) {
-      console.log(err)
       this.setStatus(500)
       return {
         message: (err as Error).message,

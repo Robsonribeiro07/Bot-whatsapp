@@ -50,7 +50,6 @@ const reserveNumbers = async ({
   if (reservedFailed.length > 0)
     reply += `❌ Números indisponíveis: ${reservedFailed.join(', ')}`
 
-  console.log(raffle)
   return SendMessageWithDelay({
     text: reply,
     jid: groupId,

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "585509635006",
+    "project_id": "loop-25297",
+    "storage_bucket": "loop-25297.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:585509635006:android:84620b4392b4161de4afef",
+        "android_client_info": {
+          "package_name": "com.robson_ribeiro07.loop"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBuHj-JPC4O84c57PEbe3fYvXLVBN3CRfI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,5 +1,6 @@
 import { Socket, Server as SocketServer } from 'socket.io'
 import { bots } from '../database/bot/bot-manager'
+import { syncHandler } from '../bot/handlers/whatsapp/syncHandle'
 
 export const connectSockets: Record<string, Socket> = {}
 
@@ -9,18 +10,19 @@ export function initSocket(server: any) {
   io = new SocketServer(server, { cors: { origin: '*' } })
 
   io.on('connection', socket => {
-    console.log(connectSockets)
     const userId = socket.handshake.auth.userId
-    console.log('client-conectadoo', socket.handshake.auth.userId)
 
     connectSockets[socket.handshake.auth.userId] = socket
 
-    const bot = bots[userId]
+    const checkbox = setInterval(() => {
+      const BotIntance = bots[userId]
 
-    if (bot) {
-      console.log('bot enviado')
-      bot.handleSetSocket(connectSockets[userId])
-      bot.GetUserData()
-    }
+      if (!BotIntance) return
+
+      clearTimeout(checkbox)
+      BotIntance.handleSetSocket(connectSockets[userId])
+      BotIntance.GetUserData()
+      syncHandler({ BotIntance, userId })
+    }, 100)
   })
 }
