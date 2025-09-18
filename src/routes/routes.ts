@@ -4,6 +4,8 @@
 import type { TsoaRoute } from '@tsoa/runtime';
 import {  fetchMiddlewares, ExpressTemplateService } from '@tsoa/runtime';
 // WARNING: This file was auto-generated with tsoa. Please do not modify it. Re-run tsoa to re-generate this file: https://github.com/lukeautry/tsoa
+import { SycronizeAllDataController } from './../controllers/user/sycronize-all-data.controller';
+// WARNING: This file was auto-generated with tsoa. Please do not modify it. Re-run tsoa to re-generate this file: https://github.com/lukeautry/tsoa
 import { registerTokenToPushNotificationController } from './../controllers/user/regiser-push-token-controller';
 // WARNING: This file was auto-generated with tsoa. Please do not modify it. Re-run tsoa to re-generate this file: https://github.com/lukeautry/tsoa
 import { FindUserControoler } from './../controllers/user/get-user-controller';
@@ -158,7 +160,7 @@ const models: TsoaRoute.Models = {
         "properties": {
             "userId": {"dataType":"string","required":true},
             "groupId": {"dataType":"string","required":true},
-            "participantId": {"dataType":"string","required":true},
+            "participantId": {"dataType":"array","array":{"dataType":"string"},"required":true},
             "promote": {"ref":"ParticipantAction","required":true},
         },
         "additionalProperties": false,
@@ -200,6 +202,36 @@ export function RegisterRoutes(app: Router) {
 
 
     
+        const argsSycronizeAllDataController_SycronizeAllData: Record<string, TsoaRoute.ParameterSchema> = {
+                body: {"in":"body","name":"body","required":true,"dataType":"nestedObjectLiteral","nestedProperties":{"userId":{"dataType":"string","required":true},"data":{"dataType":"array","array":{"dataType":"any"},"required":true}}},
+        };
+        app.post('/user/sycronize-all-data',
+            ...(fetchMiddlewares<RequestHandler>(SycronizeAllDataController)),
+            ...(fetchMiddlewares<RequestHandler>(SycronizeAllDataController.prototype.SycronizeAllData)),
+
+            async function SycronizeAllDataController_SycronizeAllData(request: ExRequest, response: ExResponse, next: any) {
+
+            // WARNING: This file was auto-generated with tsoa. Please do not modify it. Re-run tsoa to re-generate this file: https://github.com/lukeautry/tsoa
+
+            let validatedArgs: any[] = [];
+            try {
+                validatedArgs = templateService.getValidatedArgs({ args: argsSycronizeAllDataController_SycronizeAllData, request, response });
+
+                const controller = new SycronizeAllDataController();
+
+              await templateService.apiHandler({
+                methodName: 'SycronizeAllData',
+                controller,
+                response,
+                next,
+                validatedArgs,
+                successStatus: 201,
+              });
+            } catch (err) {
+                return next(err);
+            }
+        });
+        // WARNING: This file was auto-generated with tsoa. Please do not modify it. Re-run tsoa to re-generate this file: https://github.com/lukeautry/tsoa
         const argsregisterTokenToPushNotificationController_registerToTokenPush: Record<string, TsoaRoute.ParameterSchema> = {
                 body: {"in":"body","name":"body","required":true,"ref":"IRegisterToken"},
         };

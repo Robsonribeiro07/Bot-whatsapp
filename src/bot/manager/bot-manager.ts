@@ -16,6 +16,7 @@ import { Socket } from 'socket.io'
 import { updateWithWhatsappDataService } from '../../services/users/update-with-whatsapp-data-service'
 import { mapGroupsMetadataToIGroup } from '../../utils/group/map-groups-metadada-to-igroup'
 import { IGroup } from '../../database/mongoDB/models/user-schema'
+import { GroupListenerMangager } from './group/group-manager'
 
 class BotManager extends EventEmitter {
   private userID: string
@@ -31,6 +32,7 @@ class BotManager extends EventEmitter {
   private saveCreds?: () => Promise<void>
   private intentionalReconnect = false
   private ConnectAt: Date
+  public groupListener?: GroupListenerMangager
 
   constructor(userID: string) {
     super()
@@ -61,13 +63,15 @@ class BotManager extends EventEmitter {
         await this.handleConnection(update)
 
         if (update.connection === 'open') {
+          this.groupListener = new GroupListenerMangager(this)
+
           await this.UpdateUserDataWithWhatsappData()
 
           if (this.profileUpdateInterval)
             clearInterval(this.profileUpdateInterval)
           this.profileUpdateInterval = setInterval(
             () => this.GetUserData(),
-            15000,
+            50000,
           )
         }
       })
@@ -90,7 +94,6 @@ class BotManager extends EventEmitter {
     }
   }
 
-  // Nova função para verificar se os arquivos de autenticação existem
   private checkAuthFilesExist(): boolean {
     const credsPath = path.join(this.authPath, 'creds.json')
     return fs.existsSync(credsPath) // Verifica se creds.json existe, por exemplo

@@ -1,47 +1,32 @@
 import { useBotStore } from '../../../store/sock-store'
-import { proto, WASocket } from '@whiskeysockets/baileys'
+import { proto, WAMessage, WASocket } from '@whiskeysockets/baileys'
 import { reserveNumbers } from '../Rifa/tickets/reserve-number'
 import GetMessageText from '../../../utils/group/get-message-text'
+import { sendMessageIaService } from '../../../services/IA/send-message-service'
+import { RaffleManage } from '../../manager/raffle/raffle-manager'
 
-export const MonitorReplySentRifa = async (
-  m: proto.IWebMessageInfo,
-  sock: WASocket,
-) => {
-  const { groupId } = useBotStore.getState()
+export const MonitorReplySentRifa = async (m: WAMessage, sock: WASocket) => {
+  console.log('ta chegnado aqui 5 ')
 
-  if (!sock || !m) return
+  if (!m) return
 
+  console.log('ta chegnado aqui ')
   const msg = m.message
 
   if (!msg) return
 
-  const assinante = m.pushName || m.key.remoteJid || ''
-
-  const Numbers = GetMessageText(m)
-
-  const NumberConverted = Numbers?.split(/[\s,]+/)
-    .map(n => parseInt(n, 10))
-    .filter(n => !isNaN(n))
-
-  if (!assinante && !Numbers) return
-
-  if (m.key.remoteJid !== groupId) return
-
   const repliedMsgId = msg.extendedTextMessage?.contextInfo?.stanzaId
 
-  if (
-    repliedMsgId &&
-    ((repliedMsgId && !Array.isArray(NumberConverted)) ||
-      !NumberConverted?.every(n => typeof n === 'number'))
-  )
-    return
+  if (!msg.conversation) return
 
-  await reserveNumbers({
-    assinante,
-    numbers: NumberConverted,
-    groupId,
-    RifaId: repliedMsgId,
-    msg: m,
-    sock,
+  const raffleManager = new RaffleManage()
+
+  const { response } = await raffleManager.processeMessageFn(
+    msg.conversation,
+    m.key.participant!,
+  )
+
+  await sock.sendMessage(m.key.remoteJid!, {
+    text: response?.reply!,
   })
 }

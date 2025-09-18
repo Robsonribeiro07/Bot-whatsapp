@@ -33,12 +33,9 @@ export async function RemoveParticipantsTogGroupSerivces({
 
     const findSock = bots[findUser.id]
 
-    console.log('chegou aqui 2')
     if (!findSock) return { code: 404, message: 'Sock nao encontrado' }
-    console.log('chegou aqui 3')
 
-    console.log('sock', findSock.sock)
-    const respponseRemove = findSock.sock?.groupParticipantsUpdate(
+    findSock.sock?.groupParticipantsUpdate(
       groupId,
       participantsToRemove,
       'remove',

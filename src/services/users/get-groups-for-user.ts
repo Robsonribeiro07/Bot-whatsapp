@@ -1,5 +1,3 @@
-import { WASocket } from '@whiskeysockets/baileys'
-import { FindUser } from '../../bot/functions/group/find-user'
 import { userServiceFind } from './find-user'
 
 interface IgetGroupsForUsersServices {

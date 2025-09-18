@@ -5,7 +5,7 @@ import { getRolesParticipant } from '../../utils/group/user/get-roles'
 export interface IPromoteGroup {
   userId: string
   groupId: string
-  participantId: string
+  participantId: string[]
   promote: ParticipantAction
 }
 
@@ -30,7 +30,6 @@ export async function PromoteGroupSerivces({
     const getPermission = await getRolesParticipant({
       userId,
       groupId,
-      participantId,
     })
 
     if (!getPermission)
@@ -41,7 +40,7 @@ export async function PromoteGroupSerivces({
 
     await finderSock.sock?.groupParticipantsUpdate(
       groupId,
-      [participantId],
+      participantId,
       promote,
     )
 

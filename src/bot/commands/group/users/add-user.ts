@@ -43,7 +43,6 @@ const AddUser = async (
     result.forEach(r => {
       switch (r.status) {
         case '200':
-          console.log(`✅ Usuário ${r.jid} Adicionado com sucesso`)
           break
       }
     })

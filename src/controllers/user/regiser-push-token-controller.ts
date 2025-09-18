@@ -20,6 +20,7 @@ export class registerTokenToPushNotificationController extends Controller {
 
       this.setStatus(response.code)
 
+      console.log(response)
       return {
         message: response.message,
         code: response.code,

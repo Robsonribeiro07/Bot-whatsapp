@@ -25,7 +25,7 @@ export class PromoteToAdminController extends Controller {
   ): Promise<IPromoteGroupResponse> {
     const { groupId, participantId, userId, promote } = body
 
-    console.log(groupId, participantId, promote, userId)
+    console.log(groupId, participantId, userId, promote)
 
     try {
       const response = await PromoteGroupSerivces({

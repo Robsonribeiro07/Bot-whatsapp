@@ -1,8 +1,5 @@
-import { BotManager } from '../../functions/create-bot'
-import {
-  conctact,
-  synchronizeContacts,
-} from '../../functions/whatsapp/get-conctcts-data'
+import { BotManager } from '../../../manager/bot-manager'
+import { conctact, synchronizeContacts } from './get-conctcts-data'
 
 interface ISyncHandler {
   userId: string

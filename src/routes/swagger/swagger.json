@@ -7,6 +7,43 @@
 		"requestBodies": {},
 		"responses": {},
 		"schemas": {
+			"IRegisterTokenResponse": {
+				"properties": {
+					"code": {
+						"type": "number",
+						"enum": [
+							200,
+							404,
+							500
+						]
+					},
+					"message": {
+						"type": "string"
+					}
+				},
+				"required": [
+					"code",
+					"message"
+				],
+				"type": "object",
+				"additionalProperties": false
+			},
+			"IRegisterToken": {
+				"properties": {
+					"userId": {
+						"type": "string"
+					},
+					"token": {
+						"type": "string"
+					}
+				},
+				"required": [
+					"userId",
+					"token"
+				],
+				"type": "object",
+				"additionalProperties": false
+			},
 			"UserDTO": {
 				"properties": {
 					"id": {
@@ -74,24 +111,108 @@
 				"type": "object",
 				"additionalProperties": false
 			},
-			"IUpdateWithWhatsappDataResponse": {
+			"IGroupParticipant": {
 				"properties": {
-					"statusCode": {
-						"type": "number",
-						"enum": [
-							201,
-							404,
-							500
-						]
+					"id": {
+						"type": "string"
 					},
-					"message": {
+					"isAdmin": {
+						"type": "boolean"
+					},
+					"isSuperAdmin": {
+						"type": "boolean"
+					},
+					"imgUrl": {
 						"type": "string"
 					}
 				},
 				"required": [
-					"statusCode",
-					"message"
+					"id",
+					"isAdmin",
+					"isSuperAdmin"
 				],
+				"type": "object",
+				"additionalProperties": false
+			},
+			"IGroup": {
+				"properties": {
+					"id": {
+						"type": "string"
+					},
+					"subject": {
+						"type": "string"
+					},
+					"creation": {
+						"type": "number",
+						"format": "double"
+					},
+					"owner": {
+						"type": "string"
+					},
+					"imgUrl": {
+						"type": "string"
+					},
+					"participants": {
+						"items": {
+							"$ref": "#/components/schemas/IGroupParticipant"
+						},
+						"type": "array"
+					}
+				},
+				"required": [
+					"id",
+					"subject",
+					"creation",
+					"owner",
+					"participants"
+				],
+				"type": "object",
+				"additionalProperties": false
+			},
+			"IUpdateWithWhatsappData": {
+				"properties": {
+					"userId": {
+						"type": "string"
+					},
+					"id": {
+						"type": "string"
+					},
+					"name": {
+						"type": "string"
+					},
+					"imgUrl": {
+						"type": "string",
+						"nullable": true
+					},
+					"lid": {
+						"type": "string"
+					},
+					"jid": {
+						"type": "string"
+					},
+					"verifiedName": {
+						"type": "string"
+					},
+					"notify": {
+						"type": "string"
+					},
+					"connectedAt": {
+						"type": "string",
+						"format": "date-time"
+					},
+					"status": {
+						"type": "string"
+					},
+					"user": {
+						"type": "string"
+					},
+					"groups": {
+						"items": {
+							"$ref": "#/components/schemas/IGroup"
+						},
+						"type": "array"
+					}
+				},
 				"type": "object",
 				"additionalProperties": false
 			},
@@ -106,7 +227,7 @@
 						]
 					},
 					"userUpdated": {
-						"$ref": "#/components/schemas/IUpdateWithWhatsappDataResponse"
+						"$ref": "#/components/schemas/IUpdateWithWhatsappData"
 					},
 					"message": {
 						"type": "string"
@@ -138,6 +259,65 @@
 					"userId",
 					"participantsToRemove",
 					"groupId"
+				],
+				"type": "object",
+				"additionalProperties": false
+			},
+			"IPromoteGroupResponse": {
+				"properties": {
+					"code": {
+						"type": "number",
+						"enum": [
+							200,
+							403,
+							404,
+							500
+						]
+					},
+					"message": {
+						"type": "string"
+					}
+				},
+				"required": [
+					"code",
+					"message"
+				],
+				"type": "object",
+				"additionalProperties": false
+			},
+			"ParticipantAction": {
+				"type": "string",
+				"enum": [
+					"add",
+					"remove",
+					"promote",
+					"demote",
+					"modify"
+				]
+			},
+			"IPromoteGroup": {
+				"properties": {
+					"userId": {
+						"type": "string"
+					},
+					"groupId": {
+						"type": "string"
+					},
+					"participantId": {
+						"items": {
+							"type": "string"
+						},
+						"type": "array"
+					},
+					"promote": {
+						"$ref": "#/components/schemas/ParticipantAction"
+					}
+				},
+				"required": [
+					"userId",
+					"groupId",
+					"participantId",
+					"promote"
 				],
 				"type": "object",
 				"additionalProperties": false
@@ -178,6 +358,76 @@
 		"contact": {}
 	},
 	"paths": {
+		"/user/user/sycronize-all-data": {
+			"post": {
+				"operationId": "SycronizeAllData",
+				"responses": {
+					"201": {
+						"description": "Dados alterado com sucesso"
+					}
+				},
+				"tags": [
+					"User"
+				],
+				"security": [],
+				"parameters": [],
+				"requestBody": {
+					"required": true,
+					"content": {
+						"application/json": {
+							"schema": {
+								"properties": {
+									"userId": {
+										"type": "string"
+									},
+									"data": {
+										"items": {},
+										"type": "array"
+									}
+								},
+								"required": [
+									"userId",
+									"data"
+								],
+								"type": "object"
+							}
+						}
+					}
+				}
+			}
+		},
+		"/token/register": {
+			"post": {
+				"operationId": "RegisterToTokenPush",
+				"responses": {
+					"200": {
+						"description": "Token Registrado com sucesso",
+						"content": {
+							"application/json": {
+								"schema": {
+									"$ref": "#/components/schemas/IRegisterTokenResponse"
+								}
+							}
+						}
+					}
+				},
+				"tags": [
+					"Token"
+				],
+				"security": [],
+				"parameters": [],
+				"requestBody": {
+					"required": true,
+					"content": {
+						"application/json": {
+							"schema": {
+								"$ref": "#/components/schemas/IRegisterToken"
+							}
+						}
+					}
+				}
+			}
+		},
 		"/user/get-user": {
 			"get": {
 				"operationId": "FindUser",
@@ -281,6 +531,44 @@
 						"application/json": {
 							"schema": {
 								"$ref": "#/components/schemas/IRemoveParticipantToGroupDTO"
+							}
+						}
+					}
+				}
+			}
+		},
+		"/group/promote-to-group": {
+			"post": {
+				"operationId": "PromoteToAdmin",
+				"responses": {
+					"200": {
+						"description": "Usuario promovido com sucesso",
+						"content": {
+							"application/json": {
+								"schema": {
+									"$ref": "#/components/schemas/IPromoteGroupResponse"
+								}
+							}
+						}
+					},
+					"403": {
+						"description": "todos os campos sao obrigatorios"
+					},
+					"404": {
+						"description": "Usuario nao encontrado"
+					}
+				},
+				"tags": [
+					"Groups"
+				],
+				"security": [],
+				"parameters": [],
+				"requestBody": {
+					"required": true,
+					"content": {
+						"application/json": {
+							"schema": {
+								"$ref": "#/components/schemas/IPromoteGroup"
 							}
 						}
 					}

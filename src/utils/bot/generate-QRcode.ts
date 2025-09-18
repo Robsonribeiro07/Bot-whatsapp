@@ -1,4 +1,4 @@
-import { BotManager } from '../../bot/functions/create-bot'
+import { BotManager } from '../../bot/manager/bot-manager'
 import { IRegenareteQRcodeResponseService } from '../../services/users/regenarete-qr-code'
 
 interface IGenerateQRcode {

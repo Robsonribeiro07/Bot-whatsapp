@@ -3,6 +3,13 @@ import { IGroup } from '../../database/mongoDB/models/user-schema'
 
 const delay = (ms: number) => new Promise(res => setTimeout(res, ms))
 
+interface IGroupParticipant {
+  id: string
+  isAdmin: boolean
+  isSuperAdmin: boolean
+  imgUrl: string | undefined
+}
+
 export async function mapGroupsMetadataToIGroup(
   sock: WASocket,
   groups: GroupMetadata[],
@@ -12,13 +19,14 @@ export async function mapGroupsMetadataToIGroup(
       let imgUrl: string | undefined = undefined
 
       try {
-        imgUrl = await sock.profilePictureUrl(g.id, 'image')
+        imgUrl = await sock.profilePictureUrl(g.id ?? '', 'image')
       } catch (err) {
         imgUrl = ''
       }
 
-      const participants = []
-      for (const p of g.participants) {
+      const participants: IGroupParticipant[] = []
+
+      for (const p of g.participants ?? []) {
         try {
           const participantImg = await sock
             .profilePictureUrl(p.id, 'image')
@@ -33,7 +41,7 @@ export async function mapGroupsMetadataToIGroup(
         } catch (err) {
           console.log(`Erro ao buscar foto do participante ${p.id}:`)
           participants.push({
-            id: p.id,
+            id: p.id ?? '',
             isAdmin: p.admin === 'admin' || p.admin === 'superadmin',
             isSuperAdmin: p.admin === 'superadmin',
             imgUrl: '',
@@ -42,7 +50,7 @@ export async function mapGroupsMetadataToIGroup(
       }
 
       return {
-        id: g.id,
+        id: g.id ?? '',
         subject: g.subject ?? 'unknown',
         creation: g.creation ?? Date.now(),
         owner: g.owner ?? '',

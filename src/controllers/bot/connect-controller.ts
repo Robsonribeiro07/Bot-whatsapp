@@ -1,4 +1,4 @@
-import { BotManager } from '../../bot/functions/create-bot'
+import { BotManager } from '../../bot/manager/bot-manager'
 import { getOrCreateBot } from '../../database/bot/bot-manager'
 import { sessions } from '../../database/bot/sessions'
 import { userServiceFind } from '../../services/users/find-user'

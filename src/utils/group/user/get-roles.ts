@@ -4,7 +4,6 @@ import { GetGroupData } from '../get-group'
 interface IGetRolesParticipants {
   userId: string
   groupId: string
-  participantId: string
 }
 
 interface IGetRolesParticipantsResponse {
@@ -15,11 +14,10 @@ interface IGetRolesParticipantsResponse {
 export async function getRolesParticipant({
   userId,
   groupId,
-  participantId,
 }: IGetRolesParticipants): Promise<IGetRolesParticipantsResponse> {
   let isAdmin: boolean = false
 
-  if (!participantId)
+  if (!userId)
     return {
       message: 'Todos os campos sao obrigatorios',
       isAdmin,
@@ -33,9 +31,7 @@ export async function getRolesParticipant({
         isAdmin,
       }
 
-    const participant = group.groupData?.participants.find(
-      p => p.id === participantId,
-    )
+    const participant = group.groupData?.participants.find(p => p.id === userId)
 
     if (!participant)
       return {

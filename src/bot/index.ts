@@ -20,7 +20,5 @@ export async function main() {
         MonitorGroup({ sock, groupId: group.remoteJid })
       }
     }
-
-    console.log('monitrando para ', userId)
   }
 }

@@ -1,6 +1,6 @@
 import { WASocket } from '@whiskeysockets/baileys'
 import { Socket } from 'socket.io'
-import { FormatNumber } from '../../../utils/group/user/format-numbers'
+import { FormatNumber } from '../../../../utils/group/user/format-numbers'
 
 export type conctact = {
   name: string

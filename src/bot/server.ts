@@ -9,7 +9,9 @@ import cors from 'cors'
 import delayResponse from '../middleware/delay'
 import { initSocket } from '../socket'
 import { createServer } from 'http'
+import dotenv from 'dotenv'
 async function Server() {
+  dotenv.config()
   const app = express()
 
   app.use(express.json())
