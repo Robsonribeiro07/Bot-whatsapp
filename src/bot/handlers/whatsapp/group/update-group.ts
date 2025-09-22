@@ -15,9 +15,6 @@ async function processQueue(socket: Socket) {
     while (groupUpdateQueue.length > 0) {
       const job = groupUpdateQueue.shift()!
 
-      console.log('novo item entrou na fila')
-
-      console.log(job.groupId)
       try {
         const response = await getUpdateGroup({
           sock: job.sock,

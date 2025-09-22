@@ -1,10 +1,10 @@
 import { GoogleGenAI } from '@google/genai'
-import { buffer } from 'stream/consumers'
 import { getJsonById } from '../utils/get-json-by-id'
-import { json, text } from 'body-parser'
-import { IAction, UserAction } from './typed'
 import { parseJsonFromAI } from '../utils/parserJsonFromIA'
-import { StreamIA } from './openIA/functions/stream'
+import { executeAction } from './gemini/functions/execute-by-action'
+import promptByIA from './prompt.json'
+import { IOnChunk } from './openIA/functions/stream'
+import { UserAction } from './typed'
 
 export const ai = new GoogleGenAI({
   apiKey: 'AIzaSyCUENoNbltJi0UKDrpTu3l3NHVMcyfxve8',
@@ -12,79 +12,67 @@ export const ai = new GoogleGenAI({
 
 interface IsendMessage {
   message: string
-  onChunk?: (chuck: string, action: IAction) => void
+  onChunk?: IOnChunk
   userId: string
+  stopState: { stoped: boolean }
 }
 export async function sendMessageIA({
   message,
   onChunk,
   userId,
+  stopState,
 }: IsendMessage) {
-  const dataByJson = (await getJsonById(userId)) ?? ''
+  try {
+    const dataByJson = (await getJsonById(userId)) ?? ''
 
-  console.log(userId)
+    const shouldStop = () => stopState.stoped
 
-  const iaPrompt = {
-    assistant_role:
-      'You are a WhatsApp assistant that interprets administrative commands and general conversation.',
-    rules: [
-      "Detect the user's intent: 'promote' (add/elevate), 'demote' (remove/demote), or just send 'text'.",
-      'If the intent is promote/demote, look up the user in the provided JSON: ',
-      JSON.stringify(dataByJson),
-      'Return only a JSON object with this structure:',
-      '{\n  "action": "add" | "remove" | "text",\n  "content": "response text from AI (required)",\n  "parameters": {\n    "id": "@whatsapp",\n    "name": "Name",\n    "role": "role",\n    "promote": "promote" | "demote" | null,\n    "message": "contextual message about the action"\n  } (required only if action is \'add\' or \'remove\')\n}',
-      "For 'add', use promote; for 'remove', use demote.",
-      "If the user does not exist in the JSON, return parameters as null and content as 'User not found'.",
-      "For normal conversation or text, set action='text' and content as the AI's response. Do not include parameters.",
-      'Do not write anything outside the JSON object.',
-    ],
-    response_schema: {
-      action: 'text | add | remove',
-      content: 'string (always required, response from AI)',
-      parameters:
-        'object (required only if action is add or remove, null if user not found)',
-    },
-  }
-
-  const response = await ai.models.generateContent({
-    model: 'gemini-2.5-flash',
-    contents: [
-      {
-        role: 'user',
-        parts: [
-          {
-            text: `Você é um assistente inteligente. Use os seguintes dados do usuário para responder: ${JSON.stringify(iaPrompt)}`,
-          },
-        ],
+    const iaPrompt = {
+      placeholders: {
+        users: JSON.stringify(dataByJson),
+        SystemPrompt: JSON.stringify(promptByIA),
       },
-      {
-        role: 'user',
-        parts: [{ text: message }],
-      },
-    ],
-  })
+    }
 
-  let textToParse: string
-  let content = response.candidates![0].content?.parts ?? ''
+    const response = await ai.models.generateContent({
+      model: 'gemini-2.5-flash',
+      contents: [
+        {
+          role: 'user',
+          parts: [
+            {
+              text: ` user Data ${JSON.stringify(iaPrompt.placeholders.users)}`,
+            },
+            {
+              text: ` use these placeholders ${JSON.stringify(iaPrompt.placeholders.SystemPrompt)}`,
+            },
+          ],
+        },
+        {
+          role: 'user',
+          parts: [{ text: message }],
+        },
+      ],
+    })
 
-  if (Array.isArray(content)) {
-    textToParse = content.map(part => part.text).join('\n')
-  } else {
-    textToParse = content
-  }
-  let respoonseIa: UserAction = parseJsonFromAI(textToParse)
+    let textToParse: string
+    let content = response.candidates![0].content?.parts ?? ''
 
-  console.log(respoonseIa)
+    if (Array.isArray(content)) {
+      textToParse = content.map(part => part.text).join('\n')
+    } else {
+      textToParse = content
+    }
+    let responseByIA: UserAction = parseJsonFromAI(textToParse)
 
-  let buffer = ''
+    executeAction({ action: responseByIA, onChunk, shouldStop })
 
-  StreamIA({
-    content: respoonseIa,
-    onChunk,
-    stoped: false,
-  })
+    let buffer = ''
 
-  return {
-    buffer,
+    return {
+      buffer,
+    }
+  } catch (err) {
+    console.log(err)
   }
 }

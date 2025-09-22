@@ -1,6 +1,6 @@
 import { Socket } from 'socket.io'
 import { sendMessageIA } from '../../../config/gemini'
-import { IAction } from '../../../config/typed'
+import { IMessaType } from '../../../config/typed'
 
 interface IMessageChatIa {
   socket: Socket | undefined
@@ -9,16 +9,26 @@ interface IMessageChatIa {
 export function MessageChatIHAandler({ socket }: IMessageChatIa) {
   if (!socket) return
 
+  const stopState = { stoped: false }
+
   socket.on(
     'new-message',
     async ({ content, userId }: { content: string; userId: string }) => {
+      stopState.stoped = false
       await sendMessageIA({
         message: content,
         userId,
-        onChunk: (chuck: string, action: IAction) => {
-          socket.emit('new-message-received', { chuck, action })
+        stopState,
+
+        onChunk: (chuck: string, type: IMessaType, isComplete) => {
+          socket.emit('new-message-received', { chuck, type, isComplete })
         },
       })
     },
   )
+
+  socket.on('stoped', () => {
+    console.log('chegou para  parar')
+    stopState.stoped = true
+  })
 }

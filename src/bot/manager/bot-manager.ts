@@ -70,8 +70,8 @@ class BotManager extends EventEmitter {
           if (this.profileUpdateInterval)
             clearInterval(this.profileUpdateInterval)
           this.profileUpdateInterval = setInterval(
-            () => this.GetUserData(),
-            50000,
+            () => this.UpdateUserDataWithWhatsappData(),
+            600000,
           )
         }
       })

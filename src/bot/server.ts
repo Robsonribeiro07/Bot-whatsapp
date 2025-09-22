@@ -10,6 +10,7 @@ import delayResponse from '../middleware/delay'
 import { initSocket } from '../socket'
 import { createServer } from 'http'
 import dotenv from 'dotenv'
+import path from 'path'
 async function Server() {
   dotenv.config()
   const app = express()
@@ -22,6 +23,10 @@ async function Server() {
 
   app.use('/api', apiRouter)
   app.use('/docs', swaggerUi.serve, swaggerUi.setup(swaggerSpec))
+  app.use(
+    '/uploads',
+    express.static(path.join(process.cwd(), 'src', 'uploads')),
+  )
 
   app.use(delayResponse)
   app.use(errorHandler)

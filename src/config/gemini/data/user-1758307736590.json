@@ -1,0 +1,742 @@
+[
+  {
+    "userData": {
+      "id": "user-1758307736590",
+      "imgUrl": "https://pps.whatsapp.net/v/t61.24694-24/546575618_787100873964395_287866304074853282_n.jpg?ccb=11-4&oh=01_Q5Aa2gGHcyh_tPbvDpg1_G3t49dYY1ix1I9Es1u9HFVX4UHuKw&oe=68DAE127&_nc_sid=5e03e0&_nc_cat=100",
+      "name": "Robson Ribeiro",
+      "connectedAt": "2025-09-19T22:07:54.844Z",
+      "groups": [
+        {
+          "id": "120363421736170049@g.us",
+          "subject": "Teste 2",
+          "creation": 1757963098,
+          "owner": "557582223723@s.whatsapp.net",
+          "imgUrl": "https://pps.whatsapp.net/v/t61.24694-24/548113623_1303791728135592_607121123455657125_n.jpg?ccb=11-4&oh=01_Q5Aa2gHUngfI5vNbyG8d_j-7Qf8_z52zbfBnX5rjFGX6uuRakA&oe=68DAE3B8&_nc_sid=5e03e0&_nc_cat=100",
+          "participants": [
+            {
+              "id": "557582223723@s.whatsapp.net",
+              "isAdmin": true,
+              "isSuperAdmin": true,
+              "imgUrl": "https://pps.whatsapp.net/v/t61.24694-24/546575618_787100873964395_287866304074853282_n.jpg?ccb=11-4&oh=01_Q5Aa2gGHcyh_tPbvDpg1_G3t49dYY1ix1I9Es1u9HFVX4UHuKw&oe=68DAE127&_nc_sid=5e03e0&_nc_cat=100"
+            }
+          ]
+        },
+        {
+          "id": "120363400110181560@g.us",
+          "subject": "Vida",
+          "creation": 1757795155,
+          "owner": "557582223723@s.whatsapp.net",
+          "imgUrl": "",
+          "participants": [
+            {
+              "id": "557582223723@s.whatsapp.net",
+              "isAdmin": true,
+              "isSuperAdmin": true,
+              "imgUrl": "https://pps.whatsapp.net/v/t61.24694-24/546575618_787100873964395_287866304074853282_n.jpg?ccb=11-4&oh=01_Q5Aa2gGHcyh_tPbvDpg1_G3t49dYY1ix1I9Es1u9HFVX4UHuKw&oe=68DAE127&_nc_sid=5e03e0&_nc_cat=100"
+            },
+            {
+              "id": "557582598725@s.whatsapp.net",
+              "isAdmin": false,
+              "isSuperAdmin": false,
+              "imgUrl": ""
+            },
+            {
+              "id": "557582833774@s.whatsapp.net",
+              "isAdmin": false,
+              "isSuperAdmin": false,
+              "imgUrl": ""
+            },
+            {
+              "id": "557583250140@s.whatsapp.net",
+              "isAdmin": false,
+              "isSuperAdmin": false,
+              "imgUrl": ""
+            }
+          ]
+        }
+      ]
+    },
+    "contacts": [
+      {
+        "jid": "557582469889@s.whatsapp.net",
+        "exist": true,
+        "lid": "132259306819768@lid",
+        "imgUrl": "https://pps.whatsapp.net/v/t61.24694-24/216189510_306547874784533_2984653428574605432_n.jpg?ccb=11-4&oh=01_Q5Aa2gHH6S4_2KY-vmGnPq3Dv5_pDpw_nhw3ioCZeZ_FYajP_g&oe=68DAE42F&_nc_sid=5e03e0&_nc_cat=109",
+        "name": "+5575982469889",
+        "number": "+55 75 8246-9889"
+      },
+      {
+        "jid": "557581504829@s.whatsapp.net",
+        "exist": true,
+        "lid": "76858657886232@lid",
+        "imgUrl": null,
+        "name": "+55 75 98150-4829",
+        "number": "+55 75 8150-4829"
+      },
+      {
+        "jid": "557583250140@s.whatsapp.net",
+        "exist": true,
+        "lid": "231825523888202@lid",
+        "imgUrl": null,
+        "name": "+5575983250140",
+        "number": "+55 75 8325-0140"
+      },
+      {
+        "jid": "5511933538367@s.whatsapp.net",
+        "exist": true,
+        "lid": "61701634420944@lid",
+        "imgUrl": "https://pps.whatsapp.net/v/t61.24694-24/521093707_724583313958873_3245663819309984080_n.jpg?ccb=11-4&oh=01_Q5Aa2gE3jXGfXAWLYIA8XtIyZk8QW38_ARcA9G9GL-qCyAUHOw&oe=68DAEC67&_nc_sid=5e03e0&_nc_cat=105",
+        "name": "+5511933538367",
+        "number": "+55 (11) 93353 8367 "
+      },
+      {
+        "jid": "557582598725@s.whatsapp.net",
+        "exist": true,
+        "lid": "246514010079437@lid",
+        "imgUrl": null,
+        "name": "+5575982598725",
+        "number": "+55 75 8259-8725"
+      },
+      {
+        "jid": "557591433434@s.whatsapp.net",
+        "exist": true,
+        "lid": "129501853949983@lid",
+        "imgUrl": "https://pps.whatsapp.net/v/t61.24694-24/453939858_503554348834213_2671483959810151099_n.jpg?ccb=11-4&oh=01_Q5Aa2gFw_1n6cgy8EVoMwNUV5gGh0Qi2FY6FXjFqwVtBvKVTPQ&oe=68DAFAF1&_nc_sid=5e03e0&_nc_cat=106",
+        "name": "Alfredo Celular",
+        "number": "+55 75 9143-3434"
+      },
+      {
+        "jid": "557199390793@s.whatsapp.net",
+        "exist": true,
+        "lid": "165163336474836@lid",
+        "imgUrl": "https://pps.whatsapp.net/v/t61.24694-24/390665280_464386626339785_5531081432835081316_n.jpg?ccb=11-4&oh=01_Q5Aa2gF7RIF0aCcix9RpnvsaLf4buMgfNDxSF3ub-zMwUvpVsg&oe=68DB0DD0&_nc_sid=5e03e0&_nc_cat=111",
+        "name": "Amilton",
+        "number": "+55 71 9939-0793"
+      },
+      {
+        "jid": "557582833774@s.whatsapp.net",
+        "exist": true,
+        "lid": "97508776800401@lid",
+        "imgUrl": null,
+        "name": "Amor ❤️",
+        "number": "+55 75 8283-3774"
+      },
+      {
+        "jid": "557582453542@s.whatsapp.net",
+        "exist": true,
+        "lid": "213413166882835@lid",
+        "imgUrl": "https://pps.whatsapp.net/v/t61.24694-24/473407902_1712169346405070_1347435515084839376_n.jpg?ccb=11-4&oh=01_Q5Aa2gF3zEPOM0nnEjJX97Uw-AmSYlqJyRuKNVDVvTvn9bOtMw&oe=68DB103D&_nc_sid=5e03e0&_nc_cat=109",
+        "name": "Barbearia",
+        "number": "+55 75 8245-3542"
+      },
+      {
+        "jid": "557191679976@s.whatsapp.net",
+        "exist": true,
+        "lid": "78228567900268@lid",
+        "imgUrl": null,
+        "name": "Bea♥️",
+        "number": "+55 71 9167-9976"
+      },
+      {
+        "jid": "557583608037@s.whatsapp.net",
+        "exist": true,
+        "lid": "109788138574051@lid",
+        "imgUrl": "https://pps.whatsapp.net/v/t61.24694-24/540397835_1323796679347881_2744999390310996518_n.jpg?ccb=11-4&oh=01_Q5Aa2gEm_Q8gKi-mayhkoIfd7QsbVH2ppVa0UbiOS8VnkyQyVA&oe=68DB0B0E&_nc_sid=5e03e0&_nc_cat=100",
+        "name": "Bibi",
+        "number": "+55 75 8360-8037"
+      },
+      {
+        "jid": "557591340095@s.whatsapp.net",
+        "exist": true,
+        "lid": "232581119402127@lid",
+        "imgUrl": "https://pps.whatsapp.net/v/t61.24694-24/422394752_925053475866164_2264836636433275103_n.jpg?ccb=11-4&oh=01_Q5Aa2gE1U1Jfcp7orcQgq8o6CacmalRUws-3v333aXdAID5Mlw&oe=68DB015B&_nc_sid=5e03e0&_nc_cat=101",
+        "name": "Bokeiro Tatto",
+        "number": "+55 75 9134-0095"
+      },
+      {
+        "jid": "557581086575@s.whatsapp.net",
+        "exist": true,
+        "lid": "162843953504311@lid",
+        "imgUrl": "https://pps.whatsapp.net/v/t61.24694-24/534423048_1439916120447700_1903950758844823488_n.jpg?ccb=11-4&oh=01_Q5Aa2gGeS7JHNE9klzWhqQZGXCp6nn2qyFF-0J5PFSP_uyMcIA&oe=68DAF65F&_nc_sid=5e03e0&_nc_cat=100",
+        "name": "Bruno",
+        "number": "+55 75 8108-6575"
+      },
+      {
+        "jid": "557581145113@s.whatsapp.net",
+        "exist": true,
+        "lid": "167847691087936@lid",
+        "imgUrl": "https://pps.whatsapp.net/v/t61.24694-24/517943373_1319493223115140_5248998375120325630_n.jpg?ccb=11-4&oh=01_Q5Aa2gEDlviGOq09wuq-TwCHflS7-U7pDJIZ0D8ySAaiMXPM9g&oe=68DB16C4&_nc_sid=5e03e0&_nc_cat=105",
+        "name": "Cabelo Corta",
+        "number": "+55 75 8114-5113"
+      },
+      {
+        "jid": "557581201152@s.whatsapp.net",
+        "exist": true,
+        "lid": "249760988545028@lid",
+        "imgUrl": "https://pps.whatsapp.net/v/t61.24694-24/151823225_3759539087477866_3462841965838011254_n.jpg?ccb=11-4&oh=01_Q5Aa2gEHjJR_9dCx6xEWvWEIor9Et1ZPD9EDLC2_tZSJ8q14xA&oe=68DAE6D3&_nc_sid=5e03e0&_nc_cat=102",
+        "name": "Clínica",
+        "number": "+55 75 8120-1152"
+      },
+      {
+        "jid": "557583000974@s.whatsapp.net",
+        "exist": true,
+        "lid": "143503497638030@lid",
+        "imgUrl": null,
+        "name": "Costureira",
+        "number": "+55 75 8300-0974"
+      },
+      {
+        "jid": "557582304645@s.whatsapp.net",
+        "exist": true,
+        "lid": "120233884930253@lid",
+        "imgUrl": null,
+        "name": "Crislane",
+        "number": "+55 75 8230-4645"
+      },
+      {
+        "jid": "557583186400@s.whatsapp.net",
+        "exist": true,
+        "lid": "204857273262319@lid",
+        "imgUrl": "https://pps.whatsapp.net/v/t61.24694-24/421424029_1110491193433547_1267982066512093956_n.jpg?ccb=11-4&oh=01_Q5Aa2gGe6tjPA7a8dCEiWAvEpl4E6TIVHKX9aB0FYu3wJra_VQ&oe=68DAFBD4&_nc_sid=5e03e0&_nc_cat=100",
+        "name": "Cristiano",
+        "number": "+55 75 8318-6400"
+      },
+      {
+        "jid": "557581212220@s.whatsapp.net",
+        "exist": true,
+        "lid": "227749297926234@lid",
+        "imgUrl": "https://pps.whatsapp.net/v/t61.24694-24/118750847_249319672877182_7073589522896225063_n.jpg?ccb=11-4&oh=01_Q5Aa2gEd2wNfijN4wwaoXzSZ-K4JGzyyvL26oIYU_X4gRfcxsA&oe=68DAF0A2&_nc_sid=5e03e0&_nc_cat=100",
+        "name": "Davi",
+        "number": "+55 75 8121-2220"
+      },
+      {
+        "jid": "557592010153@s.whatsapp.net",
+        "exist": true,
+        "lid": "214160138887416@lid",
+        "imgUrl": "https://pps.whatsapp.net/v/t61.24694-24/473405194_892633836282063_4424125250377815406_n.jpg?ccb=11-4&oh=01_Q5Aa2gHFcgn0Jgc3uz6tmcjg69SBgjA2ZEfOeijEi24CxKQioQ&oe=68DB06CC&_nc_sid=5e03e0&_nc_cat=100",
+        "name": "Ermor São Benedito",
+        "number": "+55 75 9201-0153"
+      },
+      {
+        "jid": "557581971419@s.whatsapp.net",
+        "exist": true,
+        "lid": "14581833416819@lid",
+        "imgUrl": null,
+        "name": "Estelita",
+        "number": "+55 75 8197-1419"
+      },
+      {
+        "jid": "557592328388@s.whatsapp.net",
+        "exist": true,
+        "lid": "39020398653577@lid",
+        "imgUrl": null,
+        "name": "Fan",
+        "number": "+55 75 9232-8388"
+      },
+      {
+        "jid": "557598384800@s.whatsapp.net",
+        "exist": true,
+        "lid": "160447529517217@lid",
+        "imgUrl": null,
+        "name": "Fan 160",
+        "number": "+55 75 9838-4800"
+      },
+      {
+        "jid": "557583432057@s.whatsapp.net",
+        "exist": true,
+        "lid": "45763010768957@lid",
+        "imgUrl": null,
+        "name": "Fan 2",
+        "number": "+55 75 8343-2057"
+      },
+      {
+        "jid": "557581435621@s.whatsapp.net",
+        "exist": true,
+        "lid": "35318019428409@lid",
+        "imgUrl": null,
+        "name": "Fran",
+        "number": "+55 75 8143-5621"
+      },
+      {
+        "jid": "557582335235@s.whatsapp.net",
+        "exist": true,
+        "lid": "216801644421138@lid",
+        "imgUrl": "https://pps.whatsapp.net/v/t61.24694-24/516590002_727483000029758_7433046984238054982_n.jpg?ccb=11-4&oh=01_Q5Aa2gGFiEU-JlKyq7AzIOOvoM0Bk4UlEhHABDf7Wn-mN-9oeA&oe=68DAFEAB&_nc_sid=5e03e0&_nc_cat=110",
+        "name": "Gabriel",
+        "number": "+55 75 8233-5235"
+      },
+      {
+        "jid": "557583451498@s.whatsapp.net",
+        "exist": true,
+        "lid": "133783936352263@lid",
+        "imgUrl": "https://pps.whatsapp.net/v/t61.24694-24/521243262_1148271963809466_3495674416415287000_n.jpg?ccb=11-4&oh=01_Q5Aa2gE5rEpCg733uwOPQndJga38vI3_iceEmJA6T8d0lRBTcw&oe=68DB14B5&_nc_sid=5e03e0&_nc_cat=103",
+        "name": "Gabriel Trabalho",
+        "number": "+55 75 8345-1498"
+      },
+      {
+        "jid": "557581435505@s.whatsapp.net",
+        "exist": true,
+        "lid": "43370680467598@lid",
+        "imgUrl": null,
+        "name": "Galego",
+        "number": "+55 75 8143-5505"
+      },
+      {
+        "jid": "557197064074@s.whatsapp.net",
+        "exist": true,
+        "lid": "80247420645548@lid",
+        "imgUrl": "https://pps.whatsapp.net/v/t61.24694-24/427463116_1290357855279153_5809585007226530608_n.jpg?ccb=11-4&oh=01_Q5Aa2gFmMValXsXcwkkr5l2xG8k_a9RNlBbOhhNtKCqdRDUkbQ&oe=68DAF1E3&_nc_sid=5e03e0&_nc_cat=110",
+        "name": "Gilberto💧💧💧💧 embasa embasa embasa embasa",
+        "number": "+55 71 9706-4074"
+      },
+      {
+        "jid": "557581383608@s.whatsapp.net",
+        "exist": true,
+        "lid": "261353625370830@lid",
+        "imgUrl": "https://pps.whatsapp.net/v/t61.24694-24/514466945_1313888840394412_7855430421669881754_n.jpg?ccb=11-4&oh=01_Q5Aa2gE8HnZtEEWRHGLtrY21FVHlQrixxzPEANUWPOwPgFwd4w&oe=68DAEA7B&_nc_sid=5e03e0&_nc_cat=110",
+        "name": "Gordo",
+        "number": "+55 75 8138-3608"
+      },
+      {
+        "jid": "5511959226858@s.whatsapp.net",
+        "exist": true,
+        "lid": "205278045823067@lid",
+        "imgUrl": "https://pps.whatsapp.net/v/t61.24694-24/473407959_2190803374656383_3970764182798618596_n.jpg?ccb=11-4&oh=01_Q5Aa2gHPJf_JjQyJPA3MB5yr5st2-d_WHDHJ8oIzfXl0Y9rfMQ&oe=68DB0E7C&_nc_sid=5e03e0&_nc_cat=104",
+        "name": "Hermínia",
+        "number": "+55 (11) 95922 6858 "
+      },
+      {
+        "jid": "557581713011@s.whatsapp.net",
+        "exist": true,
+        "lid": "183541367357456@lid",
+        "imgUrl": "https://pps.whatsapp.net/v/t61.24694-24/437024126_1657395298428770_4139302394022675015_n.jpg?ccb=11-4&oh=01_Q5Aa2gGZ_8NBvTCP75aVrO8O-4bCI9DNdU9u_q4xwjG39qDbiw&oe=68DB1658&_nc_sid=5e03e0&_nc_cat=106",
+        "name": "Imprimir",
+        "number": "+55 75 8171-3011"
+      },
+      {
+        "jid": "557583536964@s.whatsapp.net",
+        "exist": true,
+        "lid": "236961952464946@lid",
+        "imgUrl": "https://pps.whatsapp.net/v/t61.24694-24/518001608_778989938400868_3224126685771751062_n.jpg?ccb=11-4&oh=01_Q5Aa2gE7XBTol4Eqr7cmJKTEStkT-R5oEKg7l1lMujdbTL_saQ&oe=68DB1BBD&_nc_sid=5e03e0&_nc_cat=101",
+        "name": "Jai",
+        "number": "+55 75 8353-6964"
+      },
+      {
+        "jid": "557581729443@s.whatsapp.net",
+        "exist": true,
+        "lid": "145346424512595@lid",
+        "imgUrl": "https://pps.whatsapp.net/v/t61.24694-24/516748336_1877761366131817_4247766927084825521_n.jpg?ccb=11-4&oh=01_Q5Aa2gHJXccgftlK9kkI8_od5mNCnwxZOo-XVXL8ieq4ENTfpg&oe=68DB019F&_nc_sid=5e03e0&_nc_cat=101",
+        "name": "Jane",
+        "number": "+55 75 8172-9443"
+      },
+      {
+        "jid": "557598223031@s.whatsapp.net",
+        "exist": true,
+        "lid": "171889456582864@lid",
+        "imgUrl": "https://pps.whatsapp.net/v/t61.24694-24/543108239_1790993944834907_3314532509742107417_n.jpg?ccb=11-4&oh=01_Q5Aa2gHEkh1cSqMBMj0I6CrjDfvIAX6bhe_YFR3tPnB4o_sxrQ&oe=68DB1589&_nc_sid=5e03e0&_nc_cat=101",
+        "name": "Jr Honda - Ares Motos",
+        "number": "+55 75 9822-3031"
+      },
+      {
+        "jid": "557597133226@s.whatsapp.net",
+        "exist": true,
+        "lid": "172821061849306@lid",
+        "imgUrl": "https://pps.whatsapp.net/v/t61.24694-24/515407542_1300867128192994_8428674163170848205_n.jpg?ccb=11-4&oh=01_Q5Aa2gGqiwoE7I5wbMclph-WoLvFGT9JOh6ZccqUxQZ3Y12NtQ&oe=68DB006D&_nc_sid=5e03e0&_nc_cat=108",
+        "name": "Leo",
+        "number": "+55 75 9713-3226"
+      },
+      {
+        "jid": "557583097987@s.whatsapp.net",
+        "exist": true,
+        "lid": "73641677074507@lid",
+        "imgUrl": null,
+        "name": "Mariel",
+        "number": "+55 75 8309-7987"
+      },
+      {
+        "jid": "557583509399@s.whatsapp.net",
+        "exist": true,
+        "lid": "264466973388890@lid",
+        "imgUrl": "https://pps.whatsapp.net/v/t61.24694-24/473408320_640362005469015_5993148559628461558_n.jpg?ccb=11-4&oh=01_Q5Aa2gF2Tyf2NiJ11FTe2oiW1hHSGzmVNMCzgoAxIlDYO7N5ug&oe=68DAF2E9&_nc_sid=5e03e0&_nc_cat=106",
+        "name": "Marli",
+        "number": "+55 75 8350-9399"
+      },
+      {
+        "jid": "557583344213@s.whatsapp.net",
+        "exist": true,
+        "lid": "225069305446549@lid",
+        "imgUrl": null,
+        "name": "Matheus Moto",
+        "number": "+55 75 8334-4213"
+      },
+      {
+        "jid": "557588421752@s.whatsapp.net",
+        "exist": true,
+        "lid": "87205250875451@lid",
+        "imgUrl": "https://pps.whatsapp.net/v/t61.24694-24/465879493_1499547080752844_5770054380237932006_n.jpg?ccb=11-4&oh=01_Q5Aa2gGIsiOYLpJIf26LUp1zyYKxMmtn1BBFzWzV7pCQ4iM2BA&oe=68DAE5A3&_nc_sid=5e03e0&_nc_cat=104",
+        "name": "Mercado Livre",
+        "number": "+55 75 8842-1752"
+      },
+      {
+        "jid": "557591036007@s.whatsapp.net",
+        "exist": true,
+        "lid": "129884290592995@lid",
+        "imgUrl": null,
+        "name": "Mercado Livre",
+        "number": "+55 75 9103-6007"
+      },
+      {
+        "jid": "557186315492@s.whatsapp.net",
+        "exist": true,
+        "lid": "116947983270116@lid",
+        "imgUrl": null,
+        "name": "Moto 1",
+        "number": "+55 71 8631-5492"
+      },
+      {
+        "jid": "557581339695@s.whatsapp.net",
+        "exist": true,
+        "lid": "42142252720164@lid",
+        "imgUrl": null,
+        "name": "Moto Taxi",
+        "number": "+55 75 8133-9695"
+      },
+      {
+        "jid": "557582016765@s.whatsapp.net",
+        "exist": true,
+        "lid": "85586350198883@lid",
+        "imgUrl": "https://pps.whatsapp.net/v/t61.24694-24/491871218_1751411915783395_7999404631118857957_n.jpg?ccb=11-4&oh=01_Q5Aa2gEPRKeJR3eHnRyJeJQmUC9m0B0hGvxqWcI59uZwydcxrQ&oe=68DAFFF0&_nc_sid=5e03e0&_nc_cat=108",
+        "name": "Moto Táxi",
+        "number": "+55 75 8201-6765"
+      },
+      {
+        "jid": "557582517269@s.whatsapp.net",
+        "exist": true,
+        "lid": "230549734047755@lid",
+        "imgUrl": "https://pps.whatsapp.net/v/t61.24694-24/472258552_1296452621377694_2922338925872303051_n.jpg?ccb=11-4&oh=01_Q5Aa2gF9Rst7BfWSic0reF4AkLj5Qg5fbk75CnR0tHnq0PFA0Q&oe=68DB00F8&_nc_sid=5e03e0&_nc_cat=107",
+        "name": "Márcio",
+        "number": "+55 75 8251-7269"
+      },
+      {
+        "jid": "557581440776@s.whatsapp.net",
+        "exist": true,
+        "lid": "149653974716470@lid",
+        "imgUrl": "https://pps.whatsapp.net/v/t61.24694-24/548275952_750418004659457_4464619642586462335_n.jpg?ccb=11-4&oh=01_Q5Aa2gFG2VmQ7LMdavLzzSjN9HlEExGkvyxrPJ01fEcOa5ZAmQ&oe=68DAFFEF&_nc_sid=5e03e0&_nc_cat=102",
+        "name": "Nem",
+        "number": "+55 75 8144-0776"
+      },
+      {
+        "jid": "557581331598@s.whatsapp.net",
+        "exist": true,
+        "lid": "73727509319736@lid",
+        "imgUrl": null,
+        "name": "Nui",
+        "number": "+55 75 8133-1598"
+      },
+      {
+        "jid": "557581331599@s.whatsapp.net",
+        "exist": true,
+        "lid": "71967075999954@lid",
+        "imgUrl": "https://pps.whatsapp.net/v/t61.24694-24/528859949_748265754713507_2859446691385824617_n.jpg?ccb=11-4&oh=01_Q5Aa2gGIwtvs7tTezyazMbRGiowDzDnlenOvo_9wrJHHHJTkkA&oe=68DB1BBA&_nc_sid=5e03e0&_nc_cat=110",
+        "name": "Nui",
+        "number": "+55 75 8133-1599"
+      },
+      {
+        "jid": "557582772828@s.whatsapp.net",
+        "exist": true,
+        "lid": "124773162078440@lid",
+        "imgUrl": "https://pps.whatsapp.net/v/t61.24694-24/426613379_360173753518337_5126968670352891792_n.jpg?ccb=11-4&oh=01_Q5Aa2gGHPhCQTwm1HXNwo3R6YzCs_QOBzs26OfcWOLDsO63Hpw&oe=68DB0B2B&_nc_sid=5e03e0&_nc_cat=108",
+        "name": "Oficina",
+        "number": "+55 75 8277-2828"
+      },
+      {
+        "jid": "557582949403@s.whatsapp.net",
+        "exist": true,
+        "lid": "252621520670938@lid",
+        "imgUrl": "https://pps.whatsapp.net/v/t61.24694-24/485046851_624318080576802_3962108362246608339_n.jpg?ccb=11-4&oh=01_Q5Aa2gGdV0eeWkaWWD9QB9YzyCqFCD0xIXfVxZBqtVka9oJWWA&oe=68DB0DF4&_nc_sid=5e03e0&_nc_cat=105",
+        "name": "Olavo",
+        "number": "+55 75 8294-9403"
+      },
+      {
+        "jid": "5511964467222@s.whatsapp.net",
+        "exist": true,
+        "lid": "218046966796325@lid",
+        "imgUrl": "https://pps.whatsapp.net/v/t61.24694-24/57080973_629939877444704_479135492000972800_n.jpg?ccb=11-4&oh=01_Q5Aa2gEq6dNkiKXQ2pHsXk7l534To4fMjrzr6BK7LFpljCy5lA&oe=68DB17C2&_nc_sid=5e03e0&_nc_cat=105",
+        "name": "Oyo",
+        "number": "+55 (11) 96446 7222 "
+      },
+      {
+        "jid": "557582334361@s.whatsapp.net",
+        "exist": true,
+        "lid": "263797025566876@lid",
+        "imgUrl": "https://pps.whatsapp.net/v/t61.24694-24/311894654_163070679686917_4933667099177977845_n.jpg?ccb=11-4&oh=01_Q5Aa2gEGNWmucqoAYKJvUAk4u10380uQnnUJeGOyarvR9QYY_g&oe=68DAF18B&_nc_sid=5e03e0&_nc_cat=109",
+        "name": "Painho Vovô",
+        "number": "+55 75 8233-4361"
+      },
+      {
+        "jid": "557581413988@s.whatsapp.net",
+        "exist": true,
+        "lid": "239775223148784@lid",
+        "imgUrl": "https://pps.whatsapp.net/v/t61.24694-24/431741516_717664587107731_8729230948898302958_n.jpg?ccb=11-4&oh=01_Q5Aa2gFJfAAgnqhQqzmWXefmDVNI7b2HU9795vFGXNmJ5SrovA&oe=68DB0FE5&_nc_sid=5e03e0&_nc_cat=111",
+        "name": "Pezinho",
+        "number": "+55 75 8141-3988"
+      },
+      {
+        "jid": "557199554815@s.whatsapp.net",
+        "exist": true,
+        "lid": "56032697053195@lid",
+        "imgUrl": "https://pps.whatsapp.net/v/t61.24694-24/473406111_629027652813210_4217315108490078403_n.jpg?ccb=11-4&oh=01_Q5Aa2gHn_FqPNrRGoTYUlW6f_Ul8kh5BKtnbDhhQ4ggAu2inGg&oe=68DB11A5&_nc_sid=5e03e0&_nc_cat=104",
+        "name": "Pity",
+        "number": "+55 71 9955-4815"
+      },
+      {
+        "jid": "557591393929@s.whatsapp.net",
+        "exist": true,
+        "lid": "208697326366755@lid",
+        "imgUrl": null,
+        "name": "Placa De Video",
+        "number": "+55 75 9139-3929"
+      },
+      {
+        "jid": "557598552840@s.whatsapp.net",
+        "exist": true,
+        "lid": "227671971746021@lid",
+        "imgUrl": "https://pps.whatsapp.net/v/t61.24694-24/491885838_4267702126799810_5972216577342687579_n.jpg?ccb=11-4&oh=01_Q5Aa2gGVuakaBvlwzRe6UAtfvJkNVcSX4CuYASKrTWAq8SbwUA&oe=68DB0648&_nc_sid=5e03e0&_nc_cat=102",
+        "name": "Poco",
+        "number": "+55 75 9855-2840"
+      },
+      {
+        "jid": "557399347471@s.whatsapp.net",
+        "exist": true,
+        "lid": "59361011458229@lid",
+        "imgUrl": null,
+        "name": "Pop 110",
+        "number": "+55 73 9934-7471"
+      },
+      {
+        "jid": "557581244149@s.whatsapp.net",
+        "exist": true,
+        "lid": "83769478390004@lid",
+        "imgUrl": "https://pps.whatsapp.net/v/t61.24694-24/505161178_748659854818458_7966072244457380361_n.jpg?ccb=11-4&oh=01_Q5Aa2gHLQbGn5CrNkTLUFaGxww_meA6glUvr-Y5lYsSoOS1hhQ&oe=68DAF538&_nc_sid=5e03e0&_nc_cat=108",
+        "name": "Rafa",
+        "number": "+55 75 8124-4149"
+      },
+      {
+        "jid": "557581542043@s.whatsapp.net",
+        "exist": true,
+        "lid": "228269106442489@lid",
+        "imgUrl": null,
+        "name": "Rasputinho",
+        "number": "+55 75 8154-2043"
+      },
+      {
+        "jid": "557581767981@s.whatsapp.net",
+        "exist": true,
+        "lid": "115611996823577@lid",
+        "imgUrl": null,
+        "name": "Rejiane",
+        "number": "+55 75 8176-7981"
+      },
+      {
+        "jid": "557583037119@s.whatsapp.net",
+        "exist": true,
+        "lid": "107464796180671@lid",
+        "imgUrl": null,
+        "name": "Renildo",
+        "number": "+55 75 8303-7119"
+      },
+      {
+        "jid": "557582075838@s.whatsapp.net",
+        "exist": true,
+        "lid": "153786018443463@lid",
+        "imgUrl": null,
+        "name": "Samily",
+        "number": "+55 75 8207-5838"
+      },
+      {
+        "jid": "557581427916@s.whatsapp.net",
+        "exist": true,
+        "lid": "223935434121253@lid",
+        "imgUrl": null,
+        "name": "Samuel",
+        "number": "+55 75 8142-7916"
+      },
+      {
+        "jid": "557582287855@s.whatsapp.net",
+        "exist": true,
+        "lid": "158081153507486@lid",
+        "imgUrl": "https://pps.whatsapp.net/v/t61.24694-24/506096354_574682055691943_2276031255165096315_n.jpg?ccb=11-4&oh=01_Q5Aa2gHZanQrB75pQvBdhNJ-hQS0Vple_9dfdGIR7olpdBmTaA&oe=68DB1C1C&_nc_sid=5e03e0&_nc_cat=102",
+        "name": "Samuel Irmão",
+        "number": "+55 75 8228-7855"
+      },
+      {
+        "jid": "557582920254@s.whatsapp.net",
+        "exist": true,
+        "lid": "103406135959552@lid",
+        "imgUrl": null,
+        "name": "Sandrinho ❤️",
+        "number": "+55 75 8292-0254"
+      },
+      {
+        "jid": "557598552784@s.whatsapp.net",
+        "exist": true,
+        "lid": "173645829828723@lid",
+        "imgUrl": "https://pps.whatsapp.net/v/t61.24694-24/532192311_1759118932146646_7971400807359190040_n.jpg?ccb=11-4&oh=01_Q5Aa2gGRDHn8RFFpIXsHJKrnJRA1JPYvv5Qq63zu9Zf-4xPezQ&oe=68DB155E&_nc_sid=5e03e0&_nc_cat=101",
+        "name": "Start",
+        "number": "+55 75 9855-2784"
+      },
+      {
+        "jid": "557588841439@s.whatsapp.net",
+        "exist": true,
+        "lid": "276793479151644@lid",
+        "imgUrl": "https://pps.whatsapp.net/v/t61.24694-24/521216591_801707618875266_8872813361830080390_n.jpg?ccb=11-4&oh=01_Q5Aa2gFkCavl_sykAhfa6lHjeNJfGju19cpZyms3MeN9AbPMzQ&oe=68DAE575&_nc_sid=5e03e0&_nc_cat=107",
+        "name": "Start Emplacada",
+        "number": "+55 75 8884-1439"
+      },
+      {
+        "jid": "557599292268@s.whatsapp.net",
+        "exist": true,
+        "lid": "193673362972834@lid",
+        "imgUrl": "https://pps.whatsapp.net/v/t61.24694-24/525715708_1814377312766348_2452901072089690008_n.jpg?ccb=11-4&oh=01_Q5Aa2gGZUJeelrvYF_KmJD6a2bkAPsFc9YqakvlkCNZvRmDW4g&oe=68DB0006&_nc_sid=5e03e0&_nc_cat=102",
+        "name": "Start São José",
+        "number": "+55 75 9929-2268"
+      },
+      {
+        "jid": "557598008404@s.whatsapp.net",
+        "exist": true,
+        "lid": "116011797880947@lid",
+        "imgUrl": "https://pps.whatsapp.net/v/t61.24694-24/521412258_1194818785814046_1073411871151123583_n.jpg?ccb=11-4&oh=01_Q5Aa2gG07neAYM2g0CuXfQHbalXq9T18IWpkZkc2_aeEahD7RA&oe=68DAECAB&_nc_sid=5e03e0&_nc_cat=108",
+        "name": "Start Vermelha",
+        "number": "+55 75 9800-8404"
+      },
+      {
+        "jid": "557583198896@s.whatsapp.net",
+        "exist": true,
+        "lid": "252428448440324@lid",
+        "imgUrl": null,
+        "name": "Sther Jane",
+        "number": "+55 75 8319-8896"
+      },
+      {
+        "jid": "557582356892@s.whatsapp.net",
+        "exist": true,
+        "lid": "192170124406990@lid",
+        "imgUrl": null,
+        "name": "Tonha Novo",
+        "number": "+55 75 8235-6892"
+      },
+      {
+        "jid": "557599287676@s.whatsapp.net",
+        "exist": true,
+        "lid": "72331728822400@lid",
+        "imgUrl": "https://pps.whatsapp.net/v/t61.24694-24/427266929_1052847299716758_6430607202267743880_n.jpg?ccb=11-4&oh=01_Q5Aa2gH3EdUMXUZQ9pqMCmbEvT8Afx-cJpM3YMRpTNk3gCYR1g&oe=68DB114A&_nc_sid=5e03e0&_nc_cat=102",
+        "name": "Trabalho",
+        "number": "+55 75 9928-7676"
+      },
+      {
+        "jid": "557581759433@s.whatsapp.net",
+        "exist": true,
+        "lid": "113129992261728@lid",
+        "imgUrl": null,
+        "name": "Tv",
+        "number": "+55 75 8175-9433"
+      },
+      {
+        "jid": "557581508085@s.whatsapp.net",
+        "exist": true,
+        "lid": "190211837411502@lid",
+        "imgUrl": null,
+        "name": "Vender Moto 1",
+        "number": "+55 75 8150-8085"
+      },
+      {
+        "jid": "557582597928@s.whatsapp.net",
+        "exist": true,
+        "lid": "96817454776360@lid",
+        "imgUrl": null,
+        "name": "Wesley",
+        "number": "+55 75 8259-7928"
+      },
+      {
+        "jid": "557598295850@s.whatsapp.net",
+        "exist": true,
+        "lid": "69724901752998@lid",
+        "imgUrl": null,
+        "name": "Xerox",
+        "number": "+55 75 9829-5850"
+      },
+      {
+        "jid": "557591609242@s.whatsapp.net",
+        "exist": true,
+        "lid": "265167136886999@lid",
+        "imgUrl": "https://pps.whatsapp.net/v/t61.24694-24/534415793_777389914665966_6866118878077974874_n.jpg?ccb=11-4&oh=01_Q5Aa2gErSZX_nZZRfoqcejRS0Zz-bCH8v4ULnAKarz_gtzY6uQ&oe=68DAF3DD&_nc_sid=5e03e0&_nc_cat=105",
+        "name": "Xre 3",
+        "number": "+55 75 9160-9242"
+      },
+      {
+        "jid": "557192185223@s.whatsapp.net",
+        "exist": true,
+        "lid": "122836366700652@lid",
+        "imgUrl": null,
+        "name": "Xre 300",
+        "number": "+55 71 9218-5223"
+      },
+      {
+        "jid": "557598920825@s.whatsapp.net",
+        "exist": true,
+        "lid": "237503319679122@lid",
+        "imgUrl": "https://pps.whatsapp.net/v/t61.24694-24/545132525_828300106428878_8608894383864244670_n.jpg?ccb=11-4&oh=01_Q5Aa2gHbBtY-KjU5P00NaY1qZ_wZIfK-0olyy3kPcfSgG2F8ng&oe=68DB0388&_nc_sid=5e03e0&_nc_cat=109",
+        "name": "Xre 300",
+        "number": "+55 75 9892-0825"
+      },
+      {
+        "jid": "557581898545@s.whatsapp.net",
+        "exist": true,
+        "lid": "143331766054998@lid",
+        "imgUrl": "https://pps.whatsapp.net/v/t61.24694-24/537687747_2348823878906563_441960276923545635_n.jpg?ccb=11-4&oh=01_Q5Aa2gE1uWFma48SXkL4Kl0wfYSl7NomoUmV9E1oGPKzEp8ZYA&oe=68DB19DA&_nc_sid=5e03e0&_nc_cat=105",
+        "name": "Xre 33",
+        "number": "+55 75 8189-8545"
+      },
+      {
+        "jid": "557582848543@s.whatsapp.net",
+        "exist": true,
+        "lid": "259154031702202@lid",
+        "imgUrl": null,
+        "name": "Yago",
+        "number": "+55 75 8284-8543"
+      },
+      {
+        "jid": "557582339262@s.whatsapp.net",
+        "exist": true,
+        "lid": "245505246404737@lid",
+        "imgUrl": "https://pps.whatsapp.net/v/t61.24694-24/545362018_1103839721408613_9017058445006989446_n.jpg?ccb=11-4&oh=01_Q5Aa2gEMj7bzZ3uCABnuMvNcl5UuMtAUbQLyiwjIHgnbDk2kKA&oe=68DAF4E8&_nc_sid=5e03e0&_nc_cat=111",
+        "name": "iPhone 8 Plus",
+        "number": "+55 75 8233-9262"
+      },
+      {
+        "jid": "557581200767@s.whatsapp.net",
+        "exist": true,
+        "lid": "254820510371947@lid",
+        "imgUrl": null,
+        "name": "iPhone X",
+        "number": "+55 75 8120-0767"
+      },
+      {
+        "jid": "557581761526@s.whatsapp.net",
+        "exist": true,
+        "lid": "172163814449384@lid",
+        "imgUrl": "https://pps.whatsapp.net/v/t61.24694-24/539353432_764745749746896_5772382094696709007_n.jpg?ccb=11-4&oh=01_Q5Aa2gELuIDptZI23DtUIpUY6iAeunYQrl-wRb9deffrx4AXig&oe=68DAF457&_nc_sid=5e03e0&_nc_cat=101",
+        "name": "iPhone Xs",
+        "number": "+55 75 8176-1526"
+      },
+      {
+        "jid": "557582578396@s.whatsapp.net",
+        "exist": true,
+        "lid": "126569146245183@lid",
+        "imgUrl": "https://pps.whatsapp.net/v/t61.24694-24/537299089_1890253501535985_2361859957025281628_n.jpg?ccb=11-4&oh=01_Q5Aa2gFZyNTpWzvduXVM0MnR94-jSvXaYSZVuSmanM2tHIK7Jw&oe=68DAE8CF&_nc_sid=5e03e0&_nc_cat=101",
+        "name": "𝐒𝐭𝐡𝐞𝐫",
+        "number": "+55 75 8257-8396"
+      }
+    ]
+  }
+]

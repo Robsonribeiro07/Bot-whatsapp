@@ -1,0 +1,154 @@
+[
+  {
+    "userData": {
+      "id": "user-1758365195270",
+      "imgUrl": "https://pps.whatsapp.net/v/t61.24694-24/546575618_787100873964395_287866304074853282_n.jpg?ccb=11-4&oh=01_Q5Aa2gFNgUUy17lwbdIqtQ_gyh20FKlqj5gg0s-Y-qho9HB2Jg&oe=68DB89E7&_nc_sid=5e03e0&_nc_cat=100",
+      "name": "Robson Ribeiro",
+      "connectedAt": "2025-09-20T11:06:35.326Z",
+      "groups": [
+        {
+          "id": "120363421736170049@g.us",
+          "subject": "Teste 2",
+          "creation": 1757963098,
+          "owner": "557582223723@s.whatsapp.net",
+          "imgUrl": "https://pps.whatsapp.net/v/t61.24694-24/548113623_1303791728135592_607121123455657125_n.jpg?ccb=11-4&oh=01_Q5Aa2gEl9TS3wzEJsWo9ZLTA3r2A1sdTquYzgHheUUIR5KaWZA&oe=68DB8C78&_nc_sid=5e03e0&_nc_cat=100",
+          "participants": [
+            {
+              "id": "557582223723@s.whatsapp.net",
+              "isAdmin": true,
+              "isSuperAdmin": true,
+              "imgUrl": "https://pps.whatsapp.net/v/t61.24694-24/546575618_787100873964395_287866304074853282_n.jpg?ccb=11-4&oh=01_Q5Aa2gFNgUUy17lwbdIqtQ_gyh20FKlqj5gg0s-Y-qho9HB2Jg&oe=68DB89E7&_nc_sid=5e03e0&_nc_cat=100"
+            }
+          ]
+        },
+        {
+          "id": "120363400110181560@g.us",
+          "subject": "Vida",
+          "creation": 1757795155,
+          "owner": "557582223723@s.whatsapp.net",
+          "imgUrl": "",
+          "participants": [
+            {
+              "id": "557582223723@s.whatsapp.net",
+              "isAdmin": true,
+              "isSuperAdmin": true,
+              "imgUrl": "https://pps.whatsapp.net/v/t61.24694-24/546575618_787100873964395_287866304074853282_n.jpg?ccb=11-4&oh=01_Q5Aa2gFNgUUy17lwbdIqtQ_gyh20FKlqj5gg0s-Y-qho9HB2Jg&oe=68DB89E7&_nc_sid=5e03e0&_nc_cat=100"
+            },
+            {
+              "id": "557582833774@s.whatsapp.net",
+              "isAdmin": false,
+              "isSuperAdmin": false,
+              "imgUrl": ""
+            }
+          ]
+        }
+      ]
+    },
+    "contacts": [
+      {
+        "jid": "557598349298@s.whatsapp.net",
+        "exist": true,
+        "lid": "13623988584691@lid",
+        "imgUrl": null,
+        "name": "+55 75 98349-298",
+        "number": "+55 75 9834-9298"
+      },
+      {
+        "jid": "557581788504@s.whatsapp.net",
+        "exist": true,
+        "lid": "152957307891757@lid",
+        "imgUrl": null,
+        "name": "Ariel",
+        "number": "+55 75 8178-8504"
+      },
+      {
+        "jid": "557581645476@s.whatsapp.net",
+        "exist": true,
+        "lid": "102602792526062@lid",
+        "imgUrl": null,
+        "name": "Aysllan Victor",
+        "number": "+55 75 8164-5476"
+      },
+      {
+        "jid": "557582853484@s.whatsapp.net",
+        "exist": true,
+        "lid": "232315066302541@lid",
+        "imgUrl": "https://pps.whatsapp.net/v/t61.24694-24/545807909_1166632745277011_6646730371226232228_n.jpg?ccb=11-4&oh=01_Q5Aa2gGtTTYSnFIr5qiCmYw_aXjKXkvaz_jVkQiWanRMPPmh0A&oe=68DB7F63&_nc_sid=5e03e0&_nc_cat=107",
+        "name": "Flavio",
+        "number": "+55 75 8285-3484"
+      },
+      {
+        "jid": "557582598725@s.whatsapp.net",
+        "exist": true,
+        "lid": "246514010079437@lid",
+        "imgUrl": null,
+        "name": "Fátima",
+        "number": "+55 75 8259-8725"
+      },
+      {
+        "jid": "557598745020@s.whatsapp.net",
+        "exist": true,
+        "lid": "9578011975924@lid",
+        "imgUrl": null,
+        "name": "Gustavo",
+        "number": "+55 75 9874-5020"
+      },
+      {
+        "jid": "557574005422@s.whatsapp.net",
+        "exist": true,
+        "lid": "23128969359512@lid",
+        "imgUrl": null,
+        "name": "Jonathan",
+        "number": "+55 75 7400-5422"
+      },
+      {
+        "jid": "557582601580@s.whatsapp.net",
+        "exist": true,
+        "lid": "157088495988828@lid",
+        "imgUrl": "https://pps.whatsapp.net/v/t61.24694-24/491876040_1109698761044741_8520133769003395608_n.jpg?ccb=11-4&oh=01_Q5Aa2gGRNmzbR-dhIAvNOpHGSpQzlcgEaQDFsGz5_jo5KCcpFw&oe=68DBA232&_nc_sid=5e03e0&_nc_cat=104",
+        "name": "João Neto",
+        "number": "+55 75 8260-1580"
+      },
+      {
+        "jid": "557583160936@s.whatsapp.net",
+        "exist": true,
+        "lid": "240909279035620@lid",
+        "imgUrl": null,
+        "name": "Nessa❤️🙂",
+        "number": "+55 75 8316-0936"
+      },
+      {
+        "jid": "557582626132@s.whatsapp.net",
+        "exist": true,
+        "lid": "65666359017476@lid",
+        "imgUrl": "https://pps.whatsapp.net/v/t61.24694-24/515424278_763091303328536_7566028542378073505_n.jpg?ccb=11-4&oh=01_Q5Aa2gEICU5fGw2peW6gJtmBxP6fPXGuWLzres_JFOp6JqghmA&oe=68DB88DE&_nc_sid=5e03e0&_nc_cat=106",
+        "name": "Rn🫶",
+        "number": "+55 75 8262-6132"
+      },
+      {
+        "jid": "557581833679@s.whatsapp.net",
+        "exist": true,
+        "lid": "223467198779563@lid",
+        "imgUrl": "https://pps.whatsapp.net/v/t61.24694-24/524388612_3610766242388252_556909199471794411_n.jpg?ccb=11-4&oh=01_Q5Aa2gF7MZL3ophPQdN2CVGqGqCvlHItUFCoy7D7ePl6AC3chQ&oe=68DBAA93&_nc_sid=5e03e0&_nc_cat=110",
+        "name": "Samara",
+        "number": "+55 75 8183-3679"
+      },
+      {
+        "jid": "557582833774@s.whatsapp.net",
+        "exist": true,
+        "lid": "97508776800401@lid",
+        "imgUrl": null,
+        "name": "Samy😍",
+        "number": "+55 75 8283-3774"
+      },
+      {
+        "jid": "557582920254@s.whatsapp.net",
+        "exist": true,
+        "lid": "103406135959552@lid",
+        "imgUrl": null,
+        "name": "Sandro",
+        "number": "+55 75 8292-0254"
+      }
+    ]
+  }
+]

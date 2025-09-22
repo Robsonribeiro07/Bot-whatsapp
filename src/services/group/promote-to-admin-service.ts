@@ -5,7 +5,7 @@ import { getRolesParticipant } from '../../utils/group/user/get-roles'
 export interface IPromoteGroup {
   userId: string
   groupId: string
-  participantId: string[]
+  participantId?: string[]
   promote: ParticipantAction
 }
 
@@ -19,6 +19,11 @@ export async function PromoteGroupSerivces({
   participantId,
   promote,
 }: IPromoteGroup): Promise<IPromoteGroupResponse> {
+  if (!participantId)
+    return {
+      code: 403,
+      message: 'todos dados sao necessarios',
+    }
   try {
     const finderSock = bots[userId]
 
