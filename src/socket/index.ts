@@ -1,9 +1,8 @@
 import { Socket, Server as SocketServer } from 'socket.io'
 import { bots } from '../database/bot/bot-manager'
-import { syncHandler } from '../bot/handlers/whatsapp/contacts/syncHandle'
 import { MonitorReplySentRifa } from '../bot/handlers/Group/monitor-reply-sent-message'
-import { MessageChatIHAandler } from '../bot/handlers/IA/handle-chat'
-import { handleMessageReceived } from '../bot/handlers/whatsapp/messages/handle-received-message'
+import { MessageChatIHandler } from '../bot/handlers/IA/handle-chat'
+import { HandlerWhatsapp } from '../bot/handlers/whatsapp/use-handles-whatsapp'
 
 export const connectSockets: Record<string, Socket> = {}
 
@@ -27,10 +26,13 @@ export function initSocket(server: any) {
       clearTimeout(checkbox)
 
       BotIntance.handleSetSocket(connectSockets[userId])
-      MessageChatIHAandler({ socket: connectSockets[userId] })
-      handleMessageReceived({ sock: BotIntance.sock, socket })
-
-      syncHandler({ BotIntance, userId })
+      HandlerWhatsapp({
+        sock: BotIntance.sock,
+        userId,
+        socket: connectSockets[userId],
+        BotIntance,
+      })
+      MessageChatIHandler({ socket: connectSockets[userId] })
 
       BotIntance.groupListener?.addGroup({
         groupId: '120363400110181560@g.us',

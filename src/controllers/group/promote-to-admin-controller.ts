@@ -14,7 +14,7 @@ import {
 } from '../../services/group/promote-to-admin-service'
 
 @Route('group')
-@Tags('Groups')
+@Tags('Group')
 export class PromoteToAdminController extends Controller {
   @Post('promote-to-group')
   @SuccessResponse('200', 'Usuario promovido com sucesso')

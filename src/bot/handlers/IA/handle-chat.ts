@@ -6,7 +6,7 @@ interface IMessageChatIa {
   socket: Socket | undefined
 }
 
-export function MessageChatIHAandler({ socket }: IMessageChatIa) {
+export function MessageChatIHandler({ socket }: IMessageChatIa) {
   if (!socket) return
 
   const stopState = { stoped: false }

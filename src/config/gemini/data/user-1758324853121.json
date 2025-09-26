@@ -2,12 +2,12 @@
   {
     "userData": {
       "id": "user-1758324853121",
-      "lid": "56904692850782:58@lid",
+      "lid": "56904692850782:31@lid",
       "jid": null,
-      "imgUrl": "https://pps.whatsapp.net/v/t61.24694-24/546602194_1330719375111929_8242971828941180558_n.jpg?ccb=11-4&oh=01_Q5Aa2gFlrU7IPutxS9-eBozgsXdw-hKP5jBIQj2Olxv-wHzjVA&oe=68DEBAEE&_nc_sid=5e03e0&_nc_cat=110",
+      "imgUrl": "https://pps.whatsapp.net/v/t61.24694-24/546602194_1330719375111929_8242971828941180558_n.jpg?ccb=11-4&oh=01_Q5Aa2gERK3F9T1gbWPoHia4_K2n3mN1UE0vXTJWy96hBzGsK-g&oe=68E2AF6E&_nc_sid=5e03e0&_nc_cat=110",
       "status": null,
       "_id": "68cde965d1e3378cacf9bb4f",
-      "connectedAt": "2025-09-22T15:57:55.602Z",
+      "connectedAt": "2025-09-25T20:49:51.963Z",
       "groups": [
         {
           "id": "120363421736170049@g.us",
@@ -19,10 +19,10 @@
               "id": "557582223723@s.whatsapp.net",
               "isAdmin": true,
               "isSuperAdmin": true,
-              "imgUrl": "https://pps.whatsapp.net/v/t61.24694-24/546602194_1330719375111929_8242971828941180558_n.jpg?ccb=11-4&oh=01_Q5Aa2gFlrU7IPutxS9-eBozgsXdw-hKP5jBIQj2Olxv-wHzjVA&oe=68DEBAEE&_nc_sid=5e03e0&_nc_cat=110"
+              "imgUrl": "https://pps.whatsapp.net/v/t61.24694-24/546602194_1330719375111929_8242971828941180558_n.jpg?ccb=11-4&oh=01_Q5Aa2gERK3F9T1gbWPoHia4_K2n3mN1UE0vXTJWy96hBzGsK-g&oe=68E2AF6E&_nc_sid=5e03e0&_nc_cat=110"
             }
           ],
-          "imgUrl": "https://pps.whatsapp.net/v/t61.24694-24/548113623_1303791728135592_607121123455657125_n.jpg?ccb=11-4&oh=01_Q5Aa2gFAIOYTa6HrBAB4cBbadHytMyzrJfraSP-Nu8TPBziH6g&oe=68DE9FF8&_nc_sid=5e03e0&_nc_cat=100"
+          "imgUrl": "https://pps.whatsapp.net/v/t61.24694-24/548113623_1303791728135592_607121123455657125_n.jpg?ccb=11-4&oh=01_Q5Aa2gGto6duMxhuSGKJLKDaBj33RzxMRKqrphhtASeABsLh6g&oe=68E2CCB8&_nc_sid=5e03e0&_nc_cat=100"
         },
         {
           "id": "120363400110181560@g.us",
@@ -31,19 +31,280 @@
           "owner": "557582223723@s.whatsapp.net",
           "participants": [
             {
-              "id": "557582223723@s.whatsapp.net",
-              "isAdmin": true,
-              "isSuperAdmin": true,
-              "imgUrl": "https://pps.whatsapp.net/v/t61.24694-24/546602194_1330719375111929_8242971828941180558_n.jpg?ccb=11-4&oh=01_Q5Aa2gFlrU7IPutxS9-eBozgsXdw-hKP5jBIQj2Olxv-wHzjVA&oe=68DEBAEE&_nc_sid=5e03e0&_nc_cat=110"
-            },
-            {
-              "id": "557582833774@s.whatsapp.net",
+              "id": "557581504829@s.whatsapp.net",
               "isAdmin": false,
               "isSuperAdmin": false,
               "imgUrl": ""
+            },
+            {
+              "id": "557582223723@s.whatsapp.net",
+              "isAdmin": true,
+              "isSuperAdmin": true,
+              "imgUrl": "https://pps.whatsapp.net/v/t61.24694-24/546602194_1330719375111929_8242971828941180558_n.jpg?ccb=11-4&oh=01_Q5Aa2gERK3F9T1gbWPoHia4_K2n3mN1UE0vXTJWy96hBzGsK-g&oe=68E2AF6E&_nc_sid=5e03e0&_nc_cat=110"
             }
           ],
           "imgUrl": ""
+        },
+        {
+          "id": "120363405395108983@g.us",
+          "subject": "Samy premiações 💸💸",
+          "creation": 1755865978,
+          "owner": "557582833774@s.whatsapp.net",
+          "participants": [
+            {
+              "id": "557184914461@s.whatsapp.net",
+              "isAdmin": false,
+              "isSuperAdmin": false,
+              "imgUrl": ""
+            },
+            {
+              "id": "557582387186@s.whatsapp.net",
+              "isAdmin": false,
+              "isSuperAdmin": false,
+              "imgUrl": ""
+            },
+            {
+              "id": "557187464989@s.whatsapp.net",
+              "isAdmin": false,
+              "isSuperAdmin": false,
+              "imgUrl": ""
+            },
+            {
+              "id": "557183940946@s.whatsapp.net",
+              "isAdmin": false,
+              "isSuperAdmin": false,
+              "imgUrl": "https://pps.whatsapp.net/v/t61.24694-24/534423505_1125402363029776_5762128884534747216_n.jpg?ccb=11-4&oh=01_Q5Aa2gFTKrroCWl-2YPc7umhh2LARfu2w4Rvs4jDI_uvvlEV2Q&oe=68E2B842&_nc_sid=5e03e0&_nc_cat=108"
+            },
+            {
+              "id": "557187683207@s.whatsapp.net",
+              "isAdmin": false,
+              "isSuperAdmin": false,
+              "imgUrl": ""
+            },
+            {
+              "id": "559699060027@s.whatsapp.net",
+              "isAdmin": false,
+              "isSuperAdmin": false,
+              "imgUrl": ""
+            },
+            {
+              "id": "557191903628@s.whatsapp.net",
+              "isAdmin": false,
+              "isSuperAdmin": false,
+              "imgUrl": "https://pps.whatsapp.net/v/t61.24694-24/534417217_1045069850867268_6647543228031697428_n.jpg?ccb=11-4&oh=01_Q5Aa2gGueI84Pz21LX4KhSiLnhrlen45kVuj0fZ8IMI30Uhgvg&oe=68E2AAB9&_nc_sid=5e03e0&_nc_cat=102"
+            },
+            {
+              "id": "557398019281@s.whatsapp.net",
+              "isAdmin": false,
+              "isSuperAdmin": false,
+              "imgUrl": ""
+            },
+            {
+              "id": "557199465651@s.whatsapp.net",
+              "isAdmin": false,
+              "isSuperAdmin": false,
+              "imgUrl": ""
+            },
+            {
+              "id": "557193414302@s.whatsapp.net",
+              "isAdmin": false,
+              "isSuperAdmin": false,
+              "imgUrl": "https://pps.whatsapp.net/v/t61.24694-24/484838437_1327509331806984_4010848235890285888_n.jpg?ccb=11-4&oh=01_Q5Aa2gE_tjn4oaGSYUAQtQThZ9UcVZwIVLE9AmO2BgDskirz1g&oe=68E2BA65&_nc_sid=5e03e0&_nc_cat=107"
+            },
+            {
+              "id": "5519991262861@s.whatsapp.net",
+              "isAdmin": false,
+              "isSuperAdmin": false,
+              "imgUrl": "https://pps.whatsapp.net/v/t61.24694-24/536773459_2583187082043329_5226952268564282287_n.jpg?ccb=11-4&oh=01_Q5Aa2gHj46rmD-mBKayS4H230KqX75F-XKJfg5WVFZPfF3aRdQ&oe=68E2AA0F&_nc_sid=5e03e0&_nc_cat=109"
+            },
+            {
+              "id": "557186813513@s.whatsapp.net",
+              "isAdmin": false,
+              "isSuperAdmin": false,
+              "imgUrl": ""
+            },
+            {
+              "id": "557191107028@s.whatsapp.net",
+              "isAdmin": false,
+              "isSuperAdmin": false,
+              "imgUrl": ""
+            },
+            {
+              "id": "556599810506@s.whatsapp.net",
+              "isAdmin": false,
+              "isSuperAdmin": false,
+              "imgUrl": "https://pps.whatsapp.net/v/t61.24694-24/454864838_550622870962096_6726936813316318904_n.jpg?ccb=11-4&oh=01_Q5Aa2gE05S_4NUGPLgImzuJoKAtpj0kakrFZUSpm3VoF6J5VZw&oe=68E2BBB1&_nc_sid=5e03e0&_nc_cat=102"
+            },
+            {
+              "id": "557599503436@s.whatsapp.net",
+              "isAdmin": false,
+              "isSuperAdmin": false,
+              "imgUrl": ""
+            },
+            {
+              "id": "557582598725@s.whatsapp.net",
+              "isAdmin": false,
+              "isSuperAdmin": false,
+              "imgUrl": ""
+            },
+            {
+              "id": "557583735871@s.whatsapp.net",
+              "isAdmin": false,
+              "isSuperAdmin": false,
+              "imgUrl": "https://pps.whatsapp.net/v/t61.24694-24/553958591_1443839636849317_1771477514056495931_n.jpg?ccb=11-4&oh=01_Q5Aa2gFDYoIHxe73Az27NOPvNVfBeT7MRtnadHIzPa_wPZLavA&oe=68E2D7C9&_nc_sid=5e03e0&_nc_cat=104"
+            },
+            {
+              "id": "557582833774@s.whatsapp.net",
+              "isAdmin": true,
+              "isSuperAdmin": true,
+              "imgUrl": ""
+            },
+            {
+              "id": "5519994265842@s.whatsapp.net",
+              "isAdmin": false,
+              "isSuperAdmin": false,
+              "imgUrl": "https://pps.whatsapp.net/v/t61.24694-24/545825054_1349297203396998_8764929231718603658_n.jpg?ccb=11-4&oh=01_Q5Aa2gEy1ro0TUX0N2mMlrTffCmCAfZoMsYiGUbSwbLluucPQw&oe=68E2BD13&_nc_sid=5e03e0&_nc_cat=111"
+            },
+            {
+              "id": "557181865928@s.whatsapp.net",
+              "isAdmin": false,
+              "isSuperAdmin": false,
+              "imgUrl": ""
+            },
+            {
+              "id": "557582266154@s.whatsapp.net",
+              "isAdmin": false,
+              "isSuperAdmin": false,
+              "imgUrl": ""
+            },
+            {
+              "id": "557183879461@s.whatsapp.net",
+              "isAdmin": false,
+              "isSuperAdmin": false,
+              "imgUrl": ""
+            },
+            {
+              "id": "557187412489@s.whatsapp.net",
+              "isAdmin": false,
+              "isSuperAdmin": false,
+              "imgUrl": ""
+            },
+            {
+              "id": "557591094099@s.whatsapp.net",
+              "isAdmin": false,
+              "isSuperAdmin": false,
+              "imgUrl": "https://pps.whatsapp.net/v/t61.24694-24/518836630_1070501305299140_7954140489216020668_n.jpg?ccb=11-4&oh=01_Q5Aa2gEq_4ILrc4OgndxP7Eq80rU-L0elmJsn_UcPnAHAi2qYQ&oe=68E2D475&_nc_sid=5e03e0&_nc_cat=105"
+            },
+            {
+              "id": "557191505114@s.whatsapp.net",
+              "isAdmin": false,
+              "isSuperAdmin": false,
+              "imgUrl": "https://pps.whatsapp.net/v/t61.24694-24/546494259_1325987912205174_5821833596555186016_n.jpg?ccb=11-4&oh=01_Q5Aa2gFXLj4H9Dtceq2DyYa54go2KXxz3KWWBzMsaGyzFaPVRA&oe=68E2AA2F&_nc_sid=5e03e0&_nc_cat=105"
+            },
+            {
+              "id": "557587113183@s.whatsapp.net",
+              "isAdmin": false,
+              "isSuperAdmin": false,
+              "imgUrl": "https://pps.whatsapp.net/v/t61.24694-24/513080402_2974770846026419_4608180773219971777_n.jpg?ccb=11-4&oh=01_Q5Aa2gHl1q0odadhGtojDmrOQU22DW2PuTbDmsDWIQr9yRf8PQ&oe=68E2D3C0&_nc_sid=5e03e0&_nc_cat=107"
+            },
+            {
+              "id": "557598792729@s.whatsapp.net",
+              "isAdmin": false,
+              "isSuperAdmin": false,
+              "imgUrl": ""
+            },
+            {
+              "id": "557187602256@s.whatsapp.net",
+              "isAdmin": false,
+              "isSuperAdmin": false,
+              "imgUrl": "https://pps.whatsapp.net/v/t61.24694-24/545523015_821367886986972_1474207576805477026_n.jpg?ccb=11-4&oh=01_Q5Aa2gGneIx-trTaIO9LW_NBTxORpV1vh8bsmHvWlN5zUblFyA&oe=68E2BF42&_nc_sid=5e03e0&_nc_cat=106"
+            },
+            {
+              "id": "5522997048057@s.whatsapp.net",
+              "isAdmin": false,
+              "isSuperAdmin": false,
+              "imgUrl": ""
+            },
+            {
+              "id": "557183658968@s.whatsapp.net",
+              "isAdmin": false,
+              "isSuperAdmin": false,
+              "imgUrl": ""
+            },
+            {
+              "id": "557582223723@s.whatsapp.net",
+              "isAdmin": true,
+              "isSuperAdmin": false,
+              "imgUrl": "https://pps.whatsapp.net/v/t61.24694-24/546602194_1330719375111929_8242971828941180558_n.jpg?ccb=11-4&oh=01_Q5Aa2gERK3F9T1gbWPoHia4_K2n3mN1UE0vXTJWy96hBzGsK-g&oe=68E2AF6E&_nc_sid=5e03e0&_nc_cat=110"
+            },
+            {
+              "id": "558481644836@s.whatsapp.net",
+              "isAdmin": false,
+              "isSuperAdmin": false,
+              "imgUrl": ""
+            },
+            {
+              "id": "557186237880@s.whatsapp.net",
+              "isAdmin": false,
+              "isSuperAdmin": false,
+              "imgUrl": "https://pps.whatsapp.net/v/t61.24694-24/491847628_632200852897981_7488853491227919089_n.jpg?ccb=11-4&oh=01_Q5Aa2gHPv4674jdPF2WNKsIGXalQxitTRJBQMiZYkzKF0rpnFQ&oe=68E2CCC9&_nc_sid=5e03e0&_nc_cat=107"
+            },
+            {
+              "id": "557583235537@s.whatsapp.net",
+              "isAdmin": false,
+              "isSuperAdmin": false,
+              "imgUrl": "https://pps.whatsapp.net/v/t61.24694-24/528864623_1923915978154169_5022097994243503031_n.jpg?ccb=11-4&oh=01_Q5Aa2gFamSxkiRD6RGXyMHVo8791QxpwNPT_q61xvszW3nZPFA&oe=68E2D3BF&_nc_sid=5e03e0&_nc_cat=104"
+            },
+            {
+              "id": "557191727337@s.whatsapp.net",
+              "isAdmin": false,
+              "isSuperAdmin": false,
+              "imgUrl": ""
+            },
+            {
+              "id": "557191286920@s.whatsapp.net",
+              "isAdmin": false,
+              "isSuperAdmin": false,
+              "imgUrl": ""
+            },
+            {
+              "id": "557599853389@s.whatsapp.net",
+              "isAdmin": false,
+              "isSuperAdmin": false,
+              "imgUrl": ""
+            },
+            {
+              "id": "557196836189@s.whatsapp.net",
+              "isAdmin": false,
+              "isSuperAdmin": false,
+              "imgUrl": ""
+            },
+            {
+              "id": "557196554904@s.whatsapp.net",
+              "isAdmin": false,
+              "isSuperAdmin": false,
+              "imgUrl": "https://pps.whatsapp.net/v/t61.24694-24/537795041_24307077968977093_7838502762386637417_n.jpg?ccb=11-4&oh=01_Q5Aa2gGO6T_KATMOve3DGpoqlw_G4b-Nea7de5W2OQ136rkB-g&oe=68E2C876&_nc_sid=5e03e0&_nc_cat=106"
+            },
+            {
+              "id": "557592371592@s.whatsapp.net",
+              "isAdmin": false,
+              "isSuperAdmin": false,
+              "imgUrl": "https://pps.whatsapp.net/v/t61.24694-24/491844447_1804749527049378_2418662171611643513_n.jpg?ccb=11-4&oh=01_Q5Aa2gG4uhL5YPxpzJDPy0obM7Ao4ZpLcpi0ntjjDGXbACRX9Q&oe=68E2D151&_nc_sid=5e03e0&_nc_cat=109"
+            },
+            {
+              "id": "557598464803@s.whatsapp.net",
+              "isAdmin": false,
+              "isSuperAdmin": false,
+              "imgUrl": "https://pps.whatsapp.net/v/t61.24694-24/473400600_1713246232924921_3685841264748564828_n.jpg?ccb=11-4&oh=01_Q5Aa2gFd5erQ3tvKM1BfGXCtL0Rs3OGm7VTiv4sY-0sefudcnA&oe=68E2C567&_nc_sid=5e03e0&_nc_cat=107"
+            },
+            {
+              "id": "557588380450@s.whatsapp.net",
+              "isAdmin": false,
+              "isSuperAdmin": false,
+              "imgUrl": "https://pps.whatsapp.net/v/t61.24694-24/521072395_1296493545331950_3897271029792589885_n.jpg?ccb=11-4&oh=01_Q5Aa2gG714pOtV47HJ-8wUTpd51igQHtfZPP7PXlJySgBG7uPA&oe=68E2C2FB&_nc_sid=5e03e0&_nc_cat=102"
+            }
+          ],
+          "imgUrl": "https://pps.whatsapp.net/v/t61.24694-24/554307300_779595561357081_8301085895702582552_n.jpg?ccb=11-4&oh=01_Q5Aa2gGIFcnS0cg31bbeJIS-v__H16fSPNy5K96Tyoh2TxdISA&oe=68E2A598&_nc_sid=5e03e0&_nc_cat=110"
         }
       ],
       "name": "Robson Ribeiro"
@@ -53,7 +314,7 @@
         "jid": "557582469889@s.whatsapp.net",
         "exist": true,
         "lid": "132259306819768@lid",
-        "imgUrl": "https://pps.whatsapp.net/v/t61.24694-24/216189510_306547874784533_2984653428574605432_n.jpg?ccb=11-4&oh=01_Q5Aa2gHH6S4_2KY-vmGnPq3Dv5_pDpw_nhw3ioCZeZ_FYajP_g&oe=68DAE42F&_nc_sid=5e03e0&_nc_cat=109",
+        "imgUrl": "https://pps.whatsapp.net/v/t61.24694-24/216189510_306547874784533_2984653428574605432_n.jpg?ccb=11-4&oh=01_Q5Aa2gGh-I6GduCJWUQx9uCAU8vYiNh7a24dq_TRkA1GMwzr_Q&oe=68E17BAF&_nc_sid=5e03e0&_nc_cat=109",
         "name": "+5575982469889",
         "number": "+55 75 8246-9889"
       },
@@ -77,7 +338,7 @@
         "jid": "5511933538367@s.whatsapp.net",
         "exist": true,
         "lid": "61701634420944@lid",
-        "imgUrl": "https://pps.whatsapp.net/v/t61.24694-24/521093707_724583313958873_3245663819309984080_n.jpg?ccb=11-4&oh=01_Q5Aa2gE3jXGfXAWLYIA8XtIyZk8QW38_ARcA9G9GL-qCyAUHOw&oe=68DAEC67&_nc_sid=5e03e0&_nc_cat=105",
+        "imgUrl": "https://pps.whatsapp.net/v/t61.24694-24/549678735_1055609446460028_4677931892650736652_n.jpg?ccb=11-4&oh=01_Q5Aa2gGCtjilCg5YKDMFSxkKUKvS14czBiGvyNdnqk0zyHnFLg&oe=68E16B7E&_nc_sid=5e03e0&_nc_cat=104",
         "name": "+5511933538367",
         "number": "+55 (11) 93353 8367 "
       },
@@ -90,10 +351,18 @@
         "number": "+55 75 8259-8725"
       },
       {
+        "jid": "557582339319@s.whatsapp.net",
+        "exist": true,
+        "lid": "48160139382939@lid",
+        "imgUrl": null,
+        "name": "+5575982339319",
+        "number": "+55 75 8233-9319"
+      },
+      {
         "jid": "557591433434@s.whatsapp.net",
         "exist": true,
         "lid": "129501853949983@lid",
-        "imgUrl": "https://pps.whatsapp.net/v/t61.24694-24/453939858_503554348834213_2671483959810151099_n.jpg?ccb=11-4&oh=01_Q5Aa2gFw_1n6cgy8EVoMwNUV5gGh0Qi2FY6FXjFqwVtBvKVTPQ&oe=68DAFAF1&_nc_sid=5e03e0&_nc_cat=106",
+        "imgUrl": "https://pps.whatsapp.net/v/t61.24694-24/453939858_503554348834213_2671483959810151099_n.jpg?ccb=11-4&oh=01_Q5Aa2gEpbhOVPoVbRtROVM3rQluwHfVEPhSfIzVmnQ53G2KO6w&oe=68E15A31&_nc_sid=5e03e0&_nc_cat=106",
         "name": "Alfredo Celular",
         "number": "+55 75 9143-3434"
       },
@@ -101,7 +370,7 @@
         "jid": "557199390793@s.whatsapp.net",
         "exist": true,
         "lid": "165163336474836@lid",
-        "imgUrl": "https://pps.whatsapp.net/v/t61.24694-24/390665280_464386626339785_5531081432835081316_n.jpg?ccb=11-4&oh=01_Q5Aa2gF7RIF0aCcix9RpnvsaLf4buMgfNDxSF3ub-zMwUvpVsg&oe=68DB0DD0&_nc_sid=5e03e0&_nc_cat=111",
+        "imgUrl": "https://pps.whatsapp.net/v/t61.24694-24/390665280_464386626339785_5531081432835081316_n.jpg?ccb=11-4&oh=01_Q5Aa2gE7HW-I17igaGMB0D3uDJMOe86l8d1Ke_ksW-fEmhCaCw&oe=68E16D10&_nc_sid=5e03e0&_nc_cat=111",
         "name": "Amilton",
         "number": "+55 71 9939-0793"
       },
@@ -117,7 +386,7 @@
         "jid": "557582453542@s.whatsapp.net",
         "exist": true,
         "lid": "213413166882835@lid",
-        "imgUrl": "https://pps.whatsapp.net/v/t61.24694-24/473407902_1712169346405070_1347435515084839376_n.jpg?ccb=11-4&oh=01_Q5Aa2gF3zEPOM0nnEjJX97Uw-AmSYlqJyRuKNVDVvTvn9bOtMw&oe=68DB103D&_nc_sid=5e03e0&_nc_cat=109",
+        "imgUrl": "https://pps.whatsapp.net/v/t61.24694-24/473407902_1712169346405070_1347435515084839376_n.jpg?ccb=11-4&oh=01_Q5Aa2gEeCj4Rxk8NHXgblGcYCOEboDK6hxmyRwQw_DoZFSoxlA&oe=68E16F7D&_nc_sid=5e03e0&_nc_cat=109",
         "name": "Barbearia",
         "number": "+55 75 8245-3542"
       },
@@ -133,7 +402,7 @@
         "jid": "557583608037@s.whatsapp.net",
         "exist": true,
         "lid": "109788138574051@lid",
-        "imgUrl": "https://pps.whatsapp.net/v/t61.24694-24/540397835_1323796679347881_2744999390310996518_n.jpg?ccb=11-4&oh=01_Q5Aa2gEm_Q8gKi-mayhkoIfd7QsbVH2ppVa0UbiOS8VnkyQyVA&oe=68DB0B0E&_nc_sid=5e03e0&_nc_cat=100",
+        "imgUrl": "https://pps.whatsapp.net/v/t61.24694-24/540397835_1323796679347881_2744999390310996518_n.jpg?ccb=11-4&oh=01_Q5Aa2gGXfrIX1emAQVl54uLvl56nAyk9wLREQKuPmCRMWuAMdQ&oe=68E16A4E&_nc_sid=5e03e0&_nc_cat=100",
         "name": "Bibi",
         "number": "+55 75 8360-8037"
       },
@@ -141,7 +410,7 @@
         "jid": "557591340095@s.whatsapp.net",
         "exist": true,
         "lid": "232581119402127@lid",
-        "imgUrl": "https://pps.whatsapp.net/v/t61.24694-24/422394752_925053475866164_2264836636433275103_n.jpg?ccb=11-4&oh=01_Q5Aa2gE1U1Jfcp7orcQgq8o6CacmalRUws-3v333aXdAID5Mlw&oe=68DB015B&_nc_sid=5e03e0&_nc_cat=101",
+        "imgUrl": "https://pps.whatsapp.net/v/t61.24694-24/422394752_925053475866164_2264836636433275103_n.jpg?ccb=11-4&oh=01_Q5Aa2gE1gOCW_0p478woq7IJ3Z1fE9YETnQyBaSW5tj6_2-MJQ&oe=68E1609B&_nc_sid=5e03e0&_nc_cat=101",
         "name": "Bokeiro Tatto",
         "number": "+55 75 9134-0095"
       },
@@ -149,7 +418,7 @@
         "jid": "557581086575@s.whatsapp.net",
         "exist": true,
         "lid": "162843953504311@lid",
-        "imgUrl": "https://pps.whatsapp.net/v/t61.24694-24/534423048_1439916120447700_1903950758844823488_n.jpg?ccb=11-4&oh=01_Q5Aa2gGeS7JHNE9klzWhqQZGXCp6nn2qyFF-0J5PFSP_uyMcIA&oe=68DAF65F&_nc_sid=5e03e0&_nc_cat=100",
+        "imgUrl": "https://pps.whatsapp.net/v/t61.24694-24/534423048_1439916120447700_1903950758844823488_n.jpg?ccb=11-4&oh=01_Q5Aa2gF7i1p4ySdDk0Z7uQgSrSBn9ZZACW_ltuYAozYUVvKQ5w&oe=68E1559F&_nc_sid=5e03e0&_nc_cat=100",
         "name": "Bruno",
         "number": "+55 75 8108-6575"
       },
@@ -157,7 +426,7 @@
         "jid": "557581145113@s.whatsapp.net",
         "exist": true,
         "lid": "167847691087936@lid",
-        "imgUrl": "https://pps.whatsapp.net/v/t61.24694-24/517943373_1319493223115140_5248998375120325630_n.jpg?ccb=11-4&oh=01_Q5Aa2gEDlviGOq09wuq-TwCHflS7-U7pDJIZ0D8ySAaiMXPM9g&oe=68DB16C4&_nc_sid=5e03e0&_nc_cat=105",
+        "imgUrl": "https://pps.whatsapp.net/v/t61.24694-24/517943373_1319493223115140_5248998375120325630_n.jpg?ccb=11-4&oh=01_Q5Aa2gHj3EhYN31KtSYkxdBmu9dMQzd2IGPjHeatInvSnq6ojA&oe=68E17604&_nc_sid=5e03e0&_nc_cat=105",
         "name": "Cabelo Corta",
         "number": "+55 75 8114-5113"
       },
@@ -165,7 +434,7 @@
         "jid": "557581201152@s.whatsapp.net",
         "exist": true,
         "lid": "249760988545028@lid",
-        "imgUrl": "https://pps.whatsapp.net/v/t61.24694-24/151823225_3759539087477866_3462841965838011254_n.jpg?ccb=11-4&oh=01_Q5Aa2gEHjJR_9dCx6xEWvWEIor9Et1ZPD9EDLC2_tZSJ8q14xA&oe=68DAE6D3&_nc_sid=5e03e0&_nc_cat=102",
+        "imgUrl": "https://pps.whatsapp.net/v/t61.24694-24/151823225_3759539087477866_3462841965838011254_n.jpg?ccb=11-4&oh=01_Q5Aa2gGVZPu2Q7dekHOUL_n5-vxNmn-OrVpe998QLP4Rs_Reug&oe=68E17E53&_nc_sid=5e03e0&_nc_cat=102",
         "name": "Clínica",
         "number": "+55 75 8120-1152"
       },
@@ -189,7 +458,7 @@
         "jid": "557583186400@s.whatsapp.net",
         "exist": true,
         "lid": "204857273262319@lid",
-        "imgUrl": "https://pps.whatsapp.net/v/t61.24694-24/421424029_1110491193433547_1267982066512093956_n.jpg?ccb=11-4&oh=01_Q5Aa2gGe6tjPA7a8dCEiWAvEpl4E6TIVHKX9aB0FYu3wJra_VQ&oe=68DAFBD4&_nc_sid=5e03e0&_nc_cat=100",
+        "imgUrl": "https://pps.whatsapp.net/v/t61.24694-24/421424029_1110491193433547_1267982066512093956_n.jpg?ccb=11-4&oh=01_Q5Aa2gGdr6zsN2gsRgEDtCyUbvc4G-HpAGvjui33hmBoPClBqg&oe=68E15B14&_nc_sid=5e03e0&_nc_cat=100",
         "name": "Cristiano",
         "number": "+55 75 8318-6400"
       },
@@ -197,7 +466,7 @@
         "jid": "557581212220@s.whatsapp.net",
         "exist": true,
         "lid": "227749297926234@lid",
-        "imgUrl": "https://pps.whatsapp.net/v/t61.24694-24/118750847_249319672877182_7073589522896225063_n.jpg?ccb=11-4&oh=01_Q5Aa2gEd2wNfijN4wwaoXzSZ-K4JGzyyvL26oIYU_X4gRfcxsA&oe=68DAF0A2&_nc_sid=5e03e0&_nc_cat=100",
+        "imgUrl": "https://pps.whatsapp.net/v/t61.24694-24/118750847_249319672877182_7073589522896225063_n.jpg?ccb=11-4&oh=01_Q5Aa2gENQODFIHcbCWxzasLOaAOPKi8GDT15jILSRzFsk-vBxQ&oe=68E14FE2&_nc_sid=5e03e0&_nc_cat=100",
         "name": "Davi",
         "number": "+55 75 8121-2220"
       },
@@ -205,7 +474,7 @@
         "jid": "557592010153@s.whatsapp.net",
         "exist": true,
         "lid": "214160138887416@lid",
-        "imgUrl": "https://pps.whatsapp.net/v/t61.24694-24/473405194_892633836282063_4424125250377815406_n.jpg?ccb=11-4&oh=01_Q5Aa2gHFcgn0Jgc3uz6tmcjg69SBgjA2ZEfOeijEi24CxKQioQ&oe=68DB06CC&_nc_sid=5e03e0&_nc_cat=100",
+        "imgUrl": "https://pps.whatsapp.net/v/t61.24694-24/473405194_892633836282063_4424125250377815406_n.jpg?ccb=11-4&oh=01_Q5Aa2gGnjOs9eY3CUqsI3uN5vbMDMyUMpv14w-HGuLj5LQyvsg&oe=68E1660C&_nc_sid=5e03e0&_nc_cat=100",
         "name": "Ermor São Benedito",
         "number": "+55 75 9201-0153"
       },
@@ -253,7 +522,7 @@
         "jid": "557582335235@s.whatsapp.net",
         "exist": true,
         "lid": "216801644421138@lid",
-        "imgUrl": "https://pps.whatsapp.net/v/t61.24694-24/516590002_727483000029758_7433046984238054982_n.jpg?ccb=11-4&oh=01_Q5Aa2gGFiEU-JlKyq7AzIOOvoM0Bk4UlEhHABDf7Wn-mN-9oeA&oe=68DAFEAB&_nc_sid=5e03e0&_nc_cat=110",
+        "imgUrl": "https://pps.whatsapp.net/v/t61.24694-24/516590002_727483000029758_7433046984238054982_n.jpg?ccb=11-4&oh=01_Q5Aa2gFp76uNIN8ZytiO8t9ABOD-L7tZPHB8yOO4vkbG1Cp1Pg&oe=68E15DEB&_nc_sid=5e03e0&_nc_cat=110",
         "name": "Gabriel",
         "number": "+55 75 8233-5235"
       },
@@ -261,7 +530,7 @@
         "jid": "557583451498@s.whatsapp.net",
         "exist": true,
         "lid": "133783936352263@lid",
-        "imgUrl": "https://pps.whatsapp.net/v/t61.24694-24/521243262_1148271963809466_3495674416415287000_n.jpg?ccb=11-4&oh=01_Q5Aa2gE5rEpCg733uwOPQndJga38vI3_iceEmJA6T8d0lRBTcw&oe=68DB14B5&_nc_sid=5e03e0&_nc_cat=103",
+        "imgUrl": "https://pps.whatsapp.net/v/t61.24694-24/521243262_1148271963809466_3495674416415287000_n.jpg?ccb=11-4&oh=01_Q5Aa2gEjfrwr8IqOsTVK9H06oEh7fpeQKjrRaxiaFDc-U_PD2g&oe=68E173F5&_nc_sid=5e03e0&_nc_cat=103",
         "name": "Gabriel Trabalho",
         "number": "+55 75 8345-1498"
       },
@@ -277,7 +546,7 @@
         "jid": "557197064074@s.whatsapp.net",
         "exist": true,
         "lid": "80247420645548@lid",
-        "imgUrl": "https://pps.whatsapp.net/v/t61.24694-24/427463116_1290357855279153_5809585007226530608_n.jpg?ccb=11-4&oh=01_Q5Aa2gFmMValXsXcwkkr5l2xG8k_a9RNlBbOhhNtKCqdRDUkbQ&oe=68DAF1E3&_nc_sid=5e03e0&_nc_cat=110",
+        "imgUrl": "https://pps.whatsapp.net/v/t61.24694-24/427463116_1290357855279153_5809585007226530608_n.jpg?ccb=11-4&oh=01_Q5Aa2gGw1hhY46AqanB3_Hi3GK-lsyscY_hoVKX7mzQNV-STDw&oe=68E15123&_nc_sid=5e03e0&_nc_cat=110",
         "name": "Gilberto💧💧💧💧 embasa embasa embasa embasa",
         "number": "+55 71 9706-4074"
       },
@@ -285,7 +554,7 @@
         "jid": "557581383608@s.whatsapp.net",
         "exist": true,
         "lid": "261353625370830@lid",
-        "imgUrl": "https://pps.whatsapp.net/v/t61.24694-24/514466945_1313888840394412_7855430421669881754_n.jpg?ccb=11-4&oh=01_Q5Aa2gE8HnZtEEWRHGLtrY21FVHlQrixxzPEANUWPOwPgFwd4w&oe=68DAEA7B&_nc_sid=5e03e0&_nc_cat=110",
+        "imgUrl": "https://pps.whatsapp.net/v/t61.24694-24/514466945_1313888840394412_7855430421669881754_n.jpg?ccb=11-4&oh=01_Q5Aa2gHogKxXNkSBGCAVh7BchDuckR-gJSncWF05WTxn5S6j5A&oe=68E181FB&_nc_sid=5e03e0&_nc_cat=110",
         "name": "Gordo",
         "number": "+55 75 8138-3608"
       },
@@ -293,7 +562,7 @@
         "jid": "5511959226858@s.whatsapp.net",
         "exist": true,
         "lid": "205278045823067@lid",
-        "imgUrl": "https://pps.whatsapp.net/v/t61.24694-24/473407959_2190803374656383_3970764182798618596_n.jpg?ccb=11-4&oh=01_Q5Aa2gHPJf_JjQyJPA3MB5yr5st2-d_WHDHJ8oIzfXl0Y9rfMQ&oe=68DB0E7C&_nc_sid=5e03e0&_nc_cat=104",
+        "imgUrl": "https://pps.whatsapp.net/v/t61.24694-24/473407959_2190803374656383_3970764182798618596_n.jpg?ccb=11-4&oh=01_Q5Aa2gFUzoV4blA-m-bt5PCUnVbnta40iUK-cYbdC0KsZ9l-Hg&oe=68E16DBC&_nc_sid=5e03e0&_nc_cat=104",
         "name": "Hermínia",
         "number": "+55 (11) 95922 6858 "
       },
@@ -301,7 +570,7 @@
         "jid": "557581713011@s.whatsapp.net",
         "exist": true,
         "lid": "183541367357456@lid",
-        "imgUrl": "https://pps.whatsapp.net/v/t61.24694-24/437024126_1657395298428770_4139302394022675015_n.jpg?ccb=11-4&oh=01_Q5Aa2gGZ_8NBvTCP75aVrO8O-4bCI9DNdU9u_q4xwjG39qDbiw&oe=68DB1658&_nc_sid=5e03e0&_nc_cat=106",
+        "imgUrl": "https://pps.whatsapp.net/v/t61.24694-24/437024126_1657395298428770_4139302394022675015_n.jpg?ccb=11-4&oh=01_Q5Aa2gFjlH5D7oFWozCXV_dUWl92y-07D-b0FqD2IqYSt6OYnw&oe=68E17598&_nc_sid=5e03e0&_nc_cat=106",
         "name": "Imprimir",
         "number": "+55 75 8171-3011"
       },
@@ -309,7 +578,7 @@
         "jid": "557583536964@s.whatsapp.net",
         "exist": true,
         "lid": "236961952464946@lid",
-        "imgUrl": "https://pps.whatsapp.net/v/t61.24694-24/518001608_778989938400868_3224126685771751062_n.jpg?ccb=11-4&oh=01_Q5Aa2gE7XBTol4Eqr7cmJKTEStkT-R5oEKg7l1lMujdbTL_saQ&oe=68DB1BBD&_nc_sid=5e03e0&_nc_cat=101",
+        "imgUrl": "https://pps.whatsapp.net/v/t61.24694-24/534417268_717991207366668_4289909840454634263_n.jpg?ccb=11-4&oh=01_Q5Aa2gGTbYP21Zk9hKzBGlmqOnVEZmD976epDVHZSoNOf9LWjQ&oe=68E16606&_nc_sid=5e03e0&_nc_cat=105",
         "name": "Jai",
         "number": "+55 75 8353-6964"
       },
@@ -317,7 +586,7 @@
         "jid": "557581729443@s.whatsapp.net",
         "exist": true,
         "lid": "145346424512595@lid",
-        "imgUrl": "https://pps.whatsapp.net/v/t61.24694-24/516748336_1877761366131817_4247766927084825521_n.jpg?ccb=11-4&oh=01_Q5Aa2gHJXccgftlK9kkI8_od5mNCnwxZOo-XVXL8ieq4ENTfpg&oe=68DB019F&_nc_sid=5e03e0&_nc_cat=101",
+        "imgUrl": "https://pps.whatsapp.net/v/t61.24694-24/516748336_1877761366131817_4247766927084825521_n.jpg?ccb=11-4&oh=01_Q5Aa2gFWbJOoOdXaxvoThWCc3C3dDAPJJaxu_yXg34eZ0aWXHg&oe=68E160DF&_nc_sid=5e03e0&_nc_cat=101",
         "name": "Jane",
         "number": "+55 75 8172-9443"
       },
@@ -325,7 +594,7 @@
         "jid": "557598223031@s.whatsapp.net",
         "exist": true,
         "lid": "171889456582864@lid",
-        "imgUrl": "https://pps.whatsapp.net/v/t61.24694-24/543108239_1790993944834907_3314532509742107417_n.jpg?ccb=11-4&oh=01_Q5Aa2gHEkh1cSqMBMj0I6CrjDfvIAX6bhe_YFR3tPnB4o_sxrQ&oe=68DB1589&_nc_sid=5e03e0&_nc_cat=101",
+        "imgUrl": "https://pps.whatsapp.net/v/t61.24694-24/543108239_1790993944834907_3314532509742107417_n.jpg?ccb=11-4&oh=01_Q5Aa2gHc1B07N61HeeLESOiCSI2lsjYiQdnIWbuJOUKaoARv3Q&oe=68E174C9&_nc_sid=5e03e0&_nc_cat=101",
         "name": "Jr Honda - Ares Motos",
         "number": "+55 75 9822-3031"
       },
@@ -333,7 +602,7 @@
         "jid": "557597133226@s.whatsapp.net",
         "exist": true,
         "lid": "172821061849306@lid",
-        "imgUrl": "https://pps.whatsapp.net/v/t61.24694-24/515407542_1300867128192994_8428674163170848205_n.jpg?ccb=11-4&oh=01_Q5Aa2gGqiwoE7I5wbMclph-WoLvFGT9JOh6ZccqUxQZ3Y12NtQ&oe=68DB006D&_nc_sid=5e03e0&_nc_cat=108",
+        "imgUrl": "https://pps.whatsapp.net/v/t61.24694-24/515407542_1300867128192994_8428674163170848205_n.jpg?ccb=11-4&oh=01_Q5Aa2gGG4LfvvFd_DXEGK5Pm3wlgFrLBXWeVrn2YnTht5qMGSw&oe=68E15FAD&_nc_sid=5e03e0&_nc_cat=108",
         "name": "Leo",
         "number": "+55 75 9713-3226"
       },
@@ -349,7 +618,7 @@
         "jid": "557583509399@s.whatsapp.net",
         "exist": true,
         "lid": "264466973388890@lid",
-        "imgUrl": "https://pps.whatsapp.net/v/t61.24694-24/473408320_640362005469015_5993148559628461558_n.jpg?ccb=11-4&oh=01_Q5Aa2gF2Tyf2NiJ11FTe2oiW1hHSGzmVNMCzgoAxIlDYO7N5ug&oe=68DAF2E9&_nc_sid=5e03e0&_nc_cat=106",
+        "imgUrl": "https://pps.whatsapp.net/v/t61.24694-24/473408320_640362005469015_5993148559628461558_n.jpg?ccb=11-4&oh=01_Q5Aa2gH8-TR0zGd9CPww6vdDPnKW--Hm1JrT__wyM4vc5Kvm2g&oe=68E15229&_nc_sid=5e03e0&_nc_cat=106",
         "name": "Marli",
         "number": "+55 75 8350-9399"
       },
@@ -365,7 +634,7 @@
         "jid": "557588421752@s.whatsapp.net",
         "exist": true,
         "lid": "87205250875451@lid",
-        "imgUrl": "https://pps.whatsapp.net/v/t61.24694-24/465879493_1499547080752844_5770054380237932006_n.jpg?ccb=11-4&oh=01_Q5Aa2gGIsiOYLpJIf26LUp1zyYKxMmtn1BBFzWzV7pCQ4iM2BA&oe=68DAE5A3&_nc_sid=5e03e0&_nc_cat=104",
+        "imgUrl": "https://pps.whatsapp.net/v/t61.24694-24/465879493_1499547080752844_5770054380237932006_n.jpg?ccb=11-4&oh=01_Q5Aa2gFFBMaMrbG_6N9mzMoG8X2RQp61mFoqWqzCoFZ2aH1MWA&oe=68E17D23&_nc_sid=5e03e0&_nc_cat=104",
         "name": "Mercado Livre",
         "number": "+55 75 8842-1752"
       },
@@ -397,7 +666,7 @@
         "jid": "557582016765@s.whatsapp.net",
         "exist": true,
         "lid": "85586350198883@lid",
-        "imgUrl": "https://pps.whatsapp.net/v/t61.24694-24/491871218_1751411915783395_7999404631118857957_n.jpg?ccb=11-4&oh=01_Q5Aa2gEPRKeJR3eHnRyJeJQmUC9m0B0hGvxqWcI59uZwydcxrQ&oe=68DAFFF0&_nc_sid=5e03e0&_nc_cat=108",
+        "imgUrl": "https://pps.whatsapp.net/v/t61.24694-24/491871218_1751411915783395_7999404631118857957_n.jpg?ccb=11-4&oh=01_Q5Aa2gGxRyJciOP3EHF3Uu8m5l7XAKWh_wqfJWXts-jqDrN1ng&oe=68E15F30&_nc_sid=5e03e0&_nc_cat=108",
         "name": "Moto Táxi",
         "number": "+55 75 8201-6765"
       },
@@ -405,7 +674,7 @@
         "jid": "557582517269@s.whatsapp.net",
         "exist": true,
         "lid": "230549734047755@lid",
-        "imgUrl": "https://pps.whatsapp.net/v/t61.24694-24/472258552_1296452621377694_2922338925872303051_n.jpg?ccb=11-4&oh=01_Q5Aa2gF9Rst7BfWSic0reF4AkLj5Qg5fbk75CnR0tHnq0PFA0Q&oe=68DB00F8&_nc_sid=5e03e0&_nc_cat=107",
+        "imgUrl": "https://pps.whatsapp.net/v/t61.24694-24/472258552_1296452621377694_2922338925872303051_n.jpg?ccb=11-4&oh=01_Q5Aa2gEcUAcNHQ0jm8HhsE3YWazS_qbokjdVzxEOzLLBZPkTAw&oe=68E16038&_nc_sid=5e03e0&_nc_cat=107",
         "name": "Márcio",
         "number": "+55 75 8251-7269"
       },
@@ -413,7 +682,7 @@
         "jid": "557581440776@s.whatsapp.net",
         "exist": true,
         "lid": "149653974716470@lid",
-        "imgUrl": "https://pps.whatsapp.net/v/t61.24694-24/548275952_750418004659457_4464619642586462335_n.jpg?ccb=11-4&oh=01_Q5Aa2gFG2VmQ7LMdavLzzSjN9HlEExGkvyxrPJ01fEcOa5ZAmQ&oe=68DAFFEF&_nc_sid=5e03e0&_nc_cat=102",
+        "imgUrl": "https://pps.whatsapp.net/v/t61.24694-24/548275952_750418004659457_4464619642586462335_n.jpg?ccb=11-4&oh=01_Q5Aa2gEEPeSXFQVpdhd9luBaNAkE_4rNRcjRyiq-ybUNXfomCA&oe=68E15F2F&_nc_sid=5e03e0&_nc_cat=102",
         "name": "Nem",
         "number": "+55 75 8144-0776"
       },
@@ -429,7 +698,7 @@
         "jid": "557581331599@s.whatsapp.net",
         "exist": true,
         "lid": "71967075999954@lid",
-        "imgUrl": "https://pps.whatsapp.net/v/t61.24694-24/528859949_748265754713507_2859446691385824617_n.jpg?ccb=11-4&oh=01_Q5Aa2gGIwtvs7tTezyazMbRGiowDzDnlenOvo_9wrJHHHJTkkA&oe=68DB1BBA&_nc_sid=5e03e0&_nc_cat=110",
+        "imgUrl": "https://pps.whatsapp.net/v/t61.24694-24/528859949_748265754713507_2859446691385824617_n.jpg?ccb=11-4&oh=01_Q5Aa2gFzjoK6PxFx68TIL3YAb2RLTju_nmzmS0TVf_y1lvlhCQ&oe=68E17AFA&_nc_sid=5e03e0&_nc_cat=110",
         "name": "Nui",
         "number": "+55 75 8133-1599"
       },
@@ -437,7 +706,7 @@
         "jid": "557582772828@s.whatsapp.net",
         "exist": true,
         "lid": "124773162078440@lid",
-        "imgUrl": "https://pps.whatsapp.net/v/t61.24694-24/426613379_360173753518337_5126968670352891792_n.jpg?ccb=11-4&oh=01_Q5Aa2gGHPhCQTwm1HXNwo3R6YzCs_QOBzs26OfcWOLDsO63Hpw&oe=68DB0B2B&_nc_sid=5e03e0&_nc_cat=108",
+        "imgUrl": "https://pps.whatsapp.net/v/t61.24694-24/426613379_360173753518337_5126968670352891792_n.jpg?ccb=11-4&oh=01_Q5Aa2gEIeVV42kqszoJ2LKaHxqA7Ow5jCAD6BQrvG-qcfW7MTw&oe=68E16A6B&_nc_sid=5e03e0&_nc_cat=108",
         "name": "Oficina",
         "number": "+55 75 8277-2828"
       },
@@ -445,7 +714,7 @@
         "jid": "557582949403@s.whatsapp.net",
         "exist": true,
         "lid": "252621520670938@lid",
-        "imgUrl": "https://pps.whatsapp.net/v/t61.24694-24/485046851_624318080576802_3962108362246608339_n.jpg?ccb=11-4&oh=01_Q5Aa2gGdV0eeWkaWWD9QB9YzyCqFCD0xIXfVxZBqtVka9oJWWA&oe=68DB0DF4&_nc_sid=5e03e0&_nc_cat=105",
+        "imgUrl": "https://pps.whatsapp.net/v/t61.24694-24/485046851_624318080576802_3962108362246608339_n.jpg?ccb=11-4&oh=01_Q5Aa2gFtksygXiTIoi_YrnkbWukVG9cOnaN9QBxa4j2Tc3MBVg&oe=68E16D34&_nc_sid=5e03e0&_nc_cat=105",
         "name": "Olavo",
         "number": "+55 75 8294-9403"
       },
@@ -453,7 +722,7 @@
         "jid": "5511964467222@s.whatsapp.net",
         "exist": true,
         "lid": "218046966796325@lid",
-        "imgUrl": "https://pps.whatsapp.net/v/t61.24694-24/57080973_629939877444704_479135492000972800_n.jpg?ccb=11-4&oh=01_Q5Aa2gEq6dNkiKXQ2pHsXk7l534To4fMjrzr6BK7LFpljCy5lA&oe=68DB17C2&_nc_sid=5e03e0&_nc_cat=105",
+        "imgUrl": "https://pps.whatsapp.net/v/t61.24694-24/57080973_629939877444704_479135492000972800_n.jpg?ccb=11-4&oh=01_Q5Aa2gFIwFvUjFRW-F-Tqbdaoxg3i2pcSTjU1LQkpbyzjtnGrw&oe=68E17702&_nc_sid=5e03e0&_nc_cat=105",
         "name": "Oyo",
         "number": "+55 (11) 96446 7222 "
       },
@@ -461,7 +730,7 @@
         "jid": "557582334361@s.whatsapp.net",
         "exist": true,
         "lid": "263797025566876@lid",
-        "imgUrl": "https://pps.whatsapp.net/v/t61.24694-24/311894654_163070679686917_4933667099177977845_n.jpg?ccb=11-4&oh=01_Q5Aa2gEGNWmucqoAYKJvUAk4u10380uQnnUJeGOyarvR9QYY_g&oe=68DAF18B&_nc_sid=5e03e0&_nc_cat=109",
+        "imgUrl": "https://pps.whatsapp.net/v/t61.24694-24/311894654_163070679686917_4933667099177977845_n.jpg?ccb=11-4&oh=01_Q5Aa2gFLH2AEW1b4FsMK0LcCHghB3Ob53IamhChrR6ryFxb7qg&oe=68E150CB&_nc_sid=5e03e0&_nc_cat=109",
         "name": "Painho Vovô",
         "number": "+55 75 8233-4361"
       },
@@ -469,7 +738,7 @@
         "jid": "557581413988@s.whatsapp.net",
         "exist": true,
         "lid": "239775223148784@lid",
-        "imgUrl": "https://pps.whatsapp.net/v/t61.24694-24/431741516_717664587107731_8729230948898302958_n.jpg?ccb=11-4&oh=01_Q5Aa2gFJfAAgnqhQqzmWXefmDVNI7b2HU9795vFGXNmJ5SrovA&oe=68DB0FE5&_nc_sid=5e03e0&_nc_cat=111",
+        "imgUrl": "https://pps.whatsapp.net/v/t61.24694-24/431741516_717664587107731_8729230948898302958_n.jpg?ccb=11-4&oh=01_Q5Aa2gEqb-VhwBnaTFGXDbHy4yicr-RkfjVCUWG3vfZSDkqvbQ&oe=68E16F25&_nc_sid=5e03e0&_nc_cat=111",
         "name": "Pezinho",
         "number": "+55 75 8141-3988"
       },
@@ -477,7 +746,7 @@
         "jid": "557199554815@s.whatsapp.net",
         "exist": true,
         "lid": "56032697053195@lid",
-        "imgUrl": "https://pps.whatsapp.net/v/t61.24694-24/473406111_629027652813210_4217315108490078403_n.jpg?ccb=11-4&oh=01_Q5Aa2gHn_FqPNrRGoTYUlW6f_Ul8kh5BKtnbDhhQ4ggAu2inGg&oe=68DB11A5&_nc_sid=5e03e0&_nc_cat=104",
+        "imgUrl": "https://pps.whatsapp.net/v/t61.24694-24/473406111_629027652813210_4217315108490078403_n.jpg?ccb=11-4&oh=01_Q5Aa2gGrou4_m9fWDDhWmHHWDdgGdx-CbY3Al8mwoSF-JPfEZg&oe=68E170E5&_nc_sid=5e03e0&_nc_cat=104",
         "name": "Pity",
         "number": "+55 71 9955-4815"
       },
@@ -493,7 +762,7 @@
         "jid": "557598552840@s.whatsapp.net",
         "exist": true,
         "lid": "227671971746021@lid",
-        "imgUrl": "https://pps.whatsapp.net/v/t61.24694-24/491885838_4267702126799810_5972216577342687579_n.jpg?ccb=11-4&oh=01_Q5Aa2gGVuakaBvlwzRe6UAtfvJkNVcSX4CuYASKrTWAq8SbwUA&oe=68DB0648&_nc_sid=5e03e0&_nc_cat=102",
+        "imgUrl": "https://pps.whatsapp.net/v/t61.24694-24/491885838_4267702126799810_5972216577342687579_n.jpg?ccb=11-4&oh=01_Q5Aa2gGy30gOyMMEMG7qgXq3lIMeZbqEPX8tNY3gcVEth91H5g&oe=68E16588&_nc_sid=5e03e0&_nc_cat=102",
         "name": "Poco",
         "number": "+55 75 9855-2840"
       },
@@ -509,7 +778,7 @@
         "jid": "557581244149@s.whatsapp.net",
         "exist": true,
         "lid": "83769478390004@lid",
-        "imgUrl": "https://pps.whatsapp.net/v/t61.24694-24/505161178_748659854818458_7966072244457380361_n.jpg?ccb=11-4&oh=01_Q5Aa2gHLQbGn5CrNkTLUFaGxww_meA6glUvr-Y5lYsSoOS1hhQ&oe=68DAF538&_nc_sid=5e03e0&_nc_cat=108",
+        "imgUrl": "https://pps.whatsapp.net/v/t61.24694-24/505161178_748659854818458_7966072244457380361_n.jpg?ccb=11-4&oh=01_Q5Aa2gEGO4p0tpfZ4SeY8NhUcMY-xJeE1zCIyeJsQanmd_l-zg&oe=68E15478&_nc_sid=5e03e0&_nc_cat=108",
         "name": "Rafa",
         "number": "+55 75 8124-4149"
       },
@@ -541,7 +810,7 @@
         "jid": "557582075838@s.whatsapp.net",
         "exist": true,
         "lid": "153786018443463@lid",
-        "imgUrl": null,
+        "imgUrl": "https://pps.whatsapp.net/v/t61.24694-24/546589108_1103712315277247_4571253649175806076_n.jpg?ccb=11-4&oh=01_Q5Aa2gG_nmay2bOZEjoE3oLMsP6MPyw12XbOSZBjIUmnfpwzhQ&oe=68E174F8&_nc_sid=5e03e0&_nc_cat=109",
         "name": "Samily",
         "number": "+55 75 8207-5838"
       },
@@ -557,7 +826,7 @@
         "jid": "557582287855@s.whatsapp.net",
         "exist": true,
         "lid": "158081153507486@lid",
-        "imgUrl": "https://pps.whatsapp.net/v/t61.24694-24/506096354_574682055691943_2276031255165096315_n.jpg?ccb=11-4&oh=01_Q5Aa2gHZanQrB75pQvBdhNJ-hQS0Vple_9dfdGIR7olpdBmTaA&oe=68DB1C1C&_nc_sid=5e03e0&_nc_cat=102",
+        "imgUrl": "https://pps.whatsapp.net/v/t61.24694-24/506096354_574682055691943_2276031255165096315_n.jpg?ccb=11-4&oh=01_Q5Aa2gH7DHy44gND83gqMvYIPsH7O_edCqFXOmv1uJUrhnthvA&oe=68E17B5C&_nc_sid=5e03e0&_nc_cat=102",
         "name": "Samuel Irmão",
         "number": "+55 75 8228-7855"
       },
@@ -573,7 +842,7 @@
         "jid": "557598552784@s.whatsapp.net",
         "exist": true,
         "lid": "173645829828723@lid",
-        "imgUrl": "https://pps.whatsapp.net/v/t61.24694-24/532192311_1759118932146646_7971400807359190040_n.jpg?ccb=11-4&oh=01_Q5Aa2gGRDHn8RFFpIXsHJKrnJRA1JPYvv5Qq63zu9Zf-4xPezQ&oe=68DB155E&_nc_sid=5e03e0&_nc_cat=101",
+        "imgUrl": "https://pps.whatsapp.net/v/t61.24694-24/532192311_1759118932146646_7971400807359190040_n.jpg?ccb=11-4&oh=01_Q5Aa2gE2KPP3Hl5JOgTGE2oT9FxC4-k6nJN8CMoEM1X8_RGSGQ&oe=68E1749E&_nc_sid=5e03e0&_nc_cat=101",
         "name": "Start",
         "number": "+55 75 9855-2784"
       },
@@ -581,7 +850,7 @@
         "jid": "557588841439@s.whatsapp.net",
         "exist": true,
         "lid": "276793479151644@lid",
-        "imgUrl": "https://pps.whatsapp.net/v/t61.24694-24/521216591_801707618875266_8872813361830080390_n.jpg?ccb=11-4&oh=01_Q5Aa2gFkCavl_sykAhfa6lHjeNJfGju19cpZyms3MeN9AbPMzQ&oe=68DAE575&_nc_sid=5e03e0&_nc_cat=107",
+        "imgUrl": "https://pps.whatsapp.net/v/t61.24694-24/521216591_801707618875266_8872813361830080390_n.jpg?ccb=11-4&oh=01_Q5Aa2gGsmvXdL2jhnZsijeGH-geUHTadhq4BjchPHKTrOAF3Dw&oe=68E17CF5&_nc_sid=5e03e0&_nc_cat=107",
         "name": "Start Emplacada",
         "number": "+55 75 8884-1439"
       },
@@ -589,7 +858,7 @@
         "jid": "557599292268@s.whatsapp.net",
         "exist": true,
         "lid": "193673362972834@lid",
-        "imgUrl": "https://pps.whatsapp.net/v/t61.24694-24/525715708_1814377312766348_2452901072089690008_n.jpg?ccb=11-4&oh=01_Q5Aa2gGZUJeelrvYF_KmJD6a2bkAPsFc9YqakvlkCNZvRmDW4g&oe=68DB0006&_nc_sid=5e03e0&_nc_cat=102",
+        "imgUrl": "https://pps.whatsapp.net/v/t61.24694-24/525715708_1814377312766348_2452901072089690008_n.jpg?ccb=11-4&oh=01_Q5Aa2gFbcmuW8YdmoyHsfgaInFb8FremvkaNAutfW-A2BcAHRw&oe=68E15F46&_nc_sid=5e03e0&_nc_cat=102",
         "name": "Start São José",
         "number": "+55 75 9929-2268"
       },
@@ -597,7 +866,7 @@
         "jid": "557598008404@s.whatsapp.net",
         "exist": true,
         "lid": "116011797880947@lid",
-        "imgUrl": "https://pps.whatsapp.net/v/t61.24694-24/521412258_1194818785814046_1073411871151123583_n.jpg?ccb=11-4&oh=01_Q5Aa2gG07neAYM2g0CuXfQHbalXq9T18IWpkZkc2_aeEahD7RA&oe=68DAECAB&_nc_sid=5e03e0&_nc_cat=108",
+        "imgUrl": "https://pps.whatsapp.net/v/t61.24694-24/521412258_1194818785814046_1073411871151123583_n.jpg?ccb=11-4&oh=01_Q5Aa2gHF5Eu1ukmL9NYjxJ1cEcUFMcnaZwErmCb4XUR1Uy_UJQ&oe=68E1842B&_nc_sid=5e03e0&_nc_cat=108",
         "name": "Start Vermelha",
         "number": "+55 75 9800-8404"
       },
@@ -621,7 +890,7 @@
         "jid": "557599287676@s.whatsapp.net",
         "exist": true,
         "lid": "72331728822400@lid",
-        "imgUrl": "https://pps.whatsapp.net/v/t61.24694-24/427266929_1052847299716758_6430607202267743880_n.jpg?ccb=11-4&oh=01_Q5Aa2gH3EdUMXUZQ9pqMCmbEvT8Afx-cJpM3YMRpTNk3gCYR1g&oe=68DB114A&_nc_sid=5e03e0&_nc_cat=102",
+        "imgUrl": "https://pps.whatsapp.net/v/t61.24694-24/427266929_1052847299716758_6430607202267743880_n.jpg?ccb=11-4&oh=01_Q5Aa2gFCxakRy-6PktAorc9nk_FmwGFJtBPQ0Kin8FAGFsO6rQ&oe=68E1708A&_nc_sid=5e03e0&_nc_cat=102",
         "name": "Trabalho",
         "number": "+55 75 9928-7676"
       },
@@ -661,7 +930,7 @@
         "jid": "557591609242@s.whatsapp.net",
         "exist": true,
         "lid": "265167136886999@lid",
-        "imgUrl": "https://pps.whatsapp.net/v/t61.24694-24/534415793_777389914665966_6866118878077974874_n.jpg?ccb=11-4&oh=01_Q5Aa2gErSZX_nZZRfoqcejRS0Zz-bCH8v4ULnAKarz_gtzY6uQ&oe=68DAF3DD&_nc_sid=5e03e0&_nc_cat=105",
+        "imgUrl": "https://pps.whatsapp.net/v/t61.24694-24/534415793_777389914665966_6866118878077974874_n.jpg?ccb=11-4&oh=01_Q5Aa2gG68sTCjNU9fLVcN5ZOJ8Sx7feGo9msPbbRPJV1O4vThA&oe=68E1531D&_nc_sid=5e03e0&_nc_cat=105",
         "name": "Xre 3",
         "number": "+55 75 9160-9242"
       },
@@ -677,7 +946,7 @@
         "jid": "557598920825@s.whatsapp.net",
         "exist": true,
         "lid": "237503319679122@lid",
-        "imgUrl": "https://pps.whatsapp.net/v/t61.24694-24/545132525_828300106428878_8608894383864244670_n.jpg?ccb=11-4&oh=01_Q5Aa2gHbBtY-KjU5P00NaY1qZ_wZIfK-0olyy3kPcfSgG2F8ng&oe=68DB0388&_nc_sid=5e03e0&_nc_cat=109",
+        "imgUrl": "https://pps.whatsapp.net/v/t61.24694-24/545132525_828300106428878_8608894383864244670_n.jpg?ccb=11-4&oh=01_Q5Aa2gGFiRAHl9GLN1SJY8Hxw3odgK1TN3fZJpHHoPycUYuNrA&oe=68E162C8&_nc_sid=5e03e0&_nc_cat=109",
         "name": "Xre 300",
         "number": "+55 75 9892-0825"
       },
@@ -685,7 +954,7 @@
         "jid": "557581898545@s.whatsapp.net",
         "exist": true,
         "lid": "143331766054998@lid",
-        "imgUrl": "https://pps.whatsapp.net/v/t61.24694-24/537687747_2348823878906563_441960276923545635_n.jpg?ccb=11-4&oh=01_Q5Aa2gE1uWFma48SXkL4Kl0wfYSl7NomoUmV9E1oGPKzEp8ZYA&oe=68DB19DA&_nc_sid=5e03e0&_nc_cat=105",
+        "imgUrl": "https://pps.whatsapp.net/v/t61.24694-24/537687747_2348823878906563_441960276923545635_n.jpg?ccb=11-4&oh=01_Q5Aa2gHGDeTRqnRCarsY6Irwlr3RAB8XSKI4Q4jyjKksJwBDew&oe=68E1791A&_nc_sid=5e03e0&_nc_cat=105",
         "name": "Xre 33",
         "number": "+55 75 8189-8545"
       },
@@ -701,7 +970,7 @@
         "jid": "557582339262@s.whatsapp.net",
         "exist": true,
         "lid": "245505246404737@lid",
-        "imgUrl": "https://pps.whatsapp.net/v/t61.24694-24/545362018_1103839721408613_9017058445006989446_n.jpg?ccb=11-4&oh=01_Q5Aa2gEMj7bzZ3uCABnuMvNcl5UuMtAUbQLyiwjIHgnbDk2kKA&oe=68DAF4E8&_nc_sid=5e03e0&_nc_cat=111",
+        "imgUrl": "https://pps.whatsapp.net/v/t61.24694-24/545362018_1103839721408613_9017058445006989446_n.jpg?ccb=11-4&oh=01_Q5Aa2gHRkOQzp1ioEe8pG1hEvVRYHiM4cCxxIcg1T_-dPQHOFw&oe=68E15428&_nc_sid=5e03e0&_nc_cat=111",
         "name": "iPhone 8 Plus",
         "number": "+55 75 8233-9262"
       },
@@ -717,7 +986,7 @@
         "jid": "557581761526@s.whatsapp.net",
         "exist": true,
         "lid": "172163814449384@lid",
-        "imgUrl": "https://pps.whatsapp.net/v/t61.24694-24/539353432_764745749746896_5772382094696709007_n.jpg?ccb=11-4&oh=01_Q5Aa2gELuIDptZI23DtUIpUY6iAeunYQrl-wRb9deffrx4AXig&oe=68DAF457&_nc_sid=5e03e0&_nc_cat=101",
+        "imgUrl": "https://pps.whatsapp.net/v/t61.24694-24/533092297_4104695349800284_1118588970291478882_n.jpg?ccb=11-4&oh=01_Q5Aa2gFwcBlBaPDti_lsPH5VGTOa66nOgWvPENtbbDOL6h6Zzg&oe=68E1768A&_nc_sid=5e03e0&_nc_cat=103",
         "name": "iPhone Xs",
         "number": "+55 75 8176-1526"
       },
@@ -725,7 +994,7 @@
         "jid": "557582578396@s.whatsapp.net",
         "exist": true,
         "lid": "126569146245183@lid",
-        "imgUrl": "https://pps.whatsapp.net/v/t61.24694-24/537299089_1890253501535985_2361859957025281628_n.jpg?ccb=11-4&oh=01_Q5Aa2gFZyNTpWzvduXVM0MnR94-jSvXaYSZVuSmanM2tHIK7Jw&oe=68DAE8CF&_nc_sid=5e03e0&_nc_cat=101",
+        "imgUrl": "https://pps.whatsapp.net/v/t61.24694-24/537299089_1890253501535985_2361859957025281628_n.jpg?ccb=11-4&oh=01_Q5Aa2gHG7RzPbxrq5__vaiPYkpLUyRUMzuI6_H7qLfon-bDmcA&oe=68E1804F&_nc_sid=5e03e0&_nc_cat=101",
         "name": "𝐒𝐭𝐡𝐞𝐫",
         "number": "+55 75 8257-8396"
       }

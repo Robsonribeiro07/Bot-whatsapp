@@ -11,7 +11,7 @@ import {
 import { UserDTO } from '../../routes/dtos/user-Dtos'
 
 @Route('user')
-@Tags('Users')
+@Tags('User')
 export class FindUserControoler extends Controller {
   @Get('get-user')
   @SuccessResponse('200', 'Usuario Encontrado com sucess')

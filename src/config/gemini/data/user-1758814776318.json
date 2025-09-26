@@ -1,0 +1,399 @@
+[
+  {
+    "userData": {
+      "id": "user-1758814776318",
+      "lid": "56904692850782:24@lid",
+      "jid": null,
+      "imgUrl": "https://pps.whatsapp.net/v/t61.24694-24/546602194_1330719375111929_8242971828941180558_n.jpg?ccb=11-4&oh=01_Q5Aa2gHmSoQ3LiIJi9EenlOW9PJ-YvDxYcXcnXgI8d0pILlNNg&oe=68E2772E&_nc_sid=5e03e0&_nc_cat=110",
+      "status": null,
+      "_id": "68d5748afd4355d2114dd458",
+      "connectedAt": "2025-09-25T16:57:21.690Z",
+      "groups": [
+        {
+          "id": "120363421736170049@g.us",
+          "subject": "Teste 2",
+          "creation": 1757963098,
+          "owner": "557582223723@s.whatsapp.net",
+          "participants": [
+            {
+              "id": "557582223723@s.whatsapp.net",
+              "isAdmin": true,
+              "isSuperAdmin": true,
+              "imgUrl": "https://pps.whatsapp.net/v/t61.24694-24/546602194_1330719375111929_8242971828941180558_n.jpg?ccb=11-4&oh=01_Q5Aa2gHmSoQ3LiIJi9EenlOW9PJ-YvDxYcXcnXgI8d0pILlNNg&oe=68E2772E&_nc_sid=5e03e0&_nc_cat=110"
+            }
+          ],
+          "imgUrl": "https://pps.whatsapp.net/v/t61.24694-24/548113623_1303791728135592_607121123455657125_n.jpg?ccb=11-4&oh=01_Q5Aa2gEWeROKPZu-DhYwi7sSA2ehHlezA4OvHD-DRxsFQXdLcQ&oe=68E29478&_nc_sid=5e03e0&_nc_cat=100"
+        },
+        {
+          "id": "120363400110181560@g.us",
+          "subject": "Vida",
+          "creation": 1757795155,
+          "owner": "557582223723@s.whatsapp.net",
+          "participants": [
+            {
+              "id": "557581504829@s.whatsapp.net",
+              "isAdmin": false,
+              "isSuperAdmin": false,
+              "imgUrl": ""
+            },
+            {
+              "id": "557582223723@s.whatsapp.net",
+              "isAdmin": true,
+              "isSuperAdmin": true,
+              "imgUrl": "https://pps.whatsapp.net/v/t61.24694-24/546602194_1330719375111929_8242971828941180558_n.jpg?ccb=11-4&oh=01_Q5Aa2gHmSoQ3LiIJi9EenlOW9PJ-YvDxYcXcnXgI8d0pILlNNg&oe=68E2772E&_nc_sid=5e03e0&_nc_cat=110"
+            }
+          ],
+          "imgUrl": ""
+        },
+        {
+          "id": "120363405395108983@g.us",
+          "subject": "Samy premiações 💸💸",
+          "creation": 1755865978,
+          "owner": "557582833774@s.whatsapp.net",
+          "participants": [
+            {
+              "id": "557184914461@s.whatsapp.net",
+              "isAdmin": false,
+              "isSuperAdmin": false,
+              "imgUrl": ""
+            },
+            {
+              "id": "557582387186@s.whatsapp.net",
+              "isAdmin": false,
+              "isSuperAdmin": false,
+              "imgUrl": ""
+            },
+            {
+              "id": "557588321835@s.whatsapp.net",
+              "isAdmin": false,
+              "isSuperAdmin": false,
+              "imgUrl": ""
+            },
+            {
+              "id": "557187464989@s.whatsapp.net",
+              "isAdmin": false,
+              "isSuperAdmin": false,
+              "imgUrl": ""
+            },
+            {
+              "id": "557183940946@s.whatsapp.net",
+              "isAdmin": false,
+              "isSuperAdmin": false,
+              "imgUrl": "https://pps.whatsapp.net/v/t61.24694-24/534423505_1125402363029776_5762128884534747216_n.jpg?ccb=11-4&oh=01_Q5Aa2gEGi9R3OLNVhyXWeMWYgRPq7g18V3AimivnBLB-7xV9iw&oe=68E28002&_nc_sid=5e03e0&_nc_cat=108"
+            },
+            {
+              "id": "557187683207@s.whatsapp.net",
+              "isAdmin": false,
+              "isSuperAdmin": false,
+              "imgUrl": ""
+            },
+            {
+              "id": "557398019281@s.whatsapp.net",
+              "isAdmin": false,
+              "isSuperAdmin": false,
+              "imgUrl": ""
+            },
+            {
+              "id": "557199465651@s.whatsapp.net",
+              "isAdmin": false,
+              "isSuperAdmin": false,
+              "imgUrl": ""
+            },
+            {
+              "id": "557193414302@s.whatsapp.net",
+              "isAdmin": false,
+              "isSuperAdmin": false,
+              "imgUrl": "https://pps.whatsapp.net/v/t61.24694-24/484838437_1327509331806984_4010848235890285888_n.jpg?ccb=11-4&oh=01_Q5Aa2gEMWxJrPjmdYclBfWVShd0Yf6mF1S4i7SiLgyOrf_RCMQ&oe=68E28225&_nc_sid=5e03e0&_nc_cat=107"
+            },
+            {
+              "id": "5519991262861@s.whatsapp.net",
+              "isAdmin": false,
+              "isSuperAdmin": false,
+              "imgUrl": "https://pps.whatsapp.net/v/t61.24694-24/536773459_2583187082043329_5226952268564282287_n.jpg?ccb=11-4&oh=01_Q5Aa2gGfrEB8Y5f1h1LYDl66bFjUqqWBkDYbJ3Q9IyycYi-VWA&oe=68E271CF&_nc_sid=5e03e0&_nc_cat=109"
+            },
+            {
+              "id": "557192031578@s.whatsapp.net",
+              "isAdmin": false,
+              "isSuperAdmin": false,
+              "imgUrl": ""
+            },
+            {
+              "id": "557186813513@s.whatsapp.net",
+              "isAdmin": false,
+              "isSuperAdmin": false,
+              "imgUrl": ""
+            },
+            {
+              "id": "557191107028@s.whatsapp.net",
+              "isAdmin": false,
+              "isSuperAdmin": false,
+              "imgUrl": ""
+            },
+            {
+              "id": "556599810506@s.whatsapp.net",
+              "isAdmin": false,
+              "isSuperAdmin": false,
+              "imgUrl": "https://pps.whatsapp.net/v/t61.24694-24/454864838_550622870962096_6726936813316318904_n.jpg?ccb=11-4&oh=01_Q5Aa2gFI6R5O4p_BBmVcrhlglaBsD3AbvgbxiksP3GAtcnBklg&oe=68E28371&_nc_sid=5e03e0&_nc_cat=102"
+            },
+            {
+              "id": "557599503436@s.whatsapp.net",
+              "isAdmin": false,
+              "isSuperAdmin": false,
+              "imgUrl": ""
+            },
+            {
+              "id": "557582598725@s.whatsapp.net",
+              "isAdmin": false,
+              "isSuperAdmin": false,
+              "imgUrl": ""
+            },
+            {
+              "id": "557583735871@s.whatsapp.net",
+              "isAdmin": false,
+              "isSuperAdmin": false,
+              "imgUrl": "https://pps.whatsapp.net/v/t61.24694-24/553958591_1443839636849317_1771477514056495931_n.jpg?ccb=11-4&oh=01_Q5Aa2gH8YuYz6NDv6MFHN1RpHU3M61NKJ6e8w-dUPNtndwGaMw&oe=68E29F89&_nc_sid=5e03e0&_nc_cat=104"
+            },
+            {
+              "id": "557582833774@s.whatsapp.net",
+              "isAdmin": true,
+              "isSuperAdmin": true,
+              "imgUrl": ""
+            },
+            {
+              "id": "5519994265842@s.whatsapp.net",
+              "isAdmin": false,
+              "isSuperAdmin": false,
+              "imgUrl": "https://pps.whatsapp.net/v/t61.24694-24/545825054_1349297203396998_8764929231718603658_n.jpg?ccb=11-4&oh=01_Q5Aa2gEyQq6adtVXI_t-fPnT4rH8-dM8A976rD5jPavlUtiLcg&oe=68E284D3&_nc_sid=5e03e0&_nc_cat=111"
+            },
+            {
+              "id": "557582266154@s.whatsapp.net",
+              "isAdmin": false,
+              "isSuperAdmin": false,
+              "imgUrl": ""
+            },
+            {
+              "id": "557183879461@s.whatsapp.net",
+              "isAdmin": false,
+              "isSuperAdmin": false,
+              "imgUrl": ""
+            },
+            {
+              "id": "557187412489@s.whatsapp.net",
+              "isAdmin": false,
+              "isSuperAdmin": false,
+              "imgUrl": ""
+            },
+            {
+              "id": "557591094099@s.whatsapp.net",
+              "isAdmin": false,
+              "isSuperAdmin": false,
+              "imgUrl": "https://pps.whatsapp.net/v/t61.24694-24/518836630_1070501305299140_7954140489216020668_n.jpg?ccb=11-4&oh=01_Q5Aa2gFDYuq0sYl5pqY-gWIUzb30zeSBD6x13SX_86owaa4T6g&oe=68E29C35&_nc_sid=5e03e0&_nc_cat=105"
+            },
+            {
+              "id": "557191505114@s.whatsapp.net",
+              "isAdmin": false,
+              "isSuperAdmin": false,
+              "imgUrl": "https://pps.whatsapp.net/v/t61.24694-24/546494259_1325987912205174_5821833596555186016_n.jpg?ccb=11-4&oh=01_Q5Aa2gEL1Fsct_C7HCTvROrB7a5CqE4JJdm9X8Mzy6neVXhBog&oe=68E271EF&_nc_sid=5e03e0&_nc_cat=105"
+            },
+            {
+              "id": "557598792729@s.whatsapp.net",
+              "isAdmin": false,
+              "isSuperAdmin": false,
+              "imgUrl": ""
+            },
+            {
+              "id": "557187602256@s.whatsapp.net",
+              "isAdmin": false,
+              "isSuperAdmin": false,
+              "imgUrl": "https://pps.whatsapp.net/v/t61.24694-24/545523015_821367886986972_1474207576805477026_n.jpg?ccb=11-4&oh=01_Q5Aa2gH4S_SB5n38uaho9obive5JpstdQR9oMHzPfmV6CRTDNQ&oe=68E28702&_nc_sid=5e03e0&_nc_cat=106"
+            },
+            {
+              "id": "5522997048057@s.whatsapp.net",
+              "isAdmin": false,
+              "isSuperAdmin": false,
+              "imgUrl": ""
+            },
+            {
+              "id": "557183658968@s.whatsapp.net",
+              "isAdmin": false,
+              "isSuperAdmin": false,
+              "imgUrl": ""
+            },
+            {
+              "id": "557582223723@s.whatsapp.net",
+              "isAdmin": true,
+              "isSuperAdmin": false,
+              "imgUrl": "https://pps.whatsapp.net/v/t61.24694-24/546602194_1330719375111929_8242971828941180558_n.jpg?ccb=11-4&oh=01_Q5Aa2gHmSoQ3LiIJi9EenlOW9PJ-YvDxYcXcnXgI8d0pILlNNg&oe=68E2772E&_nc_sid=5e03e0&_nc_cat=110"
+            },
+            {
+              "id": "558481644836@s.whatsapp.net",
+              "isAdmin": false,
+              "isSuperAdmin": false,
+              "imgUrl": ""
+            },
+            {
+              "id": "557186237880@s.whatsapp.net",
+              "isAdmin": false,
+              "isSuperAdmin": false,
+              "imgUrl": "https://pps.whatsapp.net/v/t61.24694-24/491847628_632200852897981_7488853491227919089_n.jpg?ccb=11-4&oh=01_Q5Aa2gExKIdKDaZkfvvL-G18zNZduhtXVUVuQFKJ-kGAyJ9rjw&oe=68E29489&_nc_sid=5e03e0&_nc_cat=107"
+            },
+            {
+              "id": "557583235537@s.whatsapp.net",
+              "isAdmin": false,
+              "isSuperAdmin": false,
+              "imgUrl": "https://pps.whatsapp.net/v/t61.24694-24/528864623_1923915978154169_5022097994243503031_n.jpg?ccb=11-4&oh=01_Q5Aa2gGq6l1zSNuoRzrtwX5rU1q1WJn2V1lfTIHAM7spDhdVVQ&oe=68E29B7F&_nc_sid=5e03e0&_nc_cat=104"
+            },
+            {
+              "id": "557191727337@s.whatsapp.net",
+              "isAdmin": false,
+              "isSuperAdmin": false,
+              "imgUrl": ""
+            },
+            {
+              "id": "557191286920@s.whatsapp.net",
+              "isAdmin": false,
+              "isSuperAdmin": false,
+              "imgUrl": ""
+            },
+            {
+              "id": "557599853389@s.whatsapp.net",
+              "isAdmin": false,
+              "isSuperAdmin": false,
+              "imgUrl": ""
+            },
+            {
+              "id": "557196836189@s.whatsapp.net",
+              "isAdmin": false,
+              "isSuperAdmin": false,
+              "imgUrl": ""
+            },
+            {
+              "id": "557196554904@s.whatsapp.net",
+              "isAdmin": false,
+              "isSuperAdmin": false,
+              "imgUrl": "https://pps.whatsapp.net/v/t61.24694-24/537795041_24307077968977093_7838502762386637417_n.jpg?ccb=11-4&oh=01_Q5Aa2gG4d3EWY3w2ZYknfzKZbmadmtClVHUkmFvlwASvUVxvuA&oe=68E29036&_nc_sid=5e03e0&_nc_cat=106"
+            },
+            {
+              "id": "557592371592@s.whatsapp.net",
+              "isAdmin": false,
+              "isSuperAdmin": false,
+              "imgUrl": "https://pps.whatsapp.net/v/t61.24694-24/491844447_1804749527049378_2418662171611643513_n.jpg?ccb=11-4&oh=01_Q5Aa2gHfNkEyJfzlBJuNZ8aJ8zm7sPZZNQUksibI7Fir_V9BdQ&oe=68E29911&_nc_sid=5e03e0&_nc_cat=109"
+            },
+            {
+              "id": "557598464803@s.whatsapp.net",
+              "isAdmin": false,
+              "isSuperAdmin": false,
+              "imgUrl": "https://pps.whatsapp.net/v/t61.24694-24/473400600_1713246232924921_3685841264748564828_n.jpg?ccb=11-4&oh=01_Q5Aa2gEsabWiyGbIYlvbYF5_-7IVJGaoqpC5tBN1PLqvtjYVXA&oe=68E28D27&_nc_sid=5e03e0&_nc_cat=107"
+            },
+            {
+              "id": "557588380450@s.whatsapp.net",
+              "isAdmin": false,
+              "isSuperAdmin": false,
+              "imgUrl": "https://pps.whatsapp.net/v/t61.24694-24/521072395_1296493545331950_3897271029792589885_n.jpg?ccb=11-4&oh=01_Q5Aa2gGPsdl8_o9mIxWPN0Y3jCrPKhBjJ44SiWND49g8jXIqzw&oe=68E28ABB&_nc_sid=5e03e0&_nc_cat=102"
+            }
+          ],
+          "imgUrl": "https://pps.whatsapp.net/v/t61.24694-24/554307300_779595561357081_8301085895702582552_n.jpg?ccb=11-4&oh=01_Q5Aa2gH4cKqIVh0r-A2bgGnsDYK_kTy1-j0DD6DhSboL5dyqkg&oe=68E26D58&_nc_sid=5e03e0&_nc_cat=110"
+        }
+      ],
+      "name": "Robson Ribeiro"
+    },
+    "contacts": [
+      {
+        "jid": "557582469889@s.whatsapp.net",
+        "exist": true,
+        "lid": "132259306819768@lid",
+        "imgUrl": "https://pps.whatsapp.net/v/t61.24694-24/216189510_306547874784533_2984653428574605432_n.jpg?ccb=11-4&oh=01_Q5Aa2gE0JmSBo8Hh9BqW-JL8TBN1DInQdW3qCIxRkQfhVgoVVA&oe=68E294EF&_nc_sid=5e03e0&_nc_cat=109",
+        "name": "+5575982469889",
+        "number": "+55 75 8246-9889"
+      },
+      {
+        "jid": "557581504829@s.whatsapp.net",
+        "exist": true,
+        "lid": "76858657886232@lid",
+        "imgUrl": null,
+        "name": "+55 75 98150-4829",
+        "number": "+55 75 8150-4829"
+      },
+      {
+        "jid": "557583250140@s.whatsapp.net",
+        "exist": true,
+        "lid": "231825523888202@lid",
+        "imgUrl": null,
+        "name": "+5575983250140",
+        "number": "+55 75 8325-0140"
+      },
+      {
+        "jid": "5511933538367@s.whatsapp.net",
+        "exist": true,
+        "lid": "61701634420944@lid",
+        "imgUrl": "https://pps.whatsapp.net/v/t61.24694-24/549678735_1055609446460028_4677931892650736652_n.jpg?ccb=11-4&oh=01_Q5Aa2gHsSVNKrAUyGN9-wcH9Q5W2GG3st827jz-I7A8wEbpUCQ&oe=68E284BE&_nc_sid=5e03e0&_nc_cat=104",
+        "name": "+5511933538367",
+        "number": "+55 (11) 93353 8367 "
+      },
+      {
+        "jid": "557582598725@s.whatsapp.net",
+        "exist": true,
+        "lid": "246514010079437@lid",
+        "imgUrl": null,
+        "name": "+5575982598725",
+        "number": "+55 75 8259-8725"
+      },
+      {
+        "jid": "557582339319@s.whatsapp.net",
+        "exist": true,
+        "lid": "48160139382939@lid",
+        "imgUrl": null,
+        "name": "+5575982339319",
+        "number": "+55 75 8233-9319"
+      },
+      {
+        "jid": "557591433434@s.whatsapp.net",
+        "exist": true,
+        "lid": "129501853949983@lid",
+        "imgUrl": "https://pps.whatsapp.net/v/t61.24694-24/453939858_503554348834213_2671483959810151099_n.jpg?ccb=11-4&oh=01_Q5Aa2gE9bTKwnevd-xjqfESYau7J645fnDdpRgxyWNHT1epUrA&oe=68E27371&_nc_sid=5e03e0&_nc_cat=106",
+        "name": "Alfredo Celular",
+        "number": "+55 75 9143-3434"
+      },
+      {
+        "jid": "557199390793@s.whatsapp.net",
+        "exist": true,
+        "lid": "165163336474836@lid",
+        "imgUrl": "https://pps.whatsapp.net/v/t61.24694-24/390665280_464386626339785_5531081432835081316_n.jpg?ccb=11-4&oh=01_Q5Aa2gGe94ZFypPRrWlNTfiwubsdBSvwOLIwPEdGRsvIYyN2Jg&oe=68E28650&_nc_sid=5e03e0&_nc_cat=111",
+        "name": "Amilton",
+        "number": "+55 71 9939-0793"
+      },
+      {
+        "jid": "557582833774@s.whatsapp.net",
+        "exist": true,
+        "lid": "97508776800401@lid",
+        "imgUrl": null,
+        "name": "Amor ❤️",
+        "number": "+55 75 8283-3774"
+      },
+      {
+        "jid": "557582453542@s.whatsapp.net",
+        "exist": true,
+        "lid": "213413166882835@lid",
+        "imgUrl": "https://pps.whatsapp.net/v/t61.24694-24/473407902_1712169346405070_1347435515084839376_n.jpg?ccb=11-4&oh=01_Q5Aa2gEhsQuH-bCSSzSCTwpaI1zTuQK7jO3oHYGUCN_blZ9dDg&oe=68E288BD&_nc_sid=5e03e0&_nc_cat=109",
+        "name": "Barbearia",
+        "number": "+55 75 8245-3542"
+      },
+      {
+        "jid": "557191679976@s.whatsapp.net",
+        "exist": true,
+        "lid": "78228567900268@lid",
+        "imgUrl": null,
+        "name": "Bea♥️",
+        "number": "+55 71 9167-9976"
+      },
+      {
+        "jid": "557583608037@s.whatsapp.net",
+        "exist": true,
+        "lid": "109788138574051@lid",
+        "imgUrl": "https://pps.whatsapp.net/v/t61.24694-24/540397835_1323796679347881_2744999390310996518_n.jpg?ccb=11-4&oh=01_Q5Aa2gGRwbAqFMGPB8aMQIlKkBTNNtbksMS2nBTxFFEfqeIQMQ&oe=68E2838E&_nc_sid=5e03e0&_nc_cat=100",
+        "name": "Bibi",
+        "number": "+55 75 8360-8037"
+      }
+    ]
+  }
+]

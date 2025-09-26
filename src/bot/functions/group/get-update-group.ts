@@ -1,4 +1,4 @@
-import { GroupMetadata, WASocket } from '@whiskeysockets/baileys'
+import { WASocket } from '@whiskeysockets/baileys'
 import { mapGroupsMetadataToIGroup } from '../../../utils/group/map-groups-metadada-to-igroup'
 
 interface IGetUpdateGroup {
@@ -13,7 +13,6 @@ export async function getUpdateGroup({ sock, groupId }: IGetUpdateGroup) {
     const findGroup = await sock.groupMetadata(groupId)
     const response = await mapGroupsMetadataToIGroup(sock, [findGroup])
 
-    console.log(response)
     return response
   } catch (err) {
     return null

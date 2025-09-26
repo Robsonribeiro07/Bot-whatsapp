@@ -3,25 +3,46 @@ import path from 'path'
 import {
   downloadMediaMessage,
   MediaType,
-  proto,
   WAMessage,
 } from '@whiskeysockets/baileys'
 
 export async function SaveMediaWhatsapp(
   msg: WAMessage,
   userId: string | undefined,
-  type: MediaType,
+  type: MediaType | 'text',
   deleteAfterMs = 5 * 60 * 1000,
 ): Promise<string> {
   if (!userId) return ''
   const buffer = await downloadMediaMessage(msg, 'buffer', {})
+
   const userDir = path.join(process.cwd(), 'src', 'uploads', userId)
 
   if (!existsSync(userDir)) {
     mkdirSync(userDir, { recursive: true })
   }
 
-  const extension = type === 'image' ? 'jpg' : 'mp4'
+  const getExtension = (mediaType: MediaType | 'text'): string => {
+    switch (mediaType) {
+      case 'image':
+        return 'jpg'
+      case 'video':
+        return 'mp4'
+      case 'document': {
+        const fileName = msg.message?.documentMessage?.fileName
+        if (fileName) {
+          const ext = path.extname(fileName)
+          return ext ? ext.slice(1) : 'pdf'
+        }
+        return 'pdf'
+      }
+      case 'audio':
+        return 'mp3'
+      default:
+        return 'bin'
+    }
+  }
+
+  const extension = getExtension(type)
   const name = `${type}-${Date.now()}.${extension}`
   const filePath = path.join(userDir, name)
 

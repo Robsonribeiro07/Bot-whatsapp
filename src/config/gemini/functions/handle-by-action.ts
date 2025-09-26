@@ -1,5 +1,6 @@
 import { PromoteGroupSerivces } from '../../../services/group/promote-to-admin-service'
-import { sendMessageUseService } from '../../../services/whatsapp/send-message-user'
+import { sendMessageUseService } from '../../../services/whatsapp/send-message-user-service'
+import { MediaType } from '../../../services/whatsapp/typed-media-map'
 import { IOnChunk, StreamIA } from '../../openIA/functions/stream'
 import { ActionParams, GroupActionType, UserAction } from '../../typed'
 const handlersByGroupAction: Record<
@@ -60,13 +61,12 @@ export const handlersByAction = {
       shouldStop,
     })
 
-    console.log(action)
     for (const messages of action.userMessages) {
       await sendMessageUseService({
         message: messages.message,
         userId: action.content.userId,
         userToSendMessage: messages.userToSendMessage,
-        type: messages.type,
+        type: messages.type as MediaType,
       })
     }
   },

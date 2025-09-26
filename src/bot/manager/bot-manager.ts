@@ -221,23 +221,13 @@ class BotManager extends EventEmitter {
       const updateData = await this.GetUserData()
       if (!updateData) return
 
-      const {
-        id,
-        lid,
-        imgUrl,
-        verifiedName,
-        notify,
-        status,
-        jid,
-        name,
-        groups,
-      } = updateData
+      const { id, lid, imgUrl, verifiedName, notify, status, name, groups } =
+        updateData
 
       this.socket?.emit('send-name-update', `quase la ${name} `)
       await updateWithWhatsappDataService({
         lid,
         userId: this.userID,
-        jid,
         name,
         connectedAt: this.ConnectAt,
         id,
@@ -262,8 +252,7 @@ class BotManager extends EventEmitter {
     if (!this.sock?.user || !this.status) return
 
     try {
-      const { id, jid, lid, name, notify, verifiedName, status } =
-        this.sock.user
+      const { id, lid, name, notify, verifiedName, status } = this.sock.user
       if (!id) return
 
       let profilePictureUrl: string | undefined
@@ -282,7 +271,6 @@ class BotManager extends EventEmitter {
       const updateData = {
         id: this.userID,
         imgUrl: profilePictureUrl,
-        jid,
         lid,
         name,
         notify,

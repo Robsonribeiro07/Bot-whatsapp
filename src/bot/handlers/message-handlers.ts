@@ -10,7 +10,6 @@ const MonitorGroup = ({ sock, groupId }: MonitorGroupOptions) => {
   sock.ev.on('messages.upsert', async m => {
     const msg = m.messages[0]
 
-    console.log('id do chat', msg.key.remoteJid)
     if (!msg.message) return
 
     if (msg.key.remoteJid === groupId) {

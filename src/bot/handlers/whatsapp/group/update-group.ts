@@ -21,15 +21,10 @@ async function processQueue(socket: Socket) {
           groupId: job.groupId,
         })
 
-        console.log(response)
-
         if (response) {
-          console.log('group update', response[0].owner)
           socket.emit('have-to-update', { data: response })
         }
-      } catch (err) {
-        console.error(err)
-      }
+      } catch (err) {}
       await new Promise(res => setTimeout(res, 100))
     }
   } finally {
@@ -47,7 +42,6 @@ export function EmitToHaveUpdate({ sock, socket }: IupdateUser) {
   sock.ev.on('messages.upsert', async update => {
     for (const msg of update.messages) {
       const groupId = msg.key.remoteJid
-      const content = msg.message
 
       if (!groupId) return
       groupUpdateQueue.push({ groupId, sock })

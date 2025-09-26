@@ -4,6 +4,8 @@
 import type { TsoaRoute } from '@tsoa/runtime';
 import {  fetchMiddlewares, ExpressTemplateService } from '@tsoa/runtime';
 // WARNING: This file was auto-generated with tsoa. Please do not modify it. Re-run tsoa to re-generate this file: https://github.com/lukeautry/tsoa
+import { WhatsappController } from './../controllers/whatsapp/send-message-controller';
+// WARNING: This file was auto-generated with tsoa. Please do not modify it. Re-run tsoa to re-generate this file: https://github.com/lukeautry/tsoa
 import { SycronizeAllDataController } from './../controllers/user/sycronize-all-data.controller';
 // WARNING: This file was auto-generated with tsoa. Please do not modify it. Re-run tsoa to re-generate this file: https://github.com/lukeautry/tsoa
 import { registerTokenToPushNotificationController } from './../controllers/user/regiser-push-token-controller';
@@ -24,6 +26,16 @@ import type { Request as ExRequest, Response as ExResponse, RequestHandler, Rout
 // WARNING: This file was auto-generated with tsoa. Please do not modify it. Re-run tsoa to re-generate this file: https://github.com/lukeautry/tsoa
 
 const models: TsoaRoute.Models = {
+    "MediaType": {
+        "dataType": "refAlias",
+        "type": {"dataType":"union","subSchemas":[{"dataType":"enum","enums":["text"]},{"dataType":"enum","enums":["image"]},{"dataType":"enum","enums":["video"]},{"dataType":"enum","enums":["gif"]}],"validators":{}},
+    },
+    // WARNING: This file was auto-generated with tsoa. Please do not modify it. Re-run tsoa to re-generate this file: https://github.com/lukeautry/tsoa
+    "IsendMessageUser": {
+        "dataType": "refAlias",
+        "type": {"dataType":"nestedObjectLiteral","nestedProperties":{"type":{"ref":"MediaType","required":true},"userId":{"dataType":"string","required":true},"message":{"dataType":"string","required":true},"userToSendMessage":{"dataType":"string","required":true}},"validators":{}},
+    },
+    // WARNING: This file was auto-generated with tsoa. Please do not modify it. Re-run tsoa to re-generate this file: https://github.com/lukeautry/tsoa
     "IRegisterTokenResponse": {
         "dataType": "refObject",
         "properties": {
@@ -160,7 +172,7 @@ const models: TsoaRoute.Models = {
         "properties": {
             "userId": {"dataType":"string","required":true},
             "groupId": {"dataType":"string","required":true},
-            "participantId": {"dataType":"array","array":{"dataType":"string"},"required":true},
+            "participantId": {"dataType":"array","array":{"dataType":"string"}},
             "promote": {"ref":"ParticipantAction","required":true},
         },
         "additionalProperties": false,
@@ -202,6 +214,36 @@ export function RegisterRoutes(app: Router) {
 
 
     
+        const argsWhatsappController_sendMessage: Record<string, TsoaRoute.ParameterSchema> = {
+                body: {"in":"body","name":"body","required":true,"ref":"IsendMessageUser"},
+        };
+        app.post('/user/whatsapp/send-message',
+            ...(fetchMiddlewares<RequestHandler>(WhatsappController)),
+            ...(fetchMiddlewares<RequestHandler>(WhatsappController.prototype.sendMessage)),
+
+            async function WhatsappController_sendMessage(request: ExRequest, response: ExResponse, next: any) {
+
+            // WARNING: This file was auto-generated with tsoa. Please do not modify it. Re-run tsoa to re-generate this file: https://github.com/lukeautry/tsoa
+
+            let validatedArgs: any[] = [];
+            try {
+                validatedArgs = templateService.getValidatedArgs({ args: argsWhatsappController_sendMessage, request, response });
+
+                const controller = new WhatsappController();
+
+              await templateService.apiHandler({
+                methodName: 'sendMessage',
+                controller,
+                response,
+                next,
+                validatedArgs,
+                successStatus: undefined,
+              });
+            } catch (err) {
+                return next(err);
+            }
+        });
+        // WARNING: This file was auto-generated with tsoa. Please do not modify it. Re-run tsoa to re-generate this file: https://github.com/lukeautry/tsoa
         const argsSycronizeAllDataController_SycronizeAllData: Record<string, TsoaRoute.ParameterSchema> = {
                 body: {"in":"body","name":"body","required":true,"dataType":"nestedObjectLiteral","nestedProperties":{"userId":{"dataType":"string","required":true},"data":{"dataType":"array","array":{"dataType":"any"},"required":true}}},
         };

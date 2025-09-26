@@ -30,7 +30,7 @@ interface ICreateUserResponse {
   statusBot?: boolean
 }
 @Route('user')
-@Tags('Users')
+@Tags('User')
 export class UserController extends Controller {
   @Post('create')
   @SuccessResponse('200', 'Usuário criado com sucesso')

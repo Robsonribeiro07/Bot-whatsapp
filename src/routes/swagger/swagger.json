@@ -7,6 +7,37 @@
 		"requestBodies": {},
 		"responses": {},
 		"schemas": {
+			"MediaType": {
+				"type": "string",
+				"enum": [
+					"text",
+					"image",
+					"video"
+				]
+			},
+			"IsendMessageUser": {
+				"properties": {
+					"type": {
+						"$ref": "#/components/schemas/MediaType"
+					},
+					"userId": {
+						"type": "string"
+					},
+					"message": {
+						"type": "string"
+					},
+					"userToSendMessage": {
+						"type": "string"
+					}
+				},
+				"required": [
+					"type",
+					"userId",
+					"message",
+					"userToSendMessage"
+				],
+				"type": "object"
+			},
 			"IRegisterTokenResponse": {
 				"properties": {
 					"code": {
@@ -316,7 +347,6 @@
 				"required": [
 					"userId",
 					"groupId",
-					"participantId",
 					"promote"
 				],
 				"type": "object",
@@ -358,7 +388,32 @@
 		"contact": {}
 	},
 	"paths": {
-		"/user/user/sycronize-all-data": {
+		"/user/whatsapp/send-message": {
+			"post": {
+				"operationId": "SendMessage",
+				"responses": {
+					"204": {
+						"description": "No content"
+					}
+				},
+				"tags": [
+					"User"
+				],
+				"security": [],
+				"parameters": [],
+				"requestBody": {
+					"required": true,
+					"content": {
+						"application/json": {
+							"schema": {
+								"$ref": "#/components/schemas/IsendMessageUser"
+							}
+						}
+					}
+				}
+			}
+		},
+		"/user/sycronize-all-data": {
 			"post": {
 				"operationId": "SycronizeAllData",
 				"responses": {
@@ -452,7 +507,7 @@
 					}
 				},
 				"tags": [
-					"Users"
+					"User"
 				],
 				"security": [],
 				"parameters": [
@@ -486,7 +541,7 @@
 					}
 				},
 				"tags": [
-					"Users"
+					"User"
 				],
 				"security": [],
 				"parameters": [],
@@ -559,7 +614,7 @@
 					}
 				},
 				"tags": [
-					"Groups"
+					"Group"
 				],
 				"security": [],
 				"parameters": [],
